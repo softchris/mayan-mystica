@@ -1,0 +1,12 @@
+{
+  "name": "azure-mystery-mansion",
+  "version": "1.0.0",
+  "description": "Azure Mystey Mansion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "vuepress dev"
+  },
+  "author": "",
+  "license": "ISC"
+}
