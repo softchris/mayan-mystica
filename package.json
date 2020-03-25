@@ -1,12 +1,26 @@
 {
-  "name": "azure-mystery-mansion",
-  "version": "1.0.0",
-  "description": "Azure Mystey Mansion",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "vuepress dev"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "azure-mayan-mystery",
+	"version": "1.0.0",
+	"description": "Discover the secrets of the pyramid!",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"game:build": "vuepress build game",
+		"dev": "vuepress dev game"
+	},
+	"keywords": [],
+	"author": "softchris,jlooper",
+	"license": "MIT",
+	"dependencies": {
+		"vuepress": "^1.4.0",
+		"autoprefixer": "9.6.1",
+		"tailwindcss": "1.1.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/"
+	},
+	"bugs": {
+		"url": "https://github.com/softchris/"
+	},
+	"homepage": "https://github.com/softchris/"
 }
