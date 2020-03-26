@@ -12,23 +12,26 @@ import { addItem, hasItem } from '../utils/helpers';
 export default {
 	computed: {
 		item() {
-			const item = items.find(row => row.id == this.id);
+			let item = items.find(row => row.id == this.id);
+			item = item || { name: 'not set' };
 			return item;
 		},
 	},
 	data() {
 		const item = items.find(row => row.id == this.id);
+		
 		return {
-			show: !hasItem(item.id),
+			show: !item || !hasItem(item.id),
 		};
 	},
 	methods: {
 		pickUp(id) {
-			addItem(id);
-			// item added event
-			this.$root.$emit('item_added', id);
-			this.show = false;
-			// hide or garbage collect item
+			let addOk = confirm("Add to inventory?");
+			if (addOk) {
+				addItem(id);
+				this.$root.$emit('item_added', id);
+				this.show = false;
+			}
 		},
 	},
 	props: ['id'],

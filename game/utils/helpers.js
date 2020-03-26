@@ -1,8 +1,17 @@
+
 // just needed for the build process
-if (!localStorage) {
-	localStorage = {
+if (global.localStorage == undefined) {
+	const items = require('../utils/items.json');
+
+	global.localStorage = {
 		setItem() {},
-		getItem() {},
+		getItem() { 
+			// we need a mocked response of all items, otherwise the build process will crash everytime we add a new item
+			const mockResponse = items.reduce((acc, curr) => {
+				return {...acc, [curr.id] : true };
+			}, {})
+			return JSON.stringify(mockResponse);
+		},
 	};
 }
 
@@ -27,6 +36,7 @@ export function addItem(id) {
 
 export function getItems() {
 	var json = localStorage.getItem('inventory');
+	
 	var inv = JSON.parse(json);
 	if (!inv) {
 		inv = {};
