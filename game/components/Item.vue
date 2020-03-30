@@ -27,11 +27,14 @@ export default {
 	methods: {
 		pickUp(id) {
 			let addOk = confirm("Add to inventory?");
-			if (addOk) {
-				addItem(id);
-				this.$root.$emit('item_added', id);
-				this.show = false;
-			}
+			this.$root.$emit('dialog_open');
+			this.$root.$on('dialog_close', () => {
+				if (addOk) {
+					addItem(id);
+					this.$root.$emit('item_added', id);
+					this.show = false;
+				}
+			})
 		},
 	},
 	props: ['id'],
