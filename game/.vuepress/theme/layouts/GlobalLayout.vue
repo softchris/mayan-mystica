@@ -8,7 +8,7 @@
 
       <div class="flex mb-4">
         <div class="w-1/3">
-          <component :is="inventory"></component>
+          <component :is="camera"></component>
         </div>
         <div class="w-3/4">
           <component :is="layout"></component>
@@ -23,20 +23,20 @@
 import Nav from "@theme/components/Nav.vue";
 import Footer from "@theme/components/Footer.vue";
 import BasicLayout from "@theme/layouts/BasicLayout.vue";
-import Inventory from "@theme/components/Inventory.vue";
+import Camera from "@theme/components/Camera.vue";
 export default {
   components: {
     Nav,
     Footer,
     BasicLayout,
-    Inventory
+    Camera
   },
   computed: {
     layout() {
       return this.$page.frontmatter.layout || "BasicLayout";
     },
-    inventory() {
-      return this.$page.frontmatter.inventory || "Inventory";
+    camera() {
+      return this.$page.frontmatter.camera || "Camera";
     }
   }
 };
