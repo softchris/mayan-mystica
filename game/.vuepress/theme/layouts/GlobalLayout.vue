@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div
       class="markdown-body font-serif bg-white m-2 sm:m-3 md:m-6 lg:m-12 text-lg rounded-lg shadow-lg"
-      style="background-image: url('/images/bg.jpg'); background-repeat: no-repeat; background-size: cover"
+      :style="backdrop"
     >
       <Nav />
 
@@ -24,6 +24,7 @@ import Nav from "@theme/components/Nav.vue";
 import Footer from "@theme/components/Footer.vue";
 import BasicLayout from "@theme/layouts/BasicLayout.vue";
 import Camera from "@theme/components/Camera.vue";
+//:style="background-image: url(/assets/bg.jpg); background-repeat: no-repeat; background-size: cover"
 export default {
   components: {
     Nav,
@@ -37,6 +38,13 @@ export default {
     },
     camera() {
       return this.$page.frontmatter.camera || "Camera";
+    },
+    backdrop() {
+      return {
+        "background-image": `url(${this.$page.frontmatter.backdrop})`,
+        "background-repeat": "no-repeat",
+        "background-size": "cover"
+      };
     }
   }
 };

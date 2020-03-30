@@ -35,7 +35,7 @@ export default {
   font-size: 28px;
   font-weight: bold;
   color: red;
-  font-decoration: underline;
+  text-decoration: underline;
   display: block;
   cursor: pointer;
 }
