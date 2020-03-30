@@ -1,6 +1,8 @@
 
-// just needed for the build process
-if (global.localStorage == undefined) {
+// is on Node.js, i.e building project
+if (typeof window === "undefined") {
+	console.log('is Node.js');
+
 	const items = require('../utils/items.json');
 
 	global.localStorage = {
