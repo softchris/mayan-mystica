@@ -1,9 +1,9 @@
 <template>
   <div @click="pickUp(item.id)">
-    <span v-if="show">
+    <p v-if="show">
       You see a
       <span class="item">{{ item.name }}</span>
-    </span>
+    </p>
   </div>
 </template>
 <script>
@@ -43,5 +43,4 @@ export default {
   color: orange;
   font-weight: bold;
 }
-</style
->>
+</style>
