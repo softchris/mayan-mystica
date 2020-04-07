@@ -1,9 +1,11 @@
 <template>
   <div class="markdown-body">
-    <p class="text-2xl pb-5 pt-5 ml-5 text-sans">{{ title }}</p>
+    <p class="text-2xl pb-5 pt-5 ml-5 text-sans text-white">{{ title }}</p>
 
     <div class="p-5">
-      <div v-if="items.length == 0">No snapshots taken yet</div>
+      <div v-if="items.length == 0">
+        <span class="text-white">No snapshots taken yet</span>
+      </div>
       <div v-else>
         <div class="wrapper">
           <div v-for="item in items" class="item">

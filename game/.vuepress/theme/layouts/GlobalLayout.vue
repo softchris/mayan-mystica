@@ -1,10 +1,8 @@
 <template>
   <div class="wrapper">
-    <div
-      class="markdown-body font-serif bg-white m-2 sm:m-3 md:m-6 lg:m-12 text-lg rounded-lg shadow-lg"
-      :style="backdrop"
-    >
+    <div class="markdown-body font-serif bg-white m-2 sm:m-3 md:m-6 lg:m-12 text-lg rounded-lg">
       <Nav />
+      <div :style="backdrop" class="w-full image">&nbsp;</div>
 
       <div class="flex mb-4">
         <div class="w-1/3">
@@ -24,7 +22,7 @@ import Nav from "@theme/components/Nav.vue";
 import Footer from "@theme/components/Footer.vue";
 import BasicLayout from "@theme/layouts/BasicLayout.vue";
 import Camera from "@theme/components/Camera.vue";
-//:style="background-image: url(/assets/bg.jpg); background-repeat: no-repeat; background-size: cover"
+
 export default {
   components: {
     Nav,

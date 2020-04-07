@@ -5,6 +5,9 @@ if (typeof window === 'undefined') {
 	const items = require('../utils/items.json');
 
 	global.localStorage = {
+		generateUID() {},
+		setUID() {},
+		getUID() {},
 		setItem() {},
 		getItem() {
 			// we need a mocked response of all items, otherwise the build process will crash everytime we add a new item
@@ -14,6 +17,31 @@ if (typeof window === 'undefined') {
 			return JSON.stringify(mockResponse);
 		},
 	};
+}
+export function generateUID() {
+	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+		var r = (Math.random() * 16) | 0,
+			v = c == 'x' ? r : (r & 0x3) | 0x8;
+		return v.toString(16);
+	});
+}
+
+export function hasUID() {
+	var uid = localStorage.getItem('uid');
+	if (uid != null) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+export function getUID() {
+	return localStorage.getItem('uid');
+}
+
+export function setUID() {
+	var uid = generateUID();
+	localStorage.setItem('uid', JSON.stringify(uid));
 }
 
 export function hasItem(id) {
