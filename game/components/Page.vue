@@ -2,17 +2,9 @@
 	<router-link class="page-nav" :to="this.url">{{ name }}</router-link>
 </template>
 <script>
-import { hasItem, getUID, setUID, hasUID } from '../utils/helpers';
+import { hasItem, getUID, setUID, hasUID, setSessionTicket } from '../utils/helpers';
 export default {
 	created: function() {
-		// when loaded
-		//todo, this should only run once!
-		/*var loginRequest = {
-			TitleId: '8EA26',
-			CustomId: this.createUUID(),
-			CreateAccount: true,
-		};
-    PlayFabClientSDK.LoginWithCustomID(loginRequest, this.LoginCallback);*/
 		var hasID = hasUID();
 		if (!hasID) {
 			setUID();
@@ -37,7 +29,9 @@ export default {
 		};
 	},
 	methods: {
-		LoginCallback() {},
+		LoginCallback(e) {
+			//setSessionTicket(e.data.SessionTicket)
+		},
 		gotoRoom: function() {
 			console.log(`Navigating to  ${this.url}`);
 			this.$router.push(`/rooms/${this.url}.html`);

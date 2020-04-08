@@ -8,6 +8,8 @@ if (typeof window === 'undefined') {
 		generateUID() {},
 		setUID() {},
 		getUID() {},
+		//setSessionTicket(id) {},
+		//getSessionTicket() {},
 		setItem() {},
 		getItem() {
 			// we need a mocked response of all items, otherwise the build process will crash everytime we add a new item
@@ -18,6 +20,15 @@ if (typeof window === 'undefined') {
 		},
 	};
 }
+
+/*export function setSessionTicket(id) {
+	localStorage.setItem('sessionTicket', id);
+}
+
+export function getSessionTicket() {
+	return localStorage.getItem('sessionTicket');
+}*/
+
 export function generateUID() {
 	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
 		var r = (Math.random() * 16) | 0,

@@ -12,7 +12,6 @@
 	"license": "MIT",
 	"dependencies": {
 		"autoprefixer": "9.6.1",
-		"playfab-sdk": "^2.45.200402",
 		"tailwindcss": "1.1.2",
 		"vuepress": "^1.4.0"
 	},
