@@ -1,12 +1,9 @@
 [
 	{
 		"id": 1,
-		"name": "Jaguar Glyph",
-		"url": "url"
-	},
-	{
-		"id": 2,
-		"name": "Turtle Glyph",
-		"url": "url"
+		"instructions": "Approach the",
+		"name": "Blue glyph",
+		"filename": "title",
+		"url": "https://docs.learn.com/goto"
 	}
 ]

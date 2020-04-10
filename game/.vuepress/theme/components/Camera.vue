@@ -10,8 +10,10 @@
         <div class="wrapper">
           <div v-for="item in items" class="item">
             <div class="polaroid">
-              <img src="/images/turtle.png" />
-              <div class="caption">{{ item }}</div>
+              <img :src="'/images/'+item.filename+'.png'" />
+              <div class="caption">
+                <a :href="item.url">Learn</a>
+              </div>
             </div>
           </div>
         </div>
@@ -24,22 +26,26 @@ import { getItems } from "../../../utils/helpers";
 const items = require("../../../utils/items.json");
 
 export default {
-  created() {},
+  created() {
+    this.showCameraItems();
+  },
+
   data() {
-    var me = this;
     this.$root.$on("item_added", id => {
-      console.log("snapshot taken");
-
-      var ids = getItems();
-      me.items = ids.map(id => items.find(item => item.id == id).name);
+      this.showCameraItems();
     });
-
-    var ids = getItems();
 
     return {
       title: "Camera Roll",
-      items: ids.map(id => items.find(item => item.id == id).name)
+      items: []
     };
+  },
+  methods: {
+    showCameraItems() {
+      var ids = getItems();
+      this.items = ids.map(id => items.find(item => item.id == id));
+      return items;
+    }
   }
 };
 </script>
