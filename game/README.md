@@ -10,8 +10,4 @@ Finally, your search has proven fruitful: you are standing outside a large pyram
 
 You take your trusty camera out of your backpack and look around.
 
-To the right, you see an flash of blue. Partially hidden in the grass is a fragment of a stone stela, a sculpted monument.
-
-<Item id="1" />
-
-<Page url="rooms/challenge1" instructions="The image seems to be acting strangely, glowing and vibrating." title="Tap the image" condition="1" />
+<Page url="rooms/snake" instructions="A snake slithers from the underbrush." name="Follow it" condition="1" />

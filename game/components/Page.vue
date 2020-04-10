@@ -29,12 +29,12 @@ export default {
     var vm = this;
     this.$root.$on("item_added", id => {
       if (vm.condition == id) {
-        vm.name = hasItem(vm.condition) ? vm.title : "";
+        vm.name = hasItem(vm.condition) ? vm.name : "";
       }
     });
 
     return {
-      name: hasItem(this.condition) ? this.title : ""
+      name: hasItem(this.condition) ? this.name : ""
     };
   },
   methods: {
@@ -46,7 +46,7 @@ export default {
       this.$router.push(`/rooms/${this.url}.html`);
     }
   },
-  props: ["url", "title", "condition", "instructions"]
+  props: ["url", "name", "condition", "instructions"]
 };
 </script>
 <style lang="stylus">
