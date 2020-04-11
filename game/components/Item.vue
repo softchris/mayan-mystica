@@ -38,7 +38,7 @@ export default {
       var data = {
         Data: { item: item.name }
       };
-      //PlayFabClientSDK.UpdateUserData(data, this.callback);
+      PlayFabClientSDK.UpdateUserData(data, this.callback);
       let addOk = confirm("Take a picture?");
       if (addOk) {
         addItem(item.id);

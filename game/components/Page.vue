@@ -18,6 +18,7 @@ export default {
   created: function() {
     this.getInventory();
     var hasID = hasUID();
+    //if there's no id in local storage
     if (!hasID) {
       setUID();
       var loginRequest = {
@@ -25,7 +26,16 @@ export default {
         CustomId: getUID(),
         CreateAccount: true
       };
-      //PlayFabClientSDK.LoginWithCustomID(loginRequest, this.LoginCallback);
+      PlayFabClientSDK.LoginWithCustomID(loginRequest, this.LoginCallback);
+    }
+    //otherwise log back in to refresh the session ticket
+    else {
+      var loginRequest = {
+        TitleId: "8EA26",
+        CustomId: getUID(),
+        CreateAccount: false
+      };
+      PlayFabClientSDK.LoginWithCustomID(loginRequest, this.LoginCallback);
     }
   },
   data() {
@@ -55,7 +65,7 @@ export default {
       }
     },
     LoginCallback(e) {
-      //setSessionTicket(e.data.SessionTicket)
+      console.log(e);
     },
     gotoRoom: function() {
       console.log(`Navigating to  ${this.url}`);
