@@ -1,10 +1,12 @@
 <template>
-  <div class="prompt">
+  <div class="prompt" v-if="show">
     {{instructions}}
-    <router-link class="page-nav" :to="this.url">{{ name }}</router-link>
+    <router-link class="page-nav" :to="this.url">{{ action }}</router-link>
   </div>
 </template>
 <script>
+const items = require("../utils/items.json");
+
 import {
   hasItem,
   getUID,
@@ -14,6 +16,7 @@ import {
 } from "../utils/helpers";
 export default {
   created: function() {
+    this.getInventory();
     var hasID = hasUID();
     if (!hasID) {
       setUID();
@@ -26,27 +29,40 @@ export default {
     }
   },
   data() {
-    var vm = this;
     this.$root.$on("item_added", id => {
-      if (vm.condition == id) {
-        vm.name = hasItem(vm.condition) ? vm.name : "";
+      if (this.condition == id) {
+        this.show = true;
+      }
+    });
+
+    this.$root.$on("showResult", id => {
+      if (this.condition == id) {
+        this.show = true;
       }
     });
 
     return {
-      name: hasItem(this.condition) ? this.name : ""
+      show: false
     };
   },
   methods: {
+    getInventory() {
+      if (
+        this.condition == hasItem(this.condition) ||
+        this.condition == "none"
+      ) {
+        this.show = true;
+      }
+    },
     LoginCallback(e) {
       //setSessionTicket(e.data.SessionTicket)
     },
     gotoRoom: function() {
       console.log(`Navigating to  ${this.url}`);
-      this.$router.push(`/rooms/${this.url}.html`);
+      this.$router.push(`/rooms/${this.url}`);
     }
   },
-  props: ["url", "name", "condition", "instructions"]
+  props: ["url", "action", "condition", "instructions"]
 };
 </script>
 <style lang="stylus">

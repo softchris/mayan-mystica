@@ -1,9 +1,16 @@
 <template>
-  <div @click="pickUp(item)">
+  <div v-if="item.filename != ''" @click="takePic(item)">
     <p v-if="show">
       {{item.instructions}}
       <span class="item">{{ item.name }}</span>
     </p>
+  </div>
+  <div v-else>
+    <p @click="emitResult(item)">
+      {{item.instructions}}
+      <span class="item" @click="showResult = !showResult">{{ item.name }}</span>
+    </p>
+    <p v-show="showResult">{{item.result}}</p>
   </div>
 </template>
 <script>
@@ -16,20 +23,17 @@ export default {
       let item = items.find(row => row.id == this.id);
       item = item || { name: "not set" };
       return item;
-    },
-    getItem() {}
+    }
   },
   data() {
     const item = items.find(row => row.id == this.id);
     return {
-      show: !item || !hasItem(item.id)
-    };
-    return {
-      show: false
+      show: !item || !hasItem(item.id),
+      showResult: false
     };
   },
   methods: {
-    pickUp(item) {
+    takePic(item) {
       //playfab
       var data = {
         Data: { item: item.name }
@@ -39,8 +43,12 @@ export default {
       if (addOk) {
         addItem(item.id);
         this.$root.$emit("item_added", item.id);
+        //you got the picture, so hide the prompt
         this.show = false;
       }
+    },
+    emitResult(item) {
+      this.$root.$emit("showResult", item.id);
     },
     callback(e) {
       console.log(e);
@@ -53,5 +61,6 @@ export default {
 .item {
   color: blue;
   font-weight: bold;
+  text-decoration: underline;
 }
 </style>

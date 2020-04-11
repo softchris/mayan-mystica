@@ -4,6 +4,6 @@ To the right of the hole, you see a flash of blue. Partially hidden in the grass
 
 <Item id="1" />
 
-<Page url="challenge1" instructions="The stela seems to be acting strangely, glowing and vibrating." name="Look" condition="1" />
+<Page url="challenge1" instructions="The stela seems to be acting strangely, glowing and vibrating." action="Look" condition="1" />
 
 [Go Back](../)
