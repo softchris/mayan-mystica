@@ -8,8 +8,8 @@ if (typeof window === 'undefined') {
 		generateUID() {},
 		setUID() {},
 		getUID() {},
-		//setSessionTicket(id) {},
-		//getSessionTicket() {},
+		setSessionTicket(id) {},
+		getSessionTicket() {},
 		setItem() {},
 		getItem() {
 			// we need a mocked response of all items, otherwise the build process will crash everytime we add a new item
@@ -17,17 +17,17 @@ if (typeof window === 'undefined') {
 				return { ...acc, [curr.id]: true };
 			}, {});
 			return JSON.stringify(mockResponse);
-		},
+		}
 	};
 }
 
-/*export function setSessionTicket(id) {
+export function setSessionTicket(id) {
 	localStorage.setItem('sessionTicket', id);
 }
 
 export function getSessionTicket() {
 	return localStorage.getItem('sessionTicket');
-}*/
+}
 
 export function generateUID() {
 	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {

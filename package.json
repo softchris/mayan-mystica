@@ -12,6 +12,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"autoprefixer": "9.6.1",
+		"axios": "^0.19.2",
 		"tailwindcss": "1.1.2",
 		"vuepress": "^1.4.0"
 	},
