@@ -1,3 +1,9 @@
+---
+backdrop: ../images/bg.jpg
+---
+
+# A snake
+
 You start to follow it, but the snake turns tail and whisks back into a small hole.
 
 To the right of the hole, you see a flash of blue. Partially hidden in the grass is a fragment of a stone stela, a sculpted monument.

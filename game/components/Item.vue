@@ -48,7 +48,7 @@ export default {
 					}
 				)
 				.then(response => {
-					console.log(response);
+					//console.log(response);
 				})
 				.catch(e => {
 					console.log(e);

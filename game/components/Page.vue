@@ -1,7 +1,7 @@
 <template>
 	<div class="prompt" v-if="show">
 		{{ instructions }}
-		<router-link class="page-nav" :to="this.url">{{ action }}</router-link>
+		<div class="page-nav" @click="goToRoom(url)">{{ action }}</div>
 	</div>
 </template>
 <script>
@@ -9,21 +9,18 @@ const items = require('../utils/items.json');
 import { hasItem, getUID, setUID, hasUID, setSessionTicket } from '../utils/helpers';
 import axios from 'axios';
 export default {
-	created: function() {
+	created() {
 		this.getInventory();
-		var hasID = hasUID();
-		//if there's no id in local storage
-		if (!hasID) {
+		if (!hasUID()) {
 			setUID();
 		}
 		axios
 			.post(`https://8EA26.playfabapi.com/Client/LoginWithCustomID`, {
 				TitleId: '8EA26',
 				CustomId: getUID(),
-				CreateAccount: hasID
+				CreateAccount: hasUID()
 			})
 			.then(response => {
-				console.log(response);
 				setSessionTicket(response.data.data.SessionTicket);
 			})
 			.catch(e => {
@@ -53,9 +50,9 @@ export default {
 				this.show = true;
 			}
 		},
-		gotoRoom: function() {
-			console.log(`Navigating to  ${this.url}`);
-			this.$router.push(`/rooms/${this.url}`);
+		goToRoom(url) {
+			console.log(url);
+			this.$router.replace({ path: url });
 		}
 	},
 	props: ['url', 'action', 'condition', 'instructions']

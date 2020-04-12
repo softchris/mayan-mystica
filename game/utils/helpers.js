@@ -8,11 +8,12 @@ if (typeof window === 'undefined') {
 		generateUID() {},
 		setUID() {},
 		getUID() {},
+		hasUID() {},
 		setSessionTicket(id) {},
 		getSessionTicket() {},
 		setItem() {},
 		getItem() {
-			// we need a mocked response of all items, otherwise the build process will crash everytime we add a new item
+			// we need a mocked response of all items, otherwise the build process will crash every time we add a new item
 			const mockResponse = items.reduce((acc, curr) => {
 				return { ...acc, [curr.id]: true };
 			}, {});
@@ -52,7 +53,7 @@ export function getUID() {
 
 export function setUID() {
 	var uid = generateUID();
-	localStorage.setItem('uid', JSON.stringify(uid));
+	localStorage.setItem('uid', uid);
 }
 
 export function hasItem(id) {

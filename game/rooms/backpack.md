@@ -1,3 +1,7 @@
+---
+backdrop: ../images/bg.jpg
+---
+
 # Your backpack
 
 You open your sturdy backpack and find several items.
