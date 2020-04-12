@@ -14,7 +14,7 @@ export default {
 		if (!hasUID()) {
 			setUID();
 		}
-		axios
+		/*axios
 			.post(`https://8EA26.playfabapi.com/Client/LoginWithCustomID`, {
 				TitleId: '8EA26',
 				CustomId: getUID(),
@@ -25,7 +25,7 @@ export default {
 			})
 			.catch(e => {
 				console.log(e);
-			});
+			});*/
 	},
 	data() {
 		this.$root.$on('item_added', id => {

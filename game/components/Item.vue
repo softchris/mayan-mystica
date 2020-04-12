@@ -35,7 +35,7 @@ export default {
 	},
 	methods: {
 		takePic(item) {
-			axios
+			/*axios
 				.post(
 					`https://8EA26.playfabapi.com/Client/UpdateUserData`,
 					{
@@ -52,7 +52,7 @@ export default {
 				})
 				.catch(e => {
 					console.log(e);
-				});
+				});*/
 
 			let addOk = confirm('Take a picture?');
 			if (addOk) {
