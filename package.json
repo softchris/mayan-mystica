@@ -4,7 +4,7 @@
 	"description": "Discover the secrets of the pyramid!",
 	"main": "tailwind.config.js",
 	"scripts": {
-		"game:build": "vuepress build game",
+		"build": "vuepress build game",
 		"dev": "vuepress dev game"
 	},
 	"keywords": [],
