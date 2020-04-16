@@ -1,7 +1,8 @@
 <template>
 	<div class="prompt" v-if="show">
 		{{ instructions }}
-		<div class="page-nav" @click="goToRoom(url)">{{ action }}</div>
+		<!--<div class="page-nav" @click="goToRoom(url)">{{ action }}</div>-->
+		<router-link :to="link || './'">{{ action }}</router-link>
 	</div>
 </template>
 <script>
@@ -10,6 +11,7 @@ import { hasItem, getUID, setUID, hasUID, setSessionTicket } from '../utils/help
 import axios from 'axios';
 export default {
 	created() {
+		console.log(this.url);
 		this.getInventory();
 		if (!hasUID()) {
 			setUID();
@@ -18,30 +20,31 @@ export default {
 			.post(`https://8EA26.playfabapi.com/Client/LoginWithCustomID`, {
 				TitleId: '8EA26',
 				CustomId: getUID(),
-				CreateAccount: hasUID()
+				CreateAccount: hasUID(),
 			})
-			.then(response => {
+			.then((response) => {
 				setSessionTicket(response.data.data.SessionTicket);
 			})
-			.catch(e => {
+			.catch((e) => {
 				console.log(e);
 			});
 	},
 	data() {
-		this.$root.$on('item_added', id => {
+		this.$root.$on('item_added', (id) => {
 			if (this.condition == id) {
 				this.show = true;
 			}
 		});
 
-		this.$root.$on('showResult', id => {
+		this.$root.$on('showResult', (id) => {
 			if (this.condition == id) {
 				this.show = true;
 			}
 		});
 
 		return {
-			show: false
+			show: false,
+			link: this.url,
 		};
 	},
 	methods: {
@@ -53,9 +56,9 @@ export default {
 		goToRoom(url) {
 			console.log(url);
 			this.$router.replace({ path: url });
-		}
+		},
 	},
-	props: ['url', 'action', 'condition', 'instructions']
+	props: ['url', 'action', 'condition', 'instructions'],
 };
 </script>
 <style lang="stylus">
