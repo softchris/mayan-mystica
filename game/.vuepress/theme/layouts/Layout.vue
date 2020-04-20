@@ -2,8 +2,7 @@
   <div class="wrapper">
     <div class="markdown-body font-serif bg-white m-2 sm:m-3 md:m-6 lg:m-12 text-lg rounded-lg">
       <Nav />
-      <div :style="backdrop" class="w-full image">&nbsp;</div>
-
+      <div v-if="hasBackdrop" :style="backdrop" class="w-full image">&nbsp;</div>
       <div class="flex mb-4">
         <div class="w-1/3">
           <component :is="camera"></component>
@@ -36,6 +35,9 @@ export default {
     },
     camera() {
       return this.$page.frontmatter.camera || "Camera";
+    },
+    hasBackdrop() {
+      return this.$page.frontmatter.backdrop || false;
     },
     backdrop() {
       return {

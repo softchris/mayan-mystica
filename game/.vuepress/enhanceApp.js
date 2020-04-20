@@ -1,11 +1,11 @@
 import Page from '../components/Page';
 import Item from '../components/Item';
-export default ({
-	Vue, // the version of Vue being used in the VuePress app
-	options, // the options for the root Vue instance
-	router, // the router instance for the app
-	siteData // site metadata
-}) => {
+import Login from '../components/Login';
+import Register from '../components/Register';
+
+export default ({ Vue }) => {
 	Vue.component('Page', Page);
 	Vue.component('Item', Item);
+	Vue.component('Login', Login);
+	Vue.component('Register', Register);
 };
