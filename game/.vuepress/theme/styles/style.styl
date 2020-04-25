@@ -1,13 +1,19 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'neue_pixel_sansregular';
+    src: url('../fonts/neue-pixel-sans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/neue-pixel-sans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body  {
     background-color: black;
-    font-family: 'Neue Pixel Sans', Verdana, sans-serif;
-    src: local('Neue Pixel Sans'), local('Neue Pixel Sans'), url(../fonts/neue-pixel-sans.regular.ttf) format('otf');
 }
-
 .image {
   height: 400px;
 }
@@ -27,16 +33,16 @@ body  {
 }
 
 h1, h2, h3, h4, p {
-    font-family: 'Neue Pixel Sans', Verdana, sans-serif;
-    src: local('Neue Pixel Sans'), local('Neue Pixel Sans'), url(../fonts/neue-pixel-sans.regular.ttf) format('ttf');
-
+    font-family: 'neue_pixel_sansregular', sans-serif;
+    src: local('neue_pixel_sansregular'), url(../fonts/neue-pixel-sans-regular-webfont.ttf) format('ttf');
 }
 
 .markdown-body {
-    background: rgba(255, 255, 255,.1);
-    height: 100%;
-    font-family: 'Neue Pixel Sans', Verdana, sans-serif;
-    src: local('Neue Pixel Sans'), local('Neue Pixel Sans'), url(../fonts/neue-pixel-sans.regular.ttf) format('ttf');
+   background: rgba(255, 255, 255,.1);
+   height: 100%;
+   font-family: 'neue_pixel_sansregular', sans-serif;
+   src: local('neue_pixel_sansregular'), url(../fonts/neue-pixel-sans-regular-webfont.ttf) format('ttf');
+   
 }
 
 .markdown-body .article {

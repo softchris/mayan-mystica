@@ -147,7 +147,7 @@ module.exports = {
 			'56': '14rem',
 			'64': '16rem',
 		},
-		backgroundColor: theme => theme('colors'),
+		backgroundColor: (theme) => theme('colors'),
 		backgroundPosition: {
 			bottom: 'bottom',
 			center: 'center',
@@ -164,7 +164,7 @@ module.exports = {
 			cover: 'cover',
 			contain: 'contain',
 		},
-		borderColor: theme => ({
+		borderColor: (theme) => ({
 			...theme('colors'),
 			default: theme('colors.gray.300', 'currentColor'),
 		}),
@@ -220,23 +220,9 @@ module.exports = {
 			default: '1',
 		},
 		fontFamily: {
-			sans: [
-				'Neue Pixel Sans',
-				'-apple-system',
-				'BlinkMacSystemFont',
-				'"Segoe UI"',
-				'Roboto',
-				'"Helvetica Neue"',
-				'Arial',
-				'"Noto Sans"',
-				'sans-serif',
-				'"Apple Color Emoji"',
-				'"Segoe UI Emoji"',
-				'"Segoe UI Symbol"',
-				'"Noto Color Emoji"',
-			],
-			serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-			mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+			sans: ['"Neue Pixel Sans"'],
+			serif: ['Georgia'],
+			mono: ['monospace'],
 		},
 		fontSize: {
 			xs: '0.75rem',
@@ -261,7 +247,7 @@ module.exports = {
 			extrabold: '800',
 			black: '900',
 		},
-		height: theme => ({
+		height: (theme) => ({
 			auto: 'auto',
 			...theme('spacing'),
 			full: '100%',
@@ -358,12 +344,12 @@ module.exports = {
 			'11': '11',
 			'12': '12',
 		},
-		padding: theme => theme('spacing'),
+		padding: (theme) => theme('spacing'),
 		stroke: {
 			current: 'currentColor',
 		},
-		textColor: theme => theme('colors'),
-		width: theme => ({
+		textColor: (theme) => theme('colors'),
+		width: (theme) => ({
 			auto: 'auto',
 			...theme('spacing'),
 			'1/2': '50%',
