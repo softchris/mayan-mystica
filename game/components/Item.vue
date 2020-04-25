@@ -76,6 +76,6 @@ export default {
 .item {
   font-weight: bold;
   text-decoration: underline;
-  color: #73c2fb;
+  color: #008df2;
 }
 </style>

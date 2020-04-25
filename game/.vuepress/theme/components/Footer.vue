@@ -16,3 +16,8 @@ export default {
   name: "Footer"
 };
 </script>
+<style scoped>
+.markdown-body a {
+  color: white;
+}
+</style>
