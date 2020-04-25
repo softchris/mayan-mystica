@@ -1,81 +1,81 @@
 <template>
-	<div v-if="item.filename != ''" @click="takePic(item)">
-		<p v-if="show">
-			{{ item.instructions }}
-			<span class="item">{{ item.name }}</span>
-		</p>
-	</div>
-	<div v-else>
-		<p @click="emitResult(item)">
-			{{ item.instructions }}
-			<span class="item" @click="showResult = !showResult">{{ item.name }}</span>
-		</p>
-		<p v-show="showResult">{{ item.result }}</p>
-	</div>
+  <div v-if="item.filename != ''" @click="takePic(item)">
+    <p v-if="show">
+      {{ item.instructions }}
+      <span class="item">{{ item.name }}</span>
+    </p>
+  </div>
+  <div v-else>
+    <p @click="emitResult(item)">
+      {{ item.instructions }}
+      <span class="item" @click="showResult = !showResult">{{ item.name }}</span>
+    </p>
+    <p v-show="showResult">{{ item.result }}</p>
+  </div>
 </template>
 <script>
-const items = require('../utils/items.json');
-import { addItem, hasItem, getUID, getSessionTicket } from '../utils/helpers';
-import axios from 'axios';
+const items = require("../utils/items.json");
+import { addItem, hasItem, getUID, getSessionTicket } from "../utils/helpers";
+import axios from "axios";
 
 export default {
-	computed: {
-		item() {
-			let item = items.find(row => row.id == this.id);
-			item = item || { name: 'not set' };
-			return item;
-		}
-	},
-	data() {
-		const item = items.find(row => row.id == this.id);
-		return {
-			show: !item || !hasItem(item.id),
-			showResult: false
-		};
-	},
-	methods: {
-		takePic(item) {
-			axios
-				.post(
-					`https://8EA26.playfabapi.com/Client/UpdateUserData`,
-					{
-						Data: { item: item.name }
-					},
-					{
-						headers: {
-							'X-authentication': getSessionTicket()
-						}
-					}
-				)
-				.then(response => {
-					//console.log(response);
-				})
-				.catch(e => {
-					console.log(e);
-				});
+  computed: {
+    item() {
+      let item = items.find(row => row.id == this.id);
+      item = item || { name: "not set" };
+      return item;
+    }
+  },
+  data() {
+    const item = items.find(row => row.id == this.id);
+    return {
+      show: !item || !hasItem(item.id),
+      showResult: false
+    };
+  },
+  methods: {
+    takePic(item) {
+      axios
+        .post(
+          `https://8EA26.playfabapi.com/Client/UpdateUserData`,
+          {
+            Data: { item: item.name }
+          },
+          {
+            headers: {
+              "X-authentication": getSessionTicket()
+            }
+          }
+        )
+        .then(response => {
+          //console.log(response);
+        })
+        .catch(e => {
+          console.log(e);
+        });
 
-			let addOk = confirm('Take a picture?');
-			if (addOk) {
-				addItem(item.id);
-				this.$root.$emit('item_added', item.id);
-				//you got the picture, so hide the prompt
-				this.show = false;
-			}
-		},
-		emitResult(item) {
-			this.$root.$emit('showResult', item.id);
-		},
-		callback(e) {
-			console.log(e);
-		}
-	},
-	props: ['id']
+      let addOk = confirm("Take a picture?");
+      if (addOk) {
+        addItem(item.id);
+        this.$root.$emit("item_added", item.id);
+        //you got the picture, so hide the prompt
+        this.show = false;
+      }
+    },
+    emitResult(item) {
+      this.$root.$emit("showResult", item.id);
+    },
+    callback(e) {
+      console.log(e);
+    }
+  },
+  props: ["id"]
 };
 </script>
 <style scoped>
 .item {
-	color: blue;
-	font-weight: bold;
-	text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #73c2fb;
 }
 </style>

@@ -5,7 +5,7 @@
     <img src="/images/logo.png" alt="Microsoft logo" />
 
     <router-link class="cursor-pointer block m-1 lg:m-4 md:m-2 sm:m-1" :to="$withBase('/')">
-      <h1 class="text-white no-underline">Azure Maya Mystery</h1>
+      <h1 class="text-white">Azure Maya Mystery</h1>
     </router-link>
   </nav>
 </template>
@@ -21,3 +21,9 @@ export default {
   methods: {}
 };
 </script>
+
+<style scoped>
+.markdown-body a {
+  text-decoration: none;
+}
+</style>
