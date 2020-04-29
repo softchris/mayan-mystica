@@ -11,7 +11,7 @@
             <div class="polaroid">
               <img :src="'/images/'+item.filename+'.png'" />
               <div class="caption">
-                <a :href="item.url">Learn</a>
+                <a :href="item.url" target="_blank">Learn</a>
               </div>
             </div>
           </div>

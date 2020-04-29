@@ -1,6 +1,7 @@
 <template>
   <div class="w-full max-w-xs">
     <h1>Register</h1>
+    <p v-if="message">{{message}}</p>
     <form class="bg-white px-8 pt-6 pb-8 mb-4" @submit.prevent="submit">
       <div class="mb-4">
         <label class="block text-gray-700 font-bold mb-2" for="username">Username</label>
@@ -87,7 +88,7 @@ export default {
           console.log(response);
         })
         .catch(e => {
-          console.log(e);
+          this.message = e.errorMessage;
         });
     }
   }

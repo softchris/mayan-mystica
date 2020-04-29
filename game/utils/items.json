@@ -1,13 +1,6 @@
 [
 	{
 		"id": 1,
-		"instructions": "Approach the",
-		"name": "Blue glyph",
-		"filename": "title",
-		"url": "https://docs.learn.com/goto"
-	},
-	{
-		"id": 2,
 		"instructions": "Unfold the",
 		"name": "faded map",
 		"filename": "",
@@ -15,11 +8,68 @@
 		"result": "You unfold the map, but according to your coordinates, there shouldn't be anything here. May as well put it away."
 	},
 	{
-		"id": 3,
+		"id": 2,
 		"instructions": "Take out the",
 		"name": "camera",
 		"filename": "",
 		"url": "",
 		"result": "You take out your trusty camera and look around."
+	},
+	{
+		"id": 3,
+		"instructions": "Take out your",
+		"name": "guide book",
+		"filename": "",
+		"url": "",
+		"result": "You take your guide book out of your backpack and open it, but the pages stick together due to the damp climate. You scan through the molding pages of the guidebook to see if you can identify the series of glyphs on the stela. Unfortunately, you can't seem to find any of the three."
+	},
+	{
+		"id": 4,
+		"instructions": "Look at the",
+		"name": "glyph",
+		"filename": "snake",
+		"url": "https://docs.microsoft.com/en-us/cognitive-toolkit/coding-guidelines"
+	},
+	{
+		"id": 5,
+		"instructions": "Brush off the dirt from the",
+		"name": "glyph",
+		"filename": "earth",
+		"url": "https://docs.microsoft.com/en-us/learn/modules/distribute-data-globally-with-cosmos-db/"
+	},
+	{
+		"id": 6,
+		"instructions": "Remove the leaf from the",
+		"name": "glyph",
+		"filename": "wind",
+		"url": "https://docs.microsoft.com/en-us/connectors/msnweather/"
+	},
+	{
+		"id": 7,
+		"instructions": "Hold back the vines from the",
+		"name": "glyph",
+		"filename": "tree",
+		"url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-classification/"
+	},
+	{
+		"id": 8,
+		"instructions": "Approach the",
+		"name": "Blue glyph",
+		"filename": "title",
+		"url": "https://docs.learn.com/goto"
+	},
+	{
+		"id": 9,
+		"instructions": "Approach the",
+		"name": "glyph",
+		"filename": "jaguar",
+		"url": "https://docs.learn.com/goto"
+	},
+	{
+		"id": 10,
+		"instructions": "Approach the",
+		"name": "glyph",
+		"filename": "macaw",
+		"url": "https://docs.learn.com/goto"
 	}
 ]

@@ -18,7 +18,6 @@ import {
 import axios from "axios";
 export default {
   created() {
-    console.log(this.url);
     this.getInventory();
     if (!hasUID()) {
       setUID();
