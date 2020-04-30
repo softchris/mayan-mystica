@@ -5,6 +5,7 @@
 		"name": "faded map",
 		"filename": "",
 		"url": "",
+		"initialHide": false,
 		"result": "You unfold the map, but according to your coordinates, there shouldn't be anything here. May as well put it away."
 	},
 	{
@@ -13,6 +14,8 @@
 		"name": "camera",
 		"filename": "",
 		"url": "",
+		"initialHide": true,
+
 		"result": "You take out your trusty camera and look around."
 	},
 	{
@@ -21,55 +24,88 @@
 		"name": "guide book",
 		"filename": "",
 		"url": "",
+		"initialHide": true,
+
 		"result": "You take your guide book out of your backpack and open it, but the pages stick together due to the damp climate and it's barely legible."
 	},
 	{
 		"id": 4,
 		"instructions": "Look at the",
 		"name": "glyph",
+		"gameItem": "snake glyph",
 		"filename": "snake",
+		"initialHide": true,
+
 		"url": "https://docs.microsoft.com/en-us/cognitive-toolkit/coding-guidelines"
 	},
 	{
 		"id": 5,
 		"instructions": "Brush off the dirt from the",
 		"name": "glyph",
+		"gameItem": "earth glyph",
 		"filename": "earth",
+		"initialHide": true,
+
 		"url": "https://docs.microsoft.com/en-us/learn/modules/distribute-data-globally-with-cosmos-db/"
 	},
 	{
 		"id": 6,
 		"instructions": "Remove the leaf from the",
 		"name": "glyph",
+		"gameItem": "wind glyph",
 		"filename": "wind",
+		"initialHide": true,
+
 		"url": "https://docs.microsoft.com/en-us/connectors/msnweather/"
 	},
 	{
 		"id": 7,
 		"instructions": "Hold back the vines from the",
 		"name": "glyph",
+		"gameItem": "tree glyph",
 		"filename": "tree",
+		"initialHide": true,
+
 		"url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-classification/"
 	},
 	{
 		"id": 8,
 		"instructions": "Approach the",
 		"name": "Blue glyph",
+		"gameItem": "blue glyph - cloud",
 		"filename": "title",
+		"initialHide": true,
+
 		"url": "https://docs.learn.com/goto"
 	},
 	{
 		"id": 9,
-		"instructions": "Approach the",
-		"name": "glyph",
-		"filename": "jaguar",
-		"url": "https://docs.learn.com/goto"
+		"instructions": "Go left towards the",
+		"name": "staircase",
+		"filename": "",
+		"url": "",
+		"initialHide": true,
+
+		"result": "You go down the staircase, but find another locked door. You return to the entryway."
 	},
 	{
 		"id": 10,
-		"instructions": "Approach the",
+		"instructions": "Stooping down, you reassemble the first",
 		"name": "glyph",
+		"gameItem": "jaguar glyph",
+		"filename": "jaguar",
+		"initialHide": true,
+
+		"url": "https://docs.microsoft.com/en-us/learn/modules/bash-introduction/3-bash-commands"
+	},
+	{
+		"id": 11,
+		"instructions": "Gathering up several pieces, you reassemble the second",
+		"name": "glyph",
+		"gameItem": "macaw glyph",
 		"filename": "macaw",
-		"url": "https://docs.learn.com/goto"
+		"initialHide": true,
+
+		"url": "https://docs.microsoft.com/en-us/learn"
 	}
 ]

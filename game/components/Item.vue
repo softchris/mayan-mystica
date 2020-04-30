@@ -1,6 +1,6 @@
 <template>
   <div v-if="item.filename != ''" @click="takePic(item)">
-    <p v-if="show">
+    <p v-if="showInstructions">
       {{ item.instructions }}
       <span class="item">{{ item.name }}</span>
     </p>
@@ -10,7 +10,7 @@
       {{ item.instructions }}
       <span class="item" @click="showResult = !showResult">{{ item.name }}</span>
     </p>
-    <p v-show="showResult">{{ item.result }}</p>
+    <p v-if="showResult">{{ item.result }}</p>
   </div>
 </template>
 <script>
@@ -29,17 +29,22 @@ export default {
   data() {
     const item = items.find(row => row.id == this.id);
     return {
-      show: !item || !hasItem(item.id),
+      showInstructions: item.initialHide,
       showResult: false
     };
   },
   methods: {
     takePic(item) {
+      //generate a json object to send to playfab
+      var jsonData = {};
+      var columnName = item.id;
+      jsonData[columnName] = item.gameItem;
+
       axios
         .post(
           `https://8EA26.playfabapi.com/Client/UpdateUserData`,
           {
-            Data: { item: item.name }
+            Data: jsonData
           },
           {
             headers: {
@@ -59,7 +64,7 @@ export default {
         addItem(item.id);
         this.$root.$emit("item_added", item.id);
         //you got the picture, so hide the prompt
-        this.show = false;
+        this.showInstructions = false;
       }
     },
     emitResult(item) {

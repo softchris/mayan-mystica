@@ -12,7 +12,11 @@ Clone [this repo](https://github.com/jlooper/azure-maya-mystery-challenge-1) and
 
 <hr/>
 
-Did you learn the meaning of one of the glyphs on the mysterious stela! Enter it here:
+Make sure to [Login](./login) to save your progress and continue next month!
+
+<hr/>
+
+Did you learn the meaning of one of the glyphs on the mysterious stela? Enter it here:
 
 <div class="m-10 p-10 rounded overflow-hidden shadow-lg">
 <form class="w-full max-w-sm">
@@ -26,6 +30,6 @@ Did you learn the meaning of one of the glyphs on the mysterious stela! Enter it
 </form>
 </div>
 
-Make sure to [Login](./login) to save your progress and continue next month!
+<!-- todo, only show this link if the stela meaning is in inventory -->
 
-[Continue](../)
+[Climb the stairs](7)
