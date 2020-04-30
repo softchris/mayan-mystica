@@ -1,6 +1,6 @@
 <template>
   <div class="prompt">
-    <span v-if="show">{{ instructions }}</span>
+    <span class="font-bold" v-if="show">{{ instructions }}</span>
     <div class="page-nav">
       <router-link :to="link || './'">{{ action }}</router-link>
     </div>

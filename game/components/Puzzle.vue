@@ -52,8 +52,9 @@
       </div>
     </div>
     <p
+      class="font-bold"
       v-if="show"
-    >The stones click into place, and you hear a door creak open beyond the stairs leading down. Do you dare to continue downstairs? Come back next month to continue your Mayan Adventure!</p>
+    >The stones click into place, and you hear a door creak open beyond the stairs leading down. Suddenly, the floor tilts under you and you start to slide towards the staircase! What will happen? Come back next month to continue your Mayan Adventure!</p>
   </div>
 </template>
 <script>
