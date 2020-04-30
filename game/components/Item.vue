@@ -29,7 +29,7 @@ export default {
   data() {
     const item = items.find(row => row.id == this.id);
     return {
-      showInstructions: item.initialHide,
+      showInstructions: !item || item.initialHide,
       showResult: false
     };
   },
