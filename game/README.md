@@ -8,4 +8,6 @@ It's been a month since you entered the jungle. You've braved mosquitos, malaria
 
 Finally, your search has proven fruitful: you are standing on the south side of a large pyramid. But what is this temple?
 
-<Page url="rooms/1" instructions="It's probably time to open your backpack to get the gear you need to start exploring." action="Open it" condition="none" />
+It's probably time to open your backpack to get the gear you need to start exploring.
+
+<Page url="rooms/1" instructions="" action="Open it" condition="none" />
