@@ -8,11 +8,11 @@ As you put your guidebook back in your backpack, your cellphone starts to buzz. 
 
 To read your texts, you'll need to view them on the web.
 
-Clone [this repo](https://github.com/jlooper/azure-maya-mystery-challenge-1) and follow the instructions on the README to launch the site on Azure Static Sites.
+Clone [this repo](https://github.com/jlooper/azure-maya-mystery-challenge-1) and follow the instructions on the README to launch the site on Azure Static Apps.
 
 <hr/>
 
-Make sure to [Login](./login) to save your progress and continue next month!
+Make sure to [Login](../login) to save your progress and continue next month!
 
 <hr/>
 
