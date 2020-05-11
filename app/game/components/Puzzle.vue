@@ -2,7 +2,7 @@
   <div>
     <p>Match the glyph to the inscription</p>
     <div class="mt-4">
-      <span>Cassie</span>
+      <p>Endangered</p>
       <div class="mt-2">
         <label class="inline-flex items-center">
           <input
@@ -12,7 +12,7 @@
             value="jaguar1"
             v-model="radioButtonValue1"
           />
-          <span class="ml-2">Jaguar</span>
+          <span class="text-xl ml-2">Jaguar</span>
         </label>
         <label class="inline-flex items-center ml-6">
           <input
@@ -22,12 +22,12 @@
             value="macaw1"
             v-model="radioButtonValue1"
           />
-          <span class="ml-2">Macaw</span>
+          <span class="text-xl ml-2">Macaw</span>
         </label>
       </div>
     </div>
     <div class="mt-4">
-      <span>Bash</span>
+      <p>Bash</p>
       <div class="mt-2">
         <label class="inline-flex items-center">
           <input
@@ -37,7 +37,7 @@
             value="jaguar2"
             v-model="radioButtonValue2"
           />
-          <span class="ml-2">Jaguar</span>
+          <span class="text-xl ml-2">Jaguar</span>
         </label>
         <label class="inline-flex items-center ml-6">
           <input
@@ -47,14 +47,14 @@
             value="macaw2"
             v-model="radioButtonValue2"
           />
-          <span class="ml-2">Macaw</span>
+          <span class="text-xl ml-2">Macaw</span>
         </label>
       </div>
     </div>
     <p
       class="font-bold"
       v-if="show"
-    >The stones click into place, and you hear a door creak open beyond the stairs leading down. Suddenly, the floor tilts under you and you start to slide towards the staircase! What will happen? Come back next month to continue your Mayan Adventure!</p>
+    >The stones click into place, and you hear a door creak open beyond the stairs leading down. Suddenly, the floor tilts under you and you start to slide towards the staircase! What will happen? Come back next month to continue the Azure Maya Mystery!</p>
   </div>
 </template>
 <script>

@@ -15,7 +15,6 @@
 		"filename": "",
 		"url": "",
 		"initialHide": true,
-
 		"result": "You take out your trusty camera and look around."
 	},
 	{
@@ -25,7 +24,6 @@
 		"filename": "",
 		"url": "",
 		"initialHide": true,
-
 		"result": "You take your guide book out of your backpack and open it, but the pages stick together due to the damp climate and it's barely legible."
 	},
 	{
@@ -35,8 +33,7 @@
 		"gameItem": "snake glyph",
 		"filename": "snake",
 		"initialHide": true,
-
-		"url": "https://docs.microsoft.com/en-us/cognitive-toolkit/coding-guidelines"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python"
 	},
 	{
 		"id": 5,
@@ -45,8 +42,7 @@
 		"gameItem": "earth glyph",
 		"filename": "earth",
 		"initialHide": true,
-
-		"url": "https://docs.microsoft.com/en-us/learn/modules/distribute-data-globally-with-cosmos-db/"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/azure-maps-track-air-pollution/5-show-web-page"
 	},
 	{
 		"id": 6,
@@ -55,7 +51,6 @@
 		"gameItem": "wind glyph",
 		"filename": "wind",
 		"initialHide": true,
-
 		"url": "https://docs.microsoft.com/en-us/connectors/msnweather/"
 	},
 	{
@@ -65,7 +60,6 @@
 		"gameItem": "tree glyph",
 		"filename": "tree",
 		"initialHide": true,
-
 		"url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-classification/"
 	},
 	{
@@ -75,8 +69,7 @@
 		"gameItem": "blue glyph - cloud",
 		"filename": "title",
 		"initialHide": true,
-
-		"url": "https://docs.learn.com/goto"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/"
 	},
 	{
 		"id": 9,
@@ -85,7 +78,6 @@
 		"filename": "",
 		"url": "",
 		"initialHide": true,
-
 		"result": "You go down the staircase, but find another locked door. You return to the entryway."
 	},
 	{
@@ -95,7 +87,6 @@
 		"gameItem": "jaguar glyph",
 		"filename": "jaguar",
 		"initialHide": true,
-
 		"url": "https://docs.microsoft.com/en-us/learn/modules/bash-introduction/3-bash-commands"
 	},
 	{
@@ -105,7 +96,6 @@
 		"gameItem": "macaw glyph",
 		"filename": "macaw",
 		"initialHide": true,
-
-		"url": "https://docs.microsoft.com/en-us/learn"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/cv-classify-bird-species/"
 	}
 ]

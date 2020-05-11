@@ -4,6 +4,7 @@ import Login from '../components/Login';
 import Register from '../components/Register';
 import Buttons from '../components/Buttons';
 import Puzzle from '../components/Puzzle';
+import Challenge1 from '../components/Challenge1';
 
 export default ({ Vue }) => {
 	Vue.component('Page', Page);
@@ -12,4 +13,5 @@ export default ({ Vue }) => {
 	Vue.component('Register', Register);
 	Vue.component('Buttons', Buttons);
 	Vue.component('Puzzle', Puzzle);
+	Vue.component('Challenge1', Challenge1);
 };
