@@ -26,7 +26,7 @@
     </div>
     <p>{{message}}</p>
     <p v-if="showNext">
-      <router-link to="8">Go inside</router-link>
+      <router-link to="7">Go inside</router-link>
     </p>
   </div>
 </template>

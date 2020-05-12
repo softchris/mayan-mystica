@@ -20,7 +20,7 @@
       </form>
     </div>
     <p v-if="showNext">
-      <router-link to="7">Climb the stairs</router-link>
+      <router-link to="8">Enter the pyramid</router-link>
     </p>
   </div>
 </template>
