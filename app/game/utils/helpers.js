@@ -6,6 +6,8 @@ if (typeof window === 'undefined') {
 
 	global.localStorage = {
 		generateUID() {},
+		getLocale() {},
+		setLocale() {},
 		setUID() {},
 		getUID() {},
 		hasUID() {},
@@ -18,7 +20,7 @@ if (typeof window === 'undefined') {
 				return { ...acc, [curr.id]: true };
 			}, {});
 			return JSON.stringify(mockResponse);
-		}
+		},
 	};
 }
 
@@ -45,6 +47,14 @@ export function hasUID() {
 	} else {
 		return false;
 	}
+}
+
+export function getLocale() {
+	return localStorage.getItem('locale');
+}
+
+export function setLocale(locale) {
+	localStorage.setItem('locale', locale);
 }
 
 export function getUID() {

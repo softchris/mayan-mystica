@@ -10,7 +10,7 @@
           <div v-for="item in items" class="item">
             <div class="polaroid">
               <span class="container">
-                <img :src="'/images/'+item.filename+'.png'" />
+                <img :src="'/assets/images/'+item.filename+'.png'" />
               </span>
               <div class="caption">
                 <a :href="item.url" target="_blank">Learn</a>

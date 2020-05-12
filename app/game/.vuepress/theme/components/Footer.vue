@@ -3,17 +3,26 @@
     <div
       class="text-sans text-white w-full text-base lg:text-xl md:text-sm sm:text-sm block flex-grow flex justify-center items-center w-auto"
     >
-      <a href="http://go.microsoft.com/fwlink/?LinkId=521839" target="_blank">Privacy and Cookies</a>&nbsp;|&nbsp;
+      <a href="http://go.microsoft.com/fwlink/?LinkId=521839" target="_blank">{{ $t("privacy") }}</a>&nbsp;|&nbsp;
       <a
         href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
-      >Terms of Use</a>&nbsp;|&nbsp;
-      <a href="mailto:ammteam@microsoft.com">Support</a>&nbsp;|&nbsp;© 2020 Microsoft Corporation. All rights reserved.
+      >{{ $t("terms") }}</a>&nbsp;|&nbsp;
+      <a href="mailto:ammteam@microsoft.com">{{ $t("support") }}</a>
+      &nbsp;|&nbsp;
+      {{ $t("copyright") }}
     </div>
   </footer>
 </template>
 <script>
+//import { getLocale, setLocale } from "../../../utils/helpers";
+
+import messages from "../translations/footer.js";
 export default {
-  name: "Footer"
+  name: "Footer",
+  i18n: {
+    messages
+    //locale: getLocale()
+  }
 };
 </script>
 <style scoped>

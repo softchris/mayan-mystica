@@ -1,5 +1,5 @@
 ---
-backdrop: ../images/bg.jpg
+backdrop: ../assets/images/bg.jpg
 ---
 
 # A Mysterious Text Message

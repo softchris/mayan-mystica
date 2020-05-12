@@ -11,6 +11,8 @@
 </template>
 
 <script>
+//import { setLocale } from "../../../utils/helpers";
+
 export default {
   name: "BasicLayout"
 };
