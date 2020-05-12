@@ -9,9 +9,12 @@
         <div class="wrapper">
           <div v-for="item in items" class="item">
             <div class="polaroid">
-              <img :src="'/images/'+item.filename+'.png'" />
+              <span class="container">
+                <img :src="'/images/'+item.filename+'.png'" />
+              </span>
               <div class="caption">
                 <a :href="item.url" target="_blank">Learn</a>
+                <p class="text-sm leading-snug" v-if="item.clue">{{item.clue}}</p>
               </div>
             </div>
           </div>

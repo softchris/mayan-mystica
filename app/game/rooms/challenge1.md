@@ -2,7 +2,7 @@
 backdrop: ../images/bg.jpg
 ---
 
-# A mysterious text
+# A Mysterious Text Message
 
 As you put your guidebook back in your backpack, your cellphone starts to buzz. This is strange, as you're far away from any signal. You open your phone, but your texting app crashes.
 

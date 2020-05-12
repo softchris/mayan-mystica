@@ -4,7 +4,7 @@
       <Nav />
       <div v-if="hasBackdrop" :style="backdrop" class="w-full image">&nbsp;</div>
       <div class="flex mb-4">
-        <div class="w-1/3">
+        <div class="w-1/2">
           <component :is="camera"></component>
         </div>
         <div class="w-3/4">

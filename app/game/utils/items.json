@@ -33,6 +33,7 @@
 		"gameItem": "snake glyph",
 		"filename": "snake",
 		"initialHide": true,
+		"clue": "4: The language named after this creature turns source code into byte code which can be run on any supported platform.",
 		"url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python"
 	},
 	{
@@ -42,6 +43,7 @@
 		"gameItem": "earth glyph",
 		"filename": "earth",
 		"initialHide": true,
+		"clue": "1: Longitude measures around the _____ from east to west, with 0° at the Prime Meridian",
 		"url": "https://docs.microsoft.com/en-us/learn/modules/azure-maps-track-air-pollution/5-show-web-page"
 	},
 	{
@@ -50,6 +52,7 @@
 		"name": "glyph",
 		"gameItem": "wind glyph",
 		"filename": "wind",
+		"clue": "2: Using the Measure parameter, you can measure the speed of this",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/en-us/connectors/msnweather/"
 	},
@@ -59,6 +62,7 @@
 		"name": "glyph",
 		"gameItem": "tree glyph",
 		"filename": "tree",
+		"clue": "3: Machine Learning can help you predict the prevalence of this kind of species.",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-classification/"
 	},
