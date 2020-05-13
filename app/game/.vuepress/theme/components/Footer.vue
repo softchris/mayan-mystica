@@ -14,14 +14,21 @@
   </footer>
 </template>
 <script>
-//import { getLocale, setLocale } from "../../../utils/helpers";
-
+import { getLocale } from "../../../utils/helpers";
 import messages from "../translations/footer.js";
 export default {
   name: "Footer",
   i18n: {
     messages
-    //locale: getLocale()
+  },
+  data() {
+    this.$root.$on("lang_changed", lang => {
+      this.$i18n.locale = lang;
+    });
+    return {};
+  },
+  created() {
+    this.$i18n.locale = getLocale();
   }
 };
 </script>

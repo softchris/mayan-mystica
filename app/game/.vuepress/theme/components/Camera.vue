@@ -1,9 +1,9 @@
 <template>
   <div class="markdown-body">
-    <p class="text-2xl pb-5 pt-5 ml-5 text-sans text-white">{{ title }}</p>
+    <p class="text-2xl pb-5 pt-5 ml-5 text-sans text-white">{{ $t("cameraroll") }}</p>
     <div class="p-5">
       <div v-if="items.length == 0">
-        <span class="text-white">No snapshots taken yet</span>
+        <span class="text-white">{{ $t("nosnapshots") }}</span>
       </div>
       <div v-else>
         <div class="wrapper">
@@ -24,21 +24,29 @@
   </div>
 </template>
 <script>
-import { getItems } from "../../../utils/helpers";
+import { getItems, getLocale } from "../../../utils/helpers";
 const items = require("../../../utils/items.json");
+import messages from "../translations/camera.js";
 
 export default {
+  name: "Camera",
+  i18n: {
+    messages
+  },
+
   created() {
     this.showCameraItems();
+    this.$i18n.locale = getLocale();
   },
 
   data() {
     this.$root.$on("item_added", id => {
       this.showCameraItems();
     });
-
+    this.$root.$on("lang_changed", lang => {
+      this.$i18n.locale = lang;
+    });
     return {
-      title: "Camera Roll",
       items: []
     };
   },

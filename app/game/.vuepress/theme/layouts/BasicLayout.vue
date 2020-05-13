@@ -1,6 +1,14 @@
 <template>
   <div class="markdown-body">
-    <router-link to="/es" class="float-right p-5 white-link">Español</router-link>
+    <router-link to="/es" class="float-right p-5 white-link">
+      <span @click="setLanguage('es')">Español</span>
+    </router-link>
+    <router-link to="/pt" class="float-right p-5 white-link">
+      <span @click="setLanguage('pt')">Português</span>
+    </router-link>
+    <router-link to="/" class="float-right p-5 white-link">
+      <span @click="setLanguage('en')">English</span>
+    </router-link>
 
     <router-link to="/login" class="float-right p-5 white-link">My Adventure</router-link>
     <h1 class="text-3xl pb-5 pt-5 ml-5 text-sans">{{ $page.frontmatter.title }}</h1>
@@ -11,10 +19,17 @@
 </template>
 
 <script>
-//import { setLocale } from "../../../utils/helpers";
+import { setLocale, getLocale } from "../../../utils/helpers";
 
 export default {
-  name: "BasicLayout"
+  name: "BasicLayout",
+  i18n: {},
+  methods: {
+    setLanguage(lang) {
+      setLocale(lang);
+      this.$root.$emit("lang_changed", lang);
+    }
+  }
 };
 </script>
 

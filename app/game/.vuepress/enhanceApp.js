@@ -16,13 +16,4 @@ export default ({ Vue }) => {
 	Vue.component('Puzzle', Puzzle);
 	Vue.component('Challenge1', Challenge1);
 	Vue.use(VueI18n);
-	/*Vue.i18n = new VueI18n({
-		locale: 'en',
-		fallbackLocale: 'en',
-		messages: {
-			en: {},
-			es: {},
-			pt: {},
-		},
-	});*/
 };
