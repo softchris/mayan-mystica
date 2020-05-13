@@ -2,12 +2,12 @@
   <div class="wrapper">
     <div class="markdown-body font-serif bg-white m-2 sm:m-3 md:m-6 lg:m-12 text-lg rounded-lg">
       <Nav />
-      <div v-if="hasBackdrop" :style="backdrop" class="w-full image">&nbsp;</div>
+      <div role="banner" v-if="hasBackdrop" :style="backdrop" class="w-full image">&nbsp;</div>
       <div class="flex mb-4">
-        <div class="w-1/2">
+        <div role="complementary" class="w-1/2">
           <component :is="camera"></component>
         </div>
-        <div class="w-3/4">
+        <div role="main" class="w-3/4">
           <component :is="layout"></component>
         </div>
       </div>
