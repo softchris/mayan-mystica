@@ -70,6 +70,7 @@ export default {
           if (response.data.errorMessage == null) {
             setSessionTicket(response.data.SessionTicket);
             this.linkCustomID();
+            this.message = "Welcome back!";
           } else {
             this.message = response.data.errorMessage;
           }
