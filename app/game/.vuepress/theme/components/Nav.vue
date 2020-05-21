@@ -4,7 +4,7 @@
   >
     <img src="/assets/images/logo.png" alt="Microsoft logo" />
 
-    <router-link class="cursor-pointer block m-1 lg:m-4 md:m-2 sm:m-1" :to="$withBase('/')">
+    <router-link class="cursor-pointer block m-1 lg:m-4 md:m-2 sm:m-1" :to="('/')">
       <h1 class="text-white">Azure Maya Mystery</h1>
     </router-link>
   </nav>
