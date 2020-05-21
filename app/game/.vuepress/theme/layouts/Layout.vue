@@ -51,5 +51,5 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/style.styl';
+//@import $withBase('../assets/styles/style.styl');
 </style>
