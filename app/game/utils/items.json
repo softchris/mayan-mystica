@@ -34,7 +34,7 @@
 		"filename": "snake",
 		"initialHide": true,
 		"clue": "4: The language named after this creature turns source code into byte code which can be run on any supported platform.",
-		"url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 5,
@@ -44,7 +44,7 @@
 		"filename": "earth",
 		"initialHide": true,
 		"clue": "1: Longitude measures around the _____ from east to west, with 0° at the Prime Meridian",
-		"url": "https://docs.microsoft.com/en-us/learn/modules/azure-maps-track-air-pollution/5-show-web-page"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/azure-maps-track-air-pollution/5-show-web-page/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 6,
@@ -54,7 +54,7 @@
 		"filename": "wind",
 		"clue": "2: Using the Measure parameter, you can measure the speed of this",
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/connectors/msnweather/"
+		"url": "https://docs.microsoft.com/en-us/connectors/msnweather/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 7,
@@ -64,7 +64,7 @@
 		"filename": "tree",
 		"clue": "3: Machine Learning can help you predict the prevalence of this kind of species.",
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-classification/"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-classification/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 8,
@@ -73,7 +73,7 @@
 		"gameItem": "blue glyph - cloud",
 		"filename": "title",
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 9,
@@ -91,7 +91,7 @@
 		"gameItem": "jaguar glyph",
 		"filename": "jaguar",
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/modules/bash-introduction/3-bash-commands"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/bash-introduction/3-bash-commands/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 11,
@@ -100,6 +100,6 @@
 		"gameItem": "macaw glyph",
 		"filename": "macaw",
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/modules/cv-classify-bird-species/"
+		"url": "https://docs.microsoft.com/en-us/learn/modules/cv-classify-bird-species/?WT.mc_id=mayamystery-playfab-jelooper"
 	}
 ]
