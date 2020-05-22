@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"description": "Discover the secrets of the pyramid!",
 	"main": "tailwind.config.js",
-	"base": "/AzureMayaMystery/",
 	"scripts": {
 		"build": "vuepress build game",
 		"dev": "vuepress dev game"
