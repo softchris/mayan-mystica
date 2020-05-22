@@ -2,7 +2,7 @@ module.exports = {
 	title: 'Azure Maya Mystery',
 	description: 'Discover the Secrets',
 	base: '/AzureMayaMystery/',
-	dest: 'game/.vuepress/dist/AzureMayaMystery/',
+	dest: 'game/.vuepress/dist',
 	postcss: {
 		plugins: [require('autoprefixer'), require('tailwindcss')('./tailwind.config.js')],
 	},
