@@ -1,10 +1,10 @@
-import Page from '../components/Page';
-import Item from '../components/Item';
-import Login from '../components/Login';
-import Register from '../components/Register';
-import Buttons from '../components/Buttons';
-import Puzzle from '../components/Puzzle';
-import Challenge1 from '../components/Challenge1';
+import Page from '../AzureMayaMystery/components/Page';
+import Item from '../AzureMayaMystery/components/Item';
+import Login from '../AzureMayaMystery/components/Login';
+import Register from '../AzureMayaMystery/components/Register';
+import Buttons from '../AzureMayaMystery/components/Buttons';
+import Puzzle from '../AzureMayaMystery/components/Puzzle';
+import Challenge1 from '../AzureMayaMystery/components/Challenge1';
 import VueI18n from 'vue-i18n';
 
 export default ({ Vue }) => {

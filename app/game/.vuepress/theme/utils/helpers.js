@@ -2,7 +2,7 @@
 if (typeof window === 'undefined') {
 	console.log('is Node.js');
 
-	const items = require('../utils/items.json');
+	const items = require('./items.json');
 
 	global.localStorage = {
 		generateUID() {},

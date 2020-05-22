@@ -7,8 +7,8 @@
 	</div>
 </template>
 <script>
-const items = require('../utils/items.json');
-import { hasItem, getUID, setUID, hasUID, setSessionTicket } from '../utils/helpers';
+const items = require('@theme/utils/items.json');
+import { hasItem, getUID, setUID, hasUID, setSessionTicket } from '@theme/utils/helpers';
 import axios from 'axios';
 export default {
 	created() {

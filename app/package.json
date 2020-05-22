@@ -1,8 +1,9 @@
 {
-	"name": "azure-mayan-mystery",
+	"name": "azure-maya-mystery",
 	"version": "1.0.0",
 	"description": "Discover the secrets of the pyramid!",
 	"main": "tailwind.config.js",
+	"base": "/AzureMayaMystery/",
 	"scripts": {
 		"build": "vuepress build game",
 		"dev": "vuepress dev game"
@@ -19,10 +20,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/"
+		"url": "git+https://github.com/jlooper/azure-maya-mystery"
 	},
 	"bugs": {
-		"url": "https://github.com/softchris/"
+		"url": "https://github.com/jlooper/azure-maya-mystery"
 	},
-	"homepage": "https://github.com/softchris/"
+	"homepage": "https://github.com/jlooper/azure-maya-mystery"
 }
