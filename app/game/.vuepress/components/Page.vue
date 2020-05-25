@@ -1,13 +1,12 @@
 <template>
   <div class="prompt">
     <span class="font-bold" v-if="show">{{ instructions }}</span>
-    <div class="page-nav">
+    <div class="page-nav" v-if="show">
       <router-link :to="link || './'">{{ action }}</router-link>
     </div>
   </div>
 </template>
 <script>
-//const items = require('@theme/utils/items.json');
 import {
   hasItem,
   getUID,
@@ -18,7 +17,7 @@ import {
 import axios from "axios";
 export default {
   created() {
-    //this.getInventory();
+    this.getInventory();
     if (!hasUID()) {
       setUID();
     }
@@ -39,26 +38,25 @@ export default {
   },
   data() {
     this.$root.$on("item_added", id => {
-      this.getInventory();
+      this.getInventory(id);
     });
 
     this.$root.$on("showResult", id => {
-      this.getInventory();
+      this.getInventory(id);
     });
 
     return {
       show: false,
-      link: this.url
+      link: this.url,
+      showNextPageLink: false
     };
   },
   methods: {
-    getInventory() {
-      console.log(this.condition);
-      console.log(hasItem(this.condition));
-      if (this.initialHide) {
-        this.show = false;
-      } else {
+    getInventory(id) {
+      if (this.condition == id || this.condition == "none") {
         this.show = true;
+      } else {
+        this.show = false;
       }
     },
     goToRoom(url) {
