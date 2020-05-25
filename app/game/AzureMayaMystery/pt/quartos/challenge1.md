@@ -1,21 +1,21 @@
 ---
-backdrop: ../assets/images/bg1.png
+backdrop: ../../../assets/images/bg1.png
 ---
 
-# A Mysterious Text Message
+# Uma mensagem de texto misteriosa
 
-As you put your guidebook back in your backpack, your cellphone starts to buzz. This is strange, as you're far away from any signal. You open your phone, but your texting app crashes.
+Quando você coloca o guia de volta na mochila, o celular começa a tocar. Isso é estranho, pois você está longe de qualquer sinal. Você abre o telefone, mas seu aplicativo de mensagens de texto falha.
 
-To read your texts, you'll need to view them on the web.
+Para ler seus textos, você precisará visualizá-los na web.
 
-Clone [this repo](https://github.com/MicrosoftDocs/Azure-Maya-Mystery-Challenge-1) and follow the instructions on the README to launch the site on Azure Static Apps.
-
-<hr class="m-5"/>
-
-Make sure to [Login](../login) to save your progress and continue next month!
+Clonar [este repo](https://github.com/MicrosoftDocs/Azure-Maya-Mystery-Challenge-1) e siga as instruções no arquivo LEIA-ME para iniciar o site nos Aplicativos estáticos do Azure.
 
 <hr class="m-5"/>
 
-Did you learn the meaning of one of the glyphs on the mysterious stela? Enter it here:
+Certifique-se de [Login](../../login) para salvar seu progresso e continuar no próximo mês!
+
+<hr class="m-5"/>
+
+Você aprendeu o significado de um dos glifos na misteriosa estela? Coloque aqui:
 
 <Challenge1/>
