@@ -14,7 +14,7 @@
               </span>
               <div class="caption">
                 <a :href="item.url" target="_blank">{{ $t('learn') }}</a>
-                <p class="text-sm leading-snug">{{ getLocalizedClue(item) }}</p>
+                <p class="text-sm leading-snug" v-if="item.clues">{{ getLocalizedClue(item) }}</p>
               </div>
             </div>
           </div>
