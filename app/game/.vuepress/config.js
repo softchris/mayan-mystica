@@ -4,7 +4,7 @@ module.exports = {
 	postcss: {
 		plugins: [require('autoprefixer'), require('tailwindcss')('./tailwind.config.js')],
 	},
-	dest: 'game/.vuepress/dist/AzureMayaMystery',
+	dest: 'build/AzureMayaMystery',
 	themeConfig: {
 		search: false,
 		lastUpdated: 'Last Updated',
