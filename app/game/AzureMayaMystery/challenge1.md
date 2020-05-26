@@ -1,5 +1,5 @@
 ---
-backdrop: ../assets/images/bg1.png
+backdrop: ../AzureMayaMystery/images/bg1.png
 ---
 
 # A Mysterious Text Message
