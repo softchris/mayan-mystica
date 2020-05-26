@@ -1,5 +1,5 @@
 ---
-backdrop: ../AzureMayaMystery/images/bg1.png
+backdrop: ../../images/bg1.png
 ---
 
 # Welcome, explorer!
