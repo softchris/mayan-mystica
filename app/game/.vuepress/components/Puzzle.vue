@@ -1,8 +1,8 @@
 <template>
   <div>
-    <p>Match the glyph to the inscription</p>
+    <p>{{ $t('match') }}</p>
     <div class="mt-4">
-      <p>Endangered</p>
+      <p>{{ $t('endangered') }}</p>
       <div class="mt-2">
         <label class="inline-flex items-center">
           <input
@@ -12,7 +12,7 @@
             value="jaguar1"
             v-model="radioButtonValue1"
           />
-          <span class="text-xl ml-2">Jaguar</span>
+          <span class="text-xl ml-2">{{ $t('jaguar') }}</span>
         </label>
         <label class="inline-flex items-center ml-6">
           <input
@@ -22,7 +22,7 @@
             value="macaw1"
             v-model="radioButtonValue1"
           />
-          <span class="text-xl ml-2">Macaw</span>
+          <span class="text-xl ml-2">{{ $t('macaw') }}</span>
         </label>
       </div>
     </div>
@@ -37,7 +37,7 @@
             value="jaguar2"
             v-model="radioButtonValue2"
           />
-          <span class="text-xl ml-2">Jaguar</span>
+          <span class="text-xl ml-2">{{ $t('jaguar') }}</span>
         </label>
         <label class="inline-flex items-center ml-6">
           <input
@@ -47,30 +47,34 @@
             value="macaw2"
             v-model="radioButtonValue2"
           />
-          <span class="text-xl ml-2">Macaw</span>
+          <span class="text-xl ml-2">{{ $t('macaw') }}</span>
         </label>
       </div>
     </div>
     <div v-if="show">
-      <p
-        class="font-bold"
-      >The stones click into place, and you hear a door creak open beyond the stairs leading down. Suddenly, the floor tilts under you and you start to slide towards the staircase! What will happen? Come back next month to continue the Azure Maya Mystery!</p>
-      <p>Congratulations on completing the first of three parts of the Azure Maya Mystery!</p>
+      <p class="font-bold">{{ $t('pass') }}</p>
+      <p>{{ $t('congratulations') }}</p>
       <img src="/assets/images/badge1.png" alt="badge" />
 
       <a
         href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flively-sea-026c3791e.azurestaticapps.net%2F&text=I%20just%20entered%20the%20Azure%20Maya%20Mystery%20pyramid.%20Look%20forward%20to%20next%20month%20when%20I%20will%20get%20to%20explore%20more.&hashtags=AzureMayaMystery"
         class="twitter-hashtag-button"
         data-show-count="false"
-      >Tell the world!</a>
+      >{{ $t('tell') }}</a>
 
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 </template>
 <script>
+import messages from "@theme/translations/puzzle.js";
+import { getLocale } from "@theme/utils/helpers";
+
 export default {
   name: "Puzzle",
+  i18n: {
+    messages
+  },
   data() {
     return {
       radioButtonValue1: "",
@@ -87,6 +91,9 @@ export default {
         this.show = true;
       }
     }
+  },
+  created() {
+    this.$i18n.locale = getLocale();
   }
 };
 </script>
