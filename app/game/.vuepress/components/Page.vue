@@ -47,8 +47,7 @@ export default {
 
     return {
       show: false,
-      link: this.url,
-      showNextPageLink: false
+      link: this.url
     };
   },
   methods: {
