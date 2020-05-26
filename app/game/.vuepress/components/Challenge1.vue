@@ -53,7 +53,6 @@ export default {
   },
   created() {
     this.$i18n.locale = getLocale();
-    console.log(this.$i18n.locale);
   }
 };
 </script>

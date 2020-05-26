@@ -22,17 +22,23 @@
       <button
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         @click="test()"
-      >Try the door</button>
+      >{{ $t('trythedoor') }}</button>
     </div>
     <p>{{message}}</p>
     <p v-if="showNext">
-      <router-link to="7">Go inside</router-link>
+      <router-link to="7">{{ $t('goinside') }}</router-link>
     </p>
   </div>
 </template>
 <script>
+import messages from "@theme/translations/buttons.js";
+import { getLocale } from "@theme/utils/helpers";
+
 export default {
   name: "Buttons",
+  i18n: {
+    messages
+  },
   data() {
     return {
       numbersArray: [],
@@ -48,13 +54,16 @@ export default {
     },
     test() {
       if (JSON.stringify([1, 4, 2, 3]) === JSON.stringify(this.numbersArray)) {
-        this.message = "The door opens with a creak";
+        this.message = this.$t("pass");
         this.showNext = true;
       } else {
-        this.message = "The door remains locked tight";
+        this.message = this.$t("fail");
       }
       this.numbersArray = [];
     }
+  },
+  created() {
+    this.$i18n.locale = getLocale();
   }
 };
 </script>
