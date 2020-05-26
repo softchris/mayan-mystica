@@ -1,7 +1,3 @@
----
-backdrop: ../AzureMayaMystery/images/bg1.png
----
-
 # Credits
 
 Thank you to the contributors to the Azure Maya Mystery, including:
