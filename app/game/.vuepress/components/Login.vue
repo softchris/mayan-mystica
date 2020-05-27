@@ -37,7 +37,7 @@
 			</div>
 		</form>
 
-		<router-link class="has-text-grey" to="/register">
+		<router-link class="has-text-grey" to="/pyramid/register">
 			<p>Register</p>
 		</router-link>
 	</div>
