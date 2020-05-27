@@ -3,7 +3,7 @@
 		"id": 1,
 		"instructions": {
 			"es": {
-				"instruction": "Desplegar el"
+				"instruction": "Desenrollar el"
 			},
 			"en": {
 				"instruction": "Unfold the"
@@ -14,7 +14,7 @@
 		},
 		"name": {
 			"es": {
-				"name": "mapa desvanecido"
+				"name": "mapa descolorido"
 			},
 			"en": {
 				"name": "faded map"
@@ -28,7 +28,7 @@
 		"initialHide": false,
 		"result": {
 			"es": {
-				"result": "Despliegas el mapa, pero según tus coordenadas, no debería haber nada aquí. Bien podría guardarlo."
+				"result": "Desenrollas el mapa, pero según tus coordenadas, no debería haber nada aquí. Bien podría guardar el mapa."
 			},
 			"en": {
 				"result": "You unfold the map, but according to your coordinates, there shouldn't be anything here. May as well put it away."
@@ -67,7 +67,7 @@
 		"initialHide": true,
 		"result": {
 			"es": {
-				"result": "Sacas tu cámara de confianza y miras a tu alrededor."
+				"result": "Sacas tu cámara fiel y miras a tu alrededor."
 			},
 			"en": {
 				"result": "You take out your trusty camera and look around."
@@ -81,7 +81,7 @@
 		"id": 3,
 		"instructions": {
 			"es": {
-				"instruction": "Saque su"
+				"instruction": "Sacar tu"
 			},
 			"en": {
 				"instruction": "Take out your"
@@ -106,7 +106,7 @@
 		"initialHide": true,
 		"result": {
 			"es": {
-				"result": "Sacas tu guía de tu mochila y la abres, pero las páginas se mantienen juntas debido al clima húmedo y es apenas legible."
+				"result": "Sacas tu guía de tu mochila y la abres, pero las páginas están pegadas debido al clima húmedo y es apenas legible."
 			},
 			"en": {
 				"result": "You take your guide book out of your backpack and open it, but the pages stick together due to the damp climate and it's barely legible."
@@ -145,7 +145,7 @@
 		"initialHide": true,
 		"clues": {
 			"es": {
-				"clue": "4: El idioma que lleva el nombre de esta criatura convierte el código fuente en código de bytes que se puede ejecutar en cualquier plataforma compatible."
+				"clue": "4: El lenguaje que lleva el nombre de esta criatura convierte el código fuente en código de bytes que se puede ejecutar en cualquier plataforma compatible."
 			},
 			"en": {
 				"clue": "4: The language named after this creature turns source code into byte code which can be run on any supported platform."
@@ -160,7 +160,7 @@
 		"id": 5,
 		"instructions": {
 			"es": {
-				"instruction": "Cepille la suciedad del"
+				"instruction": "Limpiar la tierra del"
 			},
 			"en": {
 				"instruction": "Brush off the dirt from the"
@@ -185,7 +185,7 @@
 		"initialHide": true,
 		"clues": {
 			"es": {
-				"clue": "1: la longitud mide alrededor de _____ de este a oeste, con 0 ° en el primer meridiano."
+				"clue": "1: La longitud es de alrededor _____ de este a oeste, con 0 ° en el primer meridiano."
 			},
 			"en": {
 				"clue": "1: Longitude measures around the _____ from east to west, with 0° at the Prime Meridian"
@@ -200,7 +200,7 @@
 		"id": 6,
 		"instructions": {
 			"es": {
-				"instruction": "Retire la hoja de la"
+				"instruction": "Retirar la hoja del"
 			},
 			"en": {
 				"instruction": "Remove the leaf from the"
@@ -224,7 +224,7 @@
 		"filename": "wind",
 		"clues": {
 			"es": {
-				"clue": "2: Usando el parámetro Measure, puede medir la velocidad de este"
+				"clue": "2: Usando el parámetro Measure, puedes medir la velocidad de este objeto"
 			},
 			"en": {
 				"clue": "2: Using the Measure parameter, you can measure the speed of this"
@@ -240,7 +240,7 @@
 		"id": 7,
 		"instructions": {
 			"es": {
-				"instruction": "Retener las vides de la"
+				"instruction": "Retener las vides del"
 			},
 			"en": {
 				"instruction": "Hold back the vines from the"
@@ -264,7 +264,7 @@
 		"filename": "tree",
 		"clues": {
 			"es": {
-				"clue": "3: Machine Learning puede ayudarlo a predecir la prevalencia de este tipo de especies"
+				"clue": "3: El Aprendizaje de Máquinas puede ayudarte a predecir la prevalencia de este tipo de especies"
 			},
 			"en": {
 				"clue": "3: Machine Learning can help you predict the prevalence of this kind of species"
@@ -309,7 +309,7 @@
 		"id": 9,
 		"instructions": {
 			"es": {
-				"instruction": "Ve a la izquierda hacia el"
+				"instruction": "Ve a la izquierda hacia la"
 			},
 			"en": {
 				"instruction": "Go left towards the"
@@ -348,7 +348,7 @@
 		"id": 10,
 		"instructions": {
 			"es": {
-				"instruction": "Agachándote, vuelves a montar el primero"
+				"instruction": "Agachándote, vuelves a armar el primer"
 			},
 			"en": {
 				"instruction": "Stooping down, you reassemble the first"
@@ -377,7 +377,7 @@
 		"id": 11,
 		"instructions": {
 			"es": {
-				"instruction": "Reuniendo varias piezas, vuelves a montar el segundo"
+				"instruction": "Reuniendo varias piezas, vuelves a a armar el segundo"
 			},
 			"en": {
 				"instruction": "Gathering up several pieces, you reassemble the second"
