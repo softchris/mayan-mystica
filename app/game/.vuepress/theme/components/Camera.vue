@@ -10,7 +10,8 @@
           <div v-for="item in items" class="item">
             <div class="polaroid">
               <span class="container">
-                <img :src="'/images/' + item.filename + '.png'" />
+                <!--todo fix glyph path ~@assets/images/-->
+                <img :src="item.filename + '.png'" />
               </span>
               <div class="caption">
                 <a :href="item.url" target="_blank">{{ $t('learn') }}</a>

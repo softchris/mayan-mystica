@@ -1,5 +1,5 @@
 ---
-backdrop: ../../images/bg1.png
+backdrop: ../../assets/images/bg1.png
 ---
 
 # Welcome, explorer!
