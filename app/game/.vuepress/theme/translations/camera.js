@@ -11,7 +11,7 @@ export default {
 	},
 	pt: {
 		cameraroll: 'Rolo da Câmera',
-		nosnapshots: 'Ainda não foram tirados instantâneos',
+		nosnapshots: 'Ainda não foram tiradas fotos',
 		learn: 'Aprender',
 	},
 };

@@ -9,7 +9,7 @@
 				"instruction": "Unfold the"
 			},
 			"pt": {
-				"instruction": "Desdobrar o"
+				"instruction": "Desenrolar o"
 			}
 		},
 		"name": {
@@ -34,7 +34,7 @@
 				"result": "You unfold the map, but according to your coordinates, there shouldn't be anything here. May as well put it away."
 			},
 			"pt": {
-				"result": "Você desdobra o mapa, mas de acordo com suas coordenadas, não deve haver nada aqui. Pode muito bem guardá-lo."
+				"result": "Você desenrola o mapa, mas de acordo com suas coordenadas, não deveria haver nada aqui. Pode até guardar o mapa."
 			}
 		}
 	},
@@ -42,13 +42,13 @@
 		"id": 2,
 		"instructions": {
 			"es": {
-				"instruction": "Saca"
+				"instruction": "Sacar la"
 			},
 			"en": {
 				"instruction": "Take out the"
 			},
 			"pt": {
-				"instruction": "Retire o"
+				"instruction": "Pegar a"
 			}
 		},
 		"name": {
@@ -126,7 +126,7 @@
 				"instruction": "Look at the"
 			},
 			"pt": {
-				"instruction": "Olhe para a"
+				"instruction": "Olhe para o"
 			}
 		},
 		"name": {
@@ -151,7 +151,7 @@
 				"clue": "4: The language named after this creature turns source code into byte code which can be run on any supported platform."
 			},
 			"pt": {
-				"clue": "4: O idioma nomeado após esta criatura transforma o código fonte em código de bytes, que pode ser executado em qualquer plataforma suportada."
+				"clue": "4: A linguagem com o nome desta criatura transforma o código-fonte em código de bytes que pode ser executado em qualquer plataforma suportada."
 			}
 		},
 		"url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-python/2-what-is-python/?WT.mc_id=mayamystery-playfab-jelooper"
@@ -206,7 +206,7 @@
 				"instruction": "Remove the leaf from the"
 			},
 			"pt": {
-				"instruction": "Retire a folha da"
+				"instruction": "Retire a folha do"
 			}
 		},
 		"name": {
@@ -246,7 +246,7 @@
 				"instruction": "Hold back the vines from the"
 			},
 			"pt": {
-				"instruction": "Retenha as videiras do"
+				"instruction": "Afaste as videiras do"
 			}
 		},
 		"name": {
@@ -270,7 +270,7 @@
 				"clue": "3: Machine Learning can help you predict the prevalence of this kind of species"
 			},
 			"pt": {
-				"clue": "3: O Machine Learning pode ajudar a prever a prevalência desse tipo de espécie"
+				"clue": "3: Machine Learning pode ajudar a prever a prevalência desse tipo de espécie"
 			}
 		},
 		"initialHide": true,
@@ -286,7 +286,7 @@
 				"instruction": "Examine the"
 			},
 			"pt": {
-				"instruction": "Examina el"
+				"instruction": "Examinar o"
 			}
 		},
 		"name": {
@@ -315,7 +315,7 @@
 				"instruction": "Go left towards the"
 			},
 			"pt": {
-				"instruction": "Vá para a esquerda em direção a"
+				"instruction": "Vá para a esquerda em direção à"
 			}
 		},
 		"name": {
@@ -354,7 +354,7 @@
 				"instruction": "Stooping down, you reassemble the first"
 			},
 			"pt": {
-				"instruction": "Abaixando-se, você remonta a primeira"
+				"instruction": "Abaixando-se, você remonta o primeiro"
 			}
 		},
 		"name": {
@@ -383,7 +383,7 @@
 				"instruction": "Gathering up several pieces, you reassemble the second"
 			},
 			"pt": {
-				"instruction": "Reunindo várias peças, você remonta a segunda"
+				"instruction": "Reunindo várias peças, você remonta o segundo"
 			}
 		},
 		"name": {
