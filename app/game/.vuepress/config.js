@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
 	title: 'Azure Maya Mystery',
@@ -24,8 +24,8 @@ module.exports = {
 	configureWebpack: {
 		resolve: {
 			alias: {
-				'@assets': path.resolve(__dirname, "../assets")
-			}
-		}
-	}
+				'@assets': path.resolve(__dirname, '../assets'),
+			},
+		},
+	},
 };

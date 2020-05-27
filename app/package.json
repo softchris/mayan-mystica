@@ -5,7 +5,8 @@
 	"main": "tailwind.config.js",
 	"scripts": {
 		"build": "vuepress build game",
-		"dev": "vuepress dev game"
+		"dev": "vuepress dev game",
+		"postbuild": "cp -rf ./game/.vuepress/dist/AzureMayaMystery/assets* ./game/.vuepress/dist/AzureMayaMystery/AzureMayaMystery/assets"
 	},
 	"keywords": [],
 	"author": "softchris,jlooper",
