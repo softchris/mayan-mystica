@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
 	title: 'Azure Maya Mystery',
@@ -6,7 +6,7 @@ module.exports = {
 	postcss: {
 		plugins: [require('autoprefixer'), require('tailwindcss')('./tailwind.config.js')],
 	},
-	dest: 'game/.vuepress/dist/AzureMayaMystery/',
+	dest: 'game/.vuepress/dist/',
 	base: '/AzureMayaMystery/',
 	themeConfig: {
 		search: false,
@@ -21,11 +21,11 @@ module.exports = {
 			},
 		},
 	},
-	configureWebpack: {
+	/*configureWebpack: {
 		resolve: {
 			alias: {
-				'@assets': path.resolve(__dirname, "../assets")
-			}
-		}
-	}
+				'@assets': path.resolve(__dirname, '../assets'),
+			},
+		},
+	},*/
 };
