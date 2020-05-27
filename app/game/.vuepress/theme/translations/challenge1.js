@@ -8,12 +8,12 @@ export default {
 		sorry: 'Sorry, try again',
 	},
 	es: {
-		enter: 'entrar en la pirámide',
+		enter: 'Entrar en la pirámide',
 		submit: 'Enviar',
-		meaning: 'primer significado de glifo',
+		meaning: 'significado del primer glifo',
 		guess: 'nube',
 		welldone: '¡Bien hecho!',
-		sorry: 'Perdón intente de nuevo',
+		sorry: 'Perdón, intenta de nuevo',
 	},
 	pt: {
 		enter: 'Entre na pirâmide',
