@@ -7,9 +7,9 @@ export default {
 		credits: 'Credits',
 	},
 	es: {
-		privacy: 'Privacidad y cookies',
+		privacy: 'Privacidad y Cookies',
 		terms: 'Términos de Uso',
-		support: 'Apoyo',
+		support: 'Soporte',
 		copyright: '© 2020 Microsoft Corporation. Todos los derechos reservados.',
 		credits: 'Créditos',
 	},
