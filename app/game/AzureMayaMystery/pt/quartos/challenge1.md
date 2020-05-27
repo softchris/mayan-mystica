@@ -8,7 +8,7 @@ Quando você coloca o guia de volta na mochila, o celular começa a tocar. Isso 
 
 Para ler seus textos, você precisará visualizá-los na web.
 
-Clonar [este repo](https://github.com/MicrosoftDocs/Azure-Maya-Mystery-Challenge-1) e siga as instruções no arquivo LEIA-ME para iniciar o site nos Aplicativos estáticos do Azure.
+Clone [este repo](https://github.com/MicrosoftDocs/Azure-Maya-Mystery-Challenge-1) e siga as instruções no arquivo LEIA-ME para iniciar o site nos Aplicativos estáticos do Azure.
 
 <hr class="m-5"/>
 

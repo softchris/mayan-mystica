@@ -17,10 +17,10 @@ export default {
 	},
 	pt: {
 		enter: 'Entre na pirâmide',
-		submit: 'Envio',
+		submit: 'Enviar',
 		meaning: 'primeiro significado de glifo',
 		guess: 'nuvem',
-		welldone: 'Bem feito!',
+		welldone: 'Parabéns!',
 		sorry: 'Desculpe, tente novamente',
 	},
 };

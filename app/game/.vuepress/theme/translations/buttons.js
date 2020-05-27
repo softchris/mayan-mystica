@@ -12,8 +12,8 @@ export default {
 		fail: 'La puerta permanece cerrada herméticamente',
 	},
 	pt: {
-		trythedoor: 'Experimente a porta',
-		goinside: 'Ir para dentro',
+		trythedoor: 'Tente a porta',
+		goinside: 'Entrar',
 		pass: 'A porta se abre com um rangido',
 		fail: 'A porta permanece trancada',
 	},
