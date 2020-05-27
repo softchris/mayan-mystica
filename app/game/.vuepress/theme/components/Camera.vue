@@ -10,7 +10,7 @@
 					<div v-for="item in items" class="item">
 						<div class="polaroid" v-if="item.filename">
 							<span class="container">
-								<img :src="'/images/' + item.filename + '.png'" alt="snapshot" />
+								<img :src="$withBase('/images/' + item.filename + '.png')" alt="snapshot" />
 							</span>
 							<div class="caption">
 								<a :href="item.url" target="_blank">{{ $t('learn') }}</a>
