@@ -3,7 +3,7 @@
     <div class="markdown-body font-serif bg-white m-2 sm:m-3 md:m-6 lg:m-12 text-lg rounded-lg">
       <Nav />
       <div role="banner">
-        <img src="~@assets/images/bg1.png" />
+        <img src="~@assets/img/bg1.png" />
       </div>
       <div class="flex mb-4">
         <div role="complementary" class="w-1/2">
