@@ -8,7 +8,7 @@
 			<div v-else>
 				<div class="wrapper">
 					<div v-for="item in items" class="item">
-						<div class="polaroid">
+						<div class="polaroid" v-if="item.filename">
 							<span class="container">
 								<img :src="'/images/' + item.filename + '.png'" alt="snapshot" />
 							</span>
