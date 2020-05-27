@@ -185,7 +185,7 @@
 		"initialHide": true,
 		"clues": {
 			"es": {
-				"clue": "1: La longitud es de alrededor _____ de este a oeste, con 0 ° en el primer meridiano."
+				"clue": "1: La longitud  mide alrededor de _____ de este a oeste, con 0 ° en el primer meridiano."
 			},
 			"en": {
 				"clue": "1: Longitude measures around the _____ from east to west, with 0° at the Prime Meridian"
