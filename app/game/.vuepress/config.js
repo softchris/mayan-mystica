@@ -27,6 +27,5 @@ module.exports = {
 				'@assets': path.resolve(__dirname, '../assets'),
 			},
 		},*/
-		devtool: 'source-map',
 	},
 };
