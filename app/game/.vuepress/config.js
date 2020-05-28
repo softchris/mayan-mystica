@@ -21,11 +21,12 @@ module.exports = {
 			},
 		},
 	},
-	/*configureWebpack: {
-		resolve: {
+	configureWebpack: {
+		/*resolve: {
 			alias: {
 				'@assets': path.resolve(__dirname, '../assets'),
 			},
-		},
-	},*/
+		},*/
+		devtool: 'source-map',
+	},
 };
