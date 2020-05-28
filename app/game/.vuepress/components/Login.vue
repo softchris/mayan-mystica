@@ -57,7 +57,7 @@ export default {
 		submit() {
 			this.message = '';
 			axios
-				.post('/AzureMayaMystery/api/login', {
+				.post('/api/login', {
 					email: this.email,
 					password: this.password,
 				})
@@ -77,7 +77,7 @@ export default {
 		},
 		linkCustomID() {
 			axios
-				.post('/AzureMayaMystery/api/linkCustomId', {
+				.post('/api/linkCustomId', {
 					id: getUID(),
 					session: getSessionTicket(),
 				})

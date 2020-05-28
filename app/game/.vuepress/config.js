@@ -14,7 +14,7 @@ module.exports = {
 	},
 	devServer: {
 		proxy: {
-			'/AzureMayaMystery/api': {
+			'/api': {
 				target: 'http://localhost:7071',
 				ws: true,
 				changeOrigin: true,

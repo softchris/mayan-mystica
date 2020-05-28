@@ -76,7 +76,7 @@ export default {
 			jsonData[columnName] = item.gameItem;
 
 			axios
-				.post('/AzureMayaMystery/api/login', {
+				.post('/api/login', {
 					Data: jsonData,
 				})
 				.then((response) => {
