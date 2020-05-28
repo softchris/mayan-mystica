@@ -77,7 +77,7 @@ export default {
 			//console.log(JSON.stringify(jsonData));
 			axios
 				.post('/api/updateData', {
-					Data: JSON.stringify(jsonData),
+					Data: jsonData,
 				})
 				.then((response) => {
 					console.log(response);

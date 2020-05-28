@@ -3,6 +3,6 @@
 	"version": "1.0.0",
 	"private": true,
 	"dependencies": {
-		"playfab-sdk": "^2.46.200422"
+		"playfab-sdk": "2.46.200422"
 	}
 }
