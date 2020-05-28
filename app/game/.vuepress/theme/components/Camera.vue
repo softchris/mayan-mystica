@@ -1,20 +1,20 @@
 <template>
-	<div class="markdown-body">
+		<div class="markdown-body">
 		<p class="text-2xl pb-5 pt-5 ml-5 text-sans text-white">{{ $t('cameraroll') }}</p>
 		<div class="p-5">
-			<div v-if="items.length == 0">
+			<div v-if="polaroids.length == 0">
 				<span class="text-white">{{ $t('nosnapshots') }}</span>
 			</div>
 			<div v-else>
 				<div class="wrapper">
-					<div v-for="item in items" class="item">
-						<div class="polaroid" v-if="item.filename">
+					<div v-for="item in polaroids" class="item">
+						<div class="polaroid">
 							<span class="container">
-								<img :src="$withBase('/images/' + item.filename + '.png')" alt="snapshot" />
+								<img :src="getUrl(item.filename)" alt="snapshot" />
 							</span>
 							<div class="caption">
 								<a :href="item.url" target="_blank">{{ $t('learn') }}</a>
-								<p class="text-sm leading-snug" v-if="item.clues">{{ getLocalizedClue(item) }}</p>
+								<p class="text-sm leading-snug">{{ getLocalizedClue(item) }}</p>
 							</div>
 						</div>
 					</div>
@@ -37,26 +37,27 @@ export default {
 	created() {
 		this.showCameraItems();
 		this.$i18n.locale = getLocale();
-	},
-
-	data() {
 		this.$root.$on('item_added', (id) => {
 			this.showCameraItems();
 		});
 		this.$root.$on('lang_changed', (lang) => {
 			this.$i18n.locale = lang;
 		});
-		return {
-			items: [],
-		};
+	},
+
+	data() {
+		let obj = { polaroids: [] };
+		return obj;
 	},
 	methods: {
 		showCameraItems() {
 			var ids = getItems();
-			this.items = ids.map((id) => items.find((item) => item.id == id));
-			return items;
+			this.polaroids = ids.map((id) => items.find((item) => item.id == id));
 		},
 		getLocalizedClue(item) {
+			if (!item.clues) {
+				return '';
+			}
 			let currItem = item;
 			if (this.$i18n.locale == 'es') {
 				currItem = currItem.clues.es.clue;
@@ -67,6 +68,12 @@ export default {
 			}
 			return currItem;
 		},
+		getUrl(name) {
+			if (name) {
+				return this.$withBase('/images/' + name + '.png')
+			} 
+			return '';
+		}
 	},
 };
 </script>
