@@ -76,7 +76,7 @@ export default {
 			jsonData[columnName] = item.gameItem;
 
 			axios
-				.post('/api/login', {
+				.post('/api/updateData', {
 					Data: jsonData,
 				})
 				.then((response) => {
