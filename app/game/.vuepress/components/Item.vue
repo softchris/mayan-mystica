@@ -72,7 +72,7 @@ export default {
 			//generate a json object to send to playfab
 			var locale = this.$i18n.locale;
 			var jsonData = {};
-			var columnName = item.id;
+			var columnName = item.id.toString();
 			jsonData[columnName] = item.gameItem;
 
 			axios
