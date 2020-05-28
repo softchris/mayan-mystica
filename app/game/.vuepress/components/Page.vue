@@ -11,7 +11,8 @@ import { hasItem, getUID, setUID, hasUID, setSessionTicket } from '@theme/utils/
 import axios from 'axios';
 export default {
 	created() {
-		this.getInventory();
+		//initially, set home page to show followup
+		this.getInventory(1);
 		if (!hasUID()) {
 			setUID();
 		}
