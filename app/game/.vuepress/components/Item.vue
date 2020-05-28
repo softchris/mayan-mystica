@@ -72,12 +72,12 @@ export default {
 			//generate a json object to send to playfab
 			var locale = this.$i18n.locale;
 			var jsonData = {};
-			var columnName = item.id.toString();
+			var columnName = 'item_' + item.id;
 			jsonData[columnName] = item.gameItem;
-
+			//console.log(JSON.stringify(jsonData));
 			axios
 				.post('/api/updateData', {
-					Data: jsonData,
+					Data: JSON.stringify(jsonData),
 				})
 				.then((response) => {
 					console.log(response);
