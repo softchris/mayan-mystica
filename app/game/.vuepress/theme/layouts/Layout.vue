@@ -5,7 +5,7 @@
       <div
         role="banner"
         v-if="hasBackdrop"
-        :style="{ backgroundImage: 'url(' + hasBackdrop + ')' }"
+        :style="{ backgroundImage: 'url(/AzureMayaMystery/' + hasBackdrop + ')' }"
         class="w-full image backdrop"
       >&nbsp;</div>
       <div class="flex mb-4">
@@ -42,7 +42,7 @@ export default {
       return this.$page.frontmatter.camera || "Camera";
     },
     hasBackdrop() {
-      return this.$withBase(this.$page.frontmatter.backdrop) || false;
+      return this.$page.frontmatter.backdrop || false;
     }
   }
 };
