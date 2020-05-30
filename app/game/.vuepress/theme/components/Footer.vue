@@ -1,7 +1,7 @@
 <template>
   <footer class="footer rounded-b sticky pin-bottom p-6">
     <div
-      class="text-sans text-white w-full text-base lg:text-xl md:text-sm sm:text-sm block flex-grow flex justify-center items-center w-auto"
+      class="text-sans flex-wrap text-white w-full text-base lg:text-xl md:text-sm sm:text-sm block flex-grow flex justify-center items-center w-auto"
     >
       <a href="http://go.microsoft.com/fwlink/?LinkId=521839" target="_blank">{{ $t('privacy') }}</a>&nbsp;|&nbsp;
       <a
