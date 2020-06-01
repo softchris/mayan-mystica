@@ -70,6 +70,7 @@ export default {
           if (response.data.errorMessage == null) {
             setSessionTicket(response.data.SessionTicket);
             this.linkCustomID();
+            this.message = "Welcome! Please login";
           } else {
             this.message = response.data.errorMessage;
           }
@@ -92,45 +93,6 @@ export default {
           console.log(error);
         });
     }
-    /*submit() {
-      axios
-        .post(`https://8EA26.playfabapi.com/Client/RegisterPlayFabUser`, {
-          TitleId: "8EA26",
-          Email: this.email,
-          Password: this.password,
-          RequireBothUsernameAndEmail: false
-        })
-        .then(response => {
-          setSessionTicket(response.data.data.SessionTicket);
-          console.log(response);
-          this.linkCustomID(response);
-        })
-        .catch(e => {
-          console.log(e);
-        });
-    },
-    linkCustomID(response) {
-      axios
-        .post(
-          `https://8EA26.playfabapi.com/Client/LinkCustomID`,
-          {
-            TitleId: "8EA26",
-            CustomId: getUID(),
-            ForceLink: true
-          },
-          {
-            headers: {
-              "X-authentication": getSessionTicket()
-            }
-          }
-        )
-        .then(response => {
-          console.log(response);
-        })
-        .catch(e => {
-          this.message = e.errorMessage;
-        });
-    }*/
   }
 };
 </script>
