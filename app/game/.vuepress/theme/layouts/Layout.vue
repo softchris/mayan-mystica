@@ -9,10 +9,10 @@
         class="w-full image backdrop"
       >&nbsp;</div>
       <div class="flex mb-4">
-        <div role="complementary" class="w-1/2">
+        <div role="complementary" :class="hidden">
           <component :is="camera"></component>
         </div>
-        <div role="main" class="w-3/4">
+        <div role="main" class="w-full">
           <component :is="layout"></component>
         </div>
       </div>
@@ -33,6 +33,11 @@ export default {
     Footer,
     BasicLayout,
     Camera
+  },
+  data() {
+    return {
+      hidden: "lg:inline-block md:hidden sm:hidden hidden w-1/2"
+    };
   },
   computed: {
     layout() {
