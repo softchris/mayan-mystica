@@ -10,4 +10,4 @@ Finally, your search has proven fruitful: you are standing on the south side of 
 
 It's probably time to open your backpack to get the gear you need to start exploring.
 
-<Page url="1" instructions="" action="Open it" condition="none" />
+<Page url="157" instructions="" action="Open it" condition="none" />

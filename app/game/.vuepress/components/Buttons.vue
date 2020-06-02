@@ -26,7 +26,7 @@
     </div>
     <p>{{message}}</p>
     <p v-if="showNext">
-      <router-link to="7">{{ $t('goinside') }}</router-link>
+      <router-link to="293">{{ $t('goinside') }}</router-link>
     </p>
   </div>
 </template>

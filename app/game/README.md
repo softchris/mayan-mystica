@@ -10,4 +10,4 @@ Finally, your search has proven fruitful: you are standing on the south side of 
 
 It's probably time to open your backpack to get the gear you need to start exploring.
 
-<Page url="/pyramid/1" instructions="" action="Open it" condition="none" />
+<Page url="/pyramid/157" instructions="" action="Open it" condition="none" />
