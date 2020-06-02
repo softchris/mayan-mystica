@@ -57,6 +57,7 @@ export default {
 .backdrop {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 </style>
 

@@ -1,5 +1,5 @@
 ---
-backdrop: images/bg1.png
+backdrop: images/1-nostairs-close.png
 ---
 
 # ¡Bienvenido, explorador!
