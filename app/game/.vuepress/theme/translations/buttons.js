@@ -7,8 +7,8 @@ export default {
 	},
 	es: {
 		trythedoor: 'Prueba la puerta',
-		goinside: 'Entrar',
-		pass: 'La puerta se abre con un crujido',
+		goinside: 'Ve adentro',
+		pass: 'La puerta se abre con un chirrido',
 		fail: 'La puerta permanece cerrada herméticamente',
 	},
 	pt: {
