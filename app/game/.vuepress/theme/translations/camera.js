@@ -5,8 +5,8 @@ export default {
 		learn: 'Learn',
 	},
 	es: {
-		cameraroll: 'Rollo de la Cámara',
-		nosnapshots: 'Aún no se han tomado instantáneas',
+		cameraroll: 'Galería de fotos',
+		nosnapshots: 'Aún no se han capturado fotografías',
 		learn: 'Aprender',
 	},
 	pt: {
