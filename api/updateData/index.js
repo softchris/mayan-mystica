@@ -2,7 +2,7 @@ const { PlayFabClient } = require('playfab-sdk');
 
 module.exports = function (context, req) {
 	var request = {
-		Data: req.body.jsonData,
+		Data: req.body.Data,
 		headers: {
 			'X-authentication': req.body.session,
 		},
