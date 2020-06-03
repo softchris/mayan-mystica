@@ -13,7 +13,7 @@ export default {
 		meaning: 'significado del primer glifo',
 		guess: 'nube',
 		welldone: '¡Bien hecho!',
-		sorry: 'Perdón, intenta de nuevo',
+		sorry: 'Lo siento, intenta de nuevo',
 	},
 	pt: {
 		enter: 'Entre na pirâmide',
