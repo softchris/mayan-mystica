@@ -24,8 +24,17 @@ import { setLocale, getLocale } from "@theme/utils/helpers";
 export default {
   name: "BasicLayout",
   i18n: {},
+  data() {
+    return {
+      //path: "/pyramid/es/"
+    };
+  },
   methods: {
     setLanguage(lang) {
+      /*var tempPath = this.$route.matched[0].path;
+      var name = tempPath.replace("es", lang);
+      this.path = name;
+      console.log(this.path);*/
       setLocale(lang);
       this.$root.$emit("lang_changed", lang);
     }
