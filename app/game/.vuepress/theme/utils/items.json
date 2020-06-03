@@ -3,7 +3,7 @@
 		"id": 1,
 		"instructions": {
 			"es": {
-				"instruction": "Desenrollar el"
+				"instruction": "Desplegar el"
 			},
 			"en": {
 				"instruction": "Unfold the"
@@ -14,7 +14,7 @@
 		},
 		"name": {
 			"es": {
-				"name": "mapa descolorido"
+				"name": "mapa desvanecido"
 			},
 			"en": {
 				"name": "faded map"
@@ -28,7 +28,7 @@
 		"initialHide": false,
 		"result": {
 			"es": {
-				"result": "Desenrollas el mapa, pero según tus coordenadas, no debería haber nada aquí. Bien podría guardar el mapa."
+				"result": "Despliegas el mapa, pero de acuerdo con sus coordenadas, no debería haber nada aquí. Bien podrías guardarlo."
 			},
 			"en": {
 				"result": "You unfold the map, but according to your coordinates, there shouldn't be anything here. May as well put it away."
@@ -67,7 +67,7 @@
 		"initialHide": true,
 		"result": {
 			"es": {
-				"result": "Sacas tu cámara fiel y miras a tu alrededor."
+				"result": "Sacas tu cámara de confianza y miras a tu alrededor."
 			},
 			"en": {
 				"result": "You take out your trusty camera and look around."
@@ -81,7 +81,7 @@
 		"id": 3,
 		"instructions": {
 			"es": {
-				"instruction": "Sacar tu"
+				"instruction": "Saca tu"
 			},
 			"en": {
 				"instruction": "Take out your"
@@ -92,7 +92,7 @@
 		},
 		"name": {
 			"es": {
-				"name": "libro guía"
+				"name": "guía"
 			},
 			"en": {
 				"name": "guide book"
@@ -106,7 +106,7 @@
 		"initialHide": true,
 		"result": {
 			"es": {
-				"result": "Sacas tu guía de tu mochila y la abres, pero las páginas están pegadas debido al clima húmedo y es apenas legible."
+				"result": "Sacas tu guía de la mochila y la abres, pero las páginas están pegadas debido al clima húmedo y es apenas es legible."
 			},
 			"en": {
 				"result": "You take your guide book out of your backpack and open it, but the pages stick together due to the damp climate and it's barely legible."
@@ -160,7 +160,7 @@
 		"id": 5,
 		"instructions": {
 			"es": {
-				"instruction": "Limpiar la tierra del"
+				"instruction": "Cepille la suciedad del"
 			},
 			"en": {
 				"instruction": "Brush off the dirt from the"
@@ -185,7 +185,7 @@
 		"initialHide": true,
 		"clues": {
 			"es": {
-				"clue": "1: La longitud  mide alrededor de _____ de este a oeste, con 0 ° en el primer meridiano."
+				"clue": "1: La longitud  mide alrededor de _____ de este a oeste, con 0° en el primer meridiano."
 			},
 			"en": {
 				"clue": "1: Longitude measures around the _____ from east to west, with 0° at the Prime Meridian"
@@ -200,7 +200,7 @@
 		"id": 6,
 		"instructions": {
 			"es": {
-				"instruction": "Retirar la hoja del"
+				"instruction": "Retire la hoja del"
 			},
 			"en": {
 				"instruction": "Remove the leaf from the"
@@ -240,7 +240,7 @@
 		"id": 7,
 		"instructions": {
 			"es": {
-				"instruction": "Retener las vides del"
+				"instruction": "Contener las vides del"
 			},
 			"en": {
 				"instruction": "Hold back the vines from the"
@@ -334,7 +334,7 @@
 		"initialHide": true,
 		"result": {
 			"es": {
-				"result": "Bajas las escaleras, pero encuentras otra puerta cerrada. Regresas a la entrada."
+				"result": "Bajas las escaleras, pero encuentras otra puerta cerrada. Vuelves a la entrada."
 			},
 			"en": {
 				"result": "You go down the staircase, but find another locked door. You return to the entryway."
