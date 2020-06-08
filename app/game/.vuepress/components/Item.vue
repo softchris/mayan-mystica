@@ -27,8 +27,16 @@ import {
   getLocale
 } from "@theme/utils/helpers";
 import axios from "axios";
+import messages from "@theme/translations/misc.js";
+import { EventBus } from "@theme/utils/event-bus";
+import { i18n } from "@theme/utils/i18n";
 
 export default {
+  props: ["id"],
+
+  i18n: {
+    messages
+  },
   computed: {
     item() {
       let item = items.find(row => row.id == this.id);
@@ -94,16 +102,16 @@ export default {
           console.log(error);
         });
 
-      let addOk = confirm("Take a picture?");
+      let addOk = confirm(this.$t("takepic"));
       if (addOk) {
         addItem(item.id);
-        this.$root.$emit("item_added", item.id);
+        EventBus.$emit("item_added", item.id);
         //you got the picture, so hide the prompt
         this.showInstructions = false;
       }
     },
     emitResult(item) {
-      this.$root.$emit("showResult", item.id);
+      EventBus.$emit("showResult", item.id);
     },
     callback(e) {
       console.log(e);
@@ -111,7 +119,10 @@ export default {
   },
   created() {
     this.$i18n.locale = getLocale();
+    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
   },
-  props: ["id"]
+  beforeDestroy() {
+    //EventBus.$off("lang_changed");
+  }
 };
 </script>

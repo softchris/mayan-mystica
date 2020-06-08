@@ -27,22 +27,13 @@
 import { getItems, getLocale } from "@theme/utils/helpers";
 const items = require("@theme/utils/items.json");
 import messages from "../translations/camera.js";
+import { EventBus } from "@theme/utils/event-bus";
+import { i18n } from "@theme/utils/i18n";
 
 export default {
   name: "Camera",
   i18n: {
     messages
-  },
-
-  created() {
-    this.showCameraItems();
-    this.$i18n.locale = getLocale();
-    this.$root.$on("item_added", id => {
-      this.showCameraItems();
-    });
-    this.$root.$on("lang_changed", lang => {
-      this.$i18n.locale = lang;
-    });
   },
 
   data() {
@@ -74,6 +65,19 @@ export default {
       }
       return "";
     }
+  },
+  created() {
+    this.showCameraItems();
+    this.$i18n.locale = getLocale();
+    EventBus.$on("item_added", id => {
+      this.showCameraItems();
+    });
+    EventBus.$on("lang_changed", lang => {
+      this.$i18n.locale = lang;
+    });
+  },
+  beforeDestroy() {
+    //EventBus.$off("lang_changed");
   }
 };
 </script>

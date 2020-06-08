@@ -5,7 +5,7 @@ import Register from './components/Register';
 import Buttons from './components/Buttons';
 import Puzzle from './components/Puzzle';
 import Challenge1 from './components/Challenge1';
-import VueI18n from 'vue-i18n';
+//import VueI18n from 'vue-i18n';
 
 export default ({ Vue }) => {
 	Vue.component('Page', Page);
@@ -15,5 +15,5 @@ export default ({ Vue }) => {
 	Vue.component('Buttons', Buttons);
 	Vue.component('Puzzle', Puzzle);
 	Vue.component('Challenge1', Challenge1);
-	Vue.use(VueI18n);
+	//Vue.use(VueI18n);
 };

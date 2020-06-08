@@ -1,16 +1,18 @@
 <template>
   <div class="markdown-body">
-    <router-link to="/pyramid/es" class="float-right p-5 white-link">
-      <span @click="setLanguage('es')">Español</span>
-    </router-link>
-    <router-link to="/pyramid/pt" class="float-right p-5 white-link">
-      <span @click="setLanguage('pt')">Português</span>
-    </router-link>
-    <router-link to="/" class="float-right p-5 white-link">
-      <span @click="setLanguage('en')">English</span>
-    </router-link>
+    <span
+      class="float-right p-5 text-white underline cursor-pointer"
+      @click="setLanguage('es')"
+    >Español</span>
+    <span
+      class="float-right p-5 text-white underline cursor-pointer"
+      @click="setLanguage('pt')"
+    >Português</span>
 
-    <router-link to="/pyramid/login" class="float-right p-5 white-link">My Adventure</router-link>
+    <span
+      class="float-right p-5 text-white underline cursor-pointer"
+      @click="goToLogin()"
+    >{{ $t('myadventure') }}</span>
     <p class="text-3xl pb-5 pt-5 ml-5 text-sans">{{ $page.frontmatter.title }}</p>
     <div class="p-5 bg-white m-5 rounded">
       <Content />
@@ -19,31 +21,47 @@
 </template>
 
 <script>
-import { setLocale, getLocale } from "@theme/utils/helpers";
+import { getLocale, setLocale } from "@theme/utils/helpers";
+import messages from "@theme/translations/misc.js";
+import { EventBus } from "@theme/utils/event-bus";
+import { i18n } from "@theme/utils/i18n";
 
 export default {
   name: "BasicLayout",
-  i18n: {},
-  data() {
-    return {
-      //path: "/pyramid/es/"
-    };
+  i18n: {
+    messages
   },
+
   methods: {
     setLanguage(lang) {
-      /*var tempPath = this.$route.matched[0].path;
-      var name = tempPath.replace("es", lang);
-      this.path = name;
-      console.log(this.path);*/
       setLocale(lang);
-      this.$root.$emit("lang_changed", lang);
+      EventBus.$emit("lang_changed", lang);
+      var currPath = this.$route.matched[0].path;
+      var newPath = currPath.replace(/es|pt|en/gi, lang);
+      console.log(newPath, currPath);
+      //check to make sure you're not already on this page
+      if (newPath == "") {
+        this.$router.push({ path: "/pyramid/" + getLocale() + "/1" });
+      } else {
+        if (currPath !== newPath) {
+          this.$router.push({ path: newPath });
+        }
+      }
+    },
+    goToLogin() {
+      var currPath = this.$route.matched[0].path;
+      var newPath = "/pyramid/" + getLocale() + "/login";
+      if (currPath !== newPath) {
+        this.$router.replace({ path: newPath });
+      }
     }
+  },
+  created() {
+    this.$i18n.locale = getLocale();
+    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+  },
+  beforeDestroy() {
+    //EventBus.$off("lang_changed");
   }
 };
 </script>
-
-<style scoped>
-.white-link {
-  color: white;
-}
-</style>

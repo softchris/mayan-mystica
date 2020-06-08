@@ -50,7 +50,7 @@ export function hasUID() {
 }
 
 export function getLocale() {
-	return localStorage.getItem('locale');
+	return localStorage.getItem('locale') || 'en';
 }
 
 export function setLocale(locale) {

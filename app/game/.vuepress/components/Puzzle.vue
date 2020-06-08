@@ -75,6 +75,7 @@
 <script>
 import messages from "@theme/translations/puzzle.js";
 import { getLocale } from "@theme/utils/helpers";
+import { EventBus } from "@theme/utils/event-bus";
 
 export default {
   name: "Puzzle",
@@ -100,6 +101,10 @@ export default {
   },
   created() {
     this.$i18n.locale = getLocale();
+    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+  },
+  beforeDestroy() {
+    EventBus.$off("lang_changed");
   }
 };
 </script>

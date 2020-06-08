@@ -10,4 +10,4 @@ Finalmente, sua pesquisa se mostrou proveitosa: você está no lado sul de uma g
 
 Provavelmente é hora de abrir sua mochila para obter o equipamento necessário para começar a explorar.
 
-<Page url="quartos/157" instructions="" action="Abra" condition="none" />
+<Page url="157" instructions="" action="Abra" condition="none" />

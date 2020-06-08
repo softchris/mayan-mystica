@@ -10,4 +10,4 @@ Finalmente, tu búsqueda ha resultado fructífera: estás parado en el lado sur 
 
 Probablemente sea hora de abrir tu mochila para obtener el equipo que necesitas para comenzar a explorar.
 
-<Page url="habitaciones/157" instructions="" action="Abrir" condition="none" />
+<Page url="157" instructions="" action="Abrir" condition="none" />

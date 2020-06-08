@@ -53,6 +53,10 @@ export default {
   },
   created() {
     this.$i18n.locale = getLocale();
+    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+  },
+  beforeDestroy() {
+    //EventBus.$off("lang_changed");
   }
 };
 </script>

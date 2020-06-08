@@ -7,9 +7,10 @@
     </span>
 
     <span class="lg:w-1/2 md:w-full sm:w-full w-full">
-      <router-link class="cursor-pointer block m-1 lg:m-4 md:m-2 sm:m-1" :to="'/'">
-        <span class="title">Azure Maya Mystery</span>
-      </router-link>
+      <span
+        class="title cursor-pointer block m-1 lg:m-4 md:m-2 sm:m-1"
+        @click="goHome()"
+      >Azure Maya Mystery</span>
     </span>
 
     <div v-on:click="openNav()" class="lg:hidden">
@@ -37,12 +38,16 @@
 
 <script>
 import Camera from "@theme/components/Camera.vue";
+import { setLocale, getLocale } from "@theme/utils/helpers";
+import { EventBus } from "@theme/utils/event-bus";
 
 export default {
   name: "Nav",
   components: { Camera },
+  i18n: {},
   data() {
     return {
+      lang: "en",
       hidden: "lg:hidden md:hidden sm:hidden hidden"
     };
   },
@@ -53,7 +58,23 @@ export default {
       else {
         this.hidden = "lg:hidden md:hidden sm:hidden hidden";
       }
+    },
+    goHome() {
+      setLocale("en");
+      EventBus.$emit("lang_changed", "en");
+
+      var tempPath = this.$route.matched[0].path;
+      if (tempPath != "") {
+        this.$router.push({ path: "/" });
+      }
     }
+  },
+  created() {
+    this.$i18n.locale = getLocale();
+    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+  },
+  beforeDestroy() {
+    //EventBus.$off("lang_changed");
   }
 };
 </script>

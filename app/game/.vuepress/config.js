@@ -10,7 +10,6 @@ module.exports = {
 	base: '/AzureMayaMystery/',
 	themeConfig: {
 		search: false,
-		lastUpdated: 'Last Updated',
 	},
 	devServer: {
 		proxy: {
@@ -20,12 +19,5 @@ module.exports = {
 				changeOrigin: true,
 			},
 		},
-	},
-	configureWebpack: {
-		/*resolve: {
-			alias: {
-				'@assets': path.resolve(__dirname, '../assets'),
-			},
-		},*/
 	},
 };

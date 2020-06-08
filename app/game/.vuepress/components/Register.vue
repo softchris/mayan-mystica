@@ -1,6 +1,6 @@
 <template>
   <div class="w-full max-w-xs">
-    <h1>Register</h1>
+    <h1>{{ $t('register') }}</h1>
     <form class="bg-white px-8 pt-6 pb-8 mb-4" @submit.prevent="submit">
       <p class="text-red-500 text-xs italic" aria-live="polite">{{ message }}</p>
 
@@ -31,23 +31,27 @@
         <button
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
           type="submit"
-        >Sign Up</button>
+        >{{ $t('register') }}</button>
       </div>
     </form>
 
-    <router-link class="has-text-grey" to="/pyramid/login">
-      <p>Login</p>
+    <router-link class="has-text-grey" to="../login">
+      <p>{{ $t('login') }}</p>
     </router-link>
   </div>
 </template>
 <script>
 import axios from "axios";
+import messages from "@theme/translations/misc.js";
+import { EventBus } from "@theme/utils/event-bus";
+
 import {
   getUID,
   setUID,
   hasUID,
   setSessionTicket,
-  getSessionTicket
+  getSessionTicket,
+  getLocale
 } from "@theme/utils/helpers";
 export default {
   data() {
@@ -70,7 +74,7 @@ export default {
           if (response.data.errorMessage == null) {
             setSessionTicket(response.data.SessionTicket);
             this.linkCustomID();
-            this.message = "Welcome! Please login";
+            this.message = this.$t("registerwelcome");
           } else {
             this.message = response.data.errorMessage;
           }
@@ -93,6 +97,13 @@ export default {
           console.log(error);
         });
     }
+  },
+  created() {
+    this.$i18n.locale = getLocale();
+    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+  },
+  beforeDestroy() {
+    EventBus.$off("lang_changed");
   }
 };
 </script>
