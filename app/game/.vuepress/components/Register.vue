@@ -65,7 +65,7 @@ export default {
     submit() {
       this.message = "";
       axios
-        .post("/api/register", {
+        .post("https://maya-mystery-api.azurewebsites.net/api/register", {
           email: this.email,
           password: this.password
         })
@@ -85,7 +85,7 @@ export default {
     },
     linkCustomID() {
       axios
-        .post("/api/linkCustomId", {
+        .post("https://maya-mystery-api.azurewebsites.net/api/linkCustomId", {
           id: getUID(),
           session: getSessionTicket()
         })

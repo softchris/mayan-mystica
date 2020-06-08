@@ -92,7 +92,7 @@ export default {
       var columnName = item.id;
       jsonData[columnName] = item.gameItem;
       axios
-        .post("/api/updateData", {
+        .post("https://maya-mystery-api.azurewebsites.net/api/updateData", {
           Data: jsonData
         })
         .then(response => {
