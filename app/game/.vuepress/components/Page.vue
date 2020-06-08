@@ -51,7 +51,7 @@ export default {
 			setUID();
 		}
 		axios
-			.post('/AzureMayaMystery/api/loginAnon', {
+			.post('/api/loginAnon', {
 				id: getUID(),
 				createAccount: hasUID(),
 			})
