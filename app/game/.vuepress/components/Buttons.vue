@@ -33,6 +33,7 @@
 <script>
 import messages from "@theme/translations/buttons.js";
 import { getLocale } from "@theme/utils/helpers";
+import { EventBus } from "@theme/utils/event-bus";
 
 export default {
   name: "Buttons",
