@@ -51,7 +51,7 @@ export default {
 			setUID();
 		}
 		axios
-			.post('/api/loginAnon', {
+			.post('https://white-field-0a3ef4c1e.azurestaticapps.net/api/loginAnon', {
 				id: getUID(),
 				createAccount: hasUID(),
 			})
