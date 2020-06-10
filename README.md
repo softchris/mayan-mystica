@@ -1,6 +1,6 @@
 # Welcome to the Azure Maya Mystery!
 
-[Explore the pyramid](https://microsoft.com/AzureMayaMystery)
+[Explore the pyramid](https://microsoft.com/AzureMayaMystery?WT.mc_id=mayamystery-github-jelooper)
 
 ![screenshot](screenshot.png)
 
@@ -8,7 +8,7 @@
 
 The Azure Maya Mystery is a project in the 'Mystery Experiences' family of web sites developed by Cloud Advocates at Microsoft, including Em Lazer-Walker, Jen Looper, and Chris Noring, amongst others. These text-based games are designed to showcase Microsoft Learn and Docs content in a new, fun, and engaging way.
 
-The first iteration of these games was built using Twine with PlayFab as its backend. Visit the [Mystery Mansion](https://microsoft.com/AzureMayaMystery?WT.mc_id=mayamystery-github-jelooper) and earn the keys to unlock the deeds to the house! The project is described [here](https://dev.to/azure/the-making-of-the-azure-mystery-mansion-3ego).
+The first iteration of these games was built using Twine with PlayFab as its backend. Visit the [Mystery Mansion](https://microsoft.com/mysterymansion?WT.mc_id=mysterymansion-github-jelooper) and earn the keys to unlock the deeds to the house! The project is described [here](https://dev.to/azure/the-making-of-the-azure-mystery-mansion-3ego).
 
 The popularity and continued engagement of our audiences with the Mystery Mansion has led us to dream even bigger, and we proudly unveil our mysterious pyramid, deep in jungle, for you to explore!
 
