@@ -13,3 +13,5 @@ Obrigado aos colaboradores do Azure Maya Mystery, incluindo:
 -   Traduções: Vicente Guzmán (LucioMSP), Tania Allard, Ricardo Prins
 
 -   Equipe de comunidades: Cynthia Zanoni, Piyali Dey
+
+-   Consultor Cultural: Matthew Looper, Professor de História da Arte Mesoamericana Antiga, California State University, Chico
