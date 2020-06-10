@@ -11,3 +11,5 @@ Obrigado aos colaboradores do Azure Maya Mystery, incluindo:
 -   Equipe de desenvolvimento: Jen Looper e Chris Noring, desenvolvedores com Em Lazer-Walker, diretora criativa
 
 -   Traduções: Vicente Guzmán (LucioMSP), Tania Allard, Ricardo Prins
+
+-   Equipe de comunidades: Cynthia Zanoni, Piyali Dey

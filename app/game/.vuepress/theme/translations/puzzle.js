@@ -26,8 +26,7 @@ export default {
 		endangered: 'Ameaçadas de extinção',
 		jaguar: 'Onça-pintada',
 		macaw: 'Arara',
-		pass:
-			'As pedras se encaixam e você ouve uma porta se abrir além da escada que desce. De repente, o chão se inclina sob você e você começa a deslizar em direção à escada! O que vai acontecer? Volte no próximo mês para continuar o Azure Maya Mystery!',
+		pass: 'As pedras se encaixam e você ouve o som de uma porta se abrir, próximo da escada. De repente, o chão se inclina e você começa a deslizar em direção à escada! O que vai acontecer? Volte no próximo mês para continuar o Azure Maya Mystery!',
 		congratulations: 'Parabéns por concluir a primeira das três partes do Azure Maya Mystery!',
 		tell: 'Compartilhe!',
 		staytuned: 'Fique ligado no próximo lançamento!',
