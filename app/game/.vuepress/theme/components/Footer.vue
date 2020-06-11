@@ -40,7 +40,7 @@ export default {
     goToCredits() {
       var lang = getLocale();
       var currPath = this.$route.matched[0].path;
-      var newPath = currPath.replace(/es|pt|en/gi, lang);
+      var newPath = currPath.replace(/es|pt|en|fr/gi, lang);
       console.log(newPath, currPath);
 
       if (newPath == "") {

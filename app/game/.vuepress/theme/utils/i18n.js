@@ -11,6 +11,7 @@ export default ({ app }) => {
 			en: {},
 			es: {},
 			pt: {},
+			fr: {},
 		},
 	});
 };

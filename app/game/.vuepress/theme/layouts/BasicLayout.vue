@@ -6,6 +6,10 @@
     >Español</span>
     <span
       class="float-right p-5 text-white underline cursor-pointer"
+      @click="setLanguage('fr')"
+    >Français</span>
+    <span
+      class="float-right p-5 text-white underline cursor-pointer"
       @click="setLanguage('pt')"
     >Português</span>
 
@@ -37,7 +41,7 @@ export default {
       setLocale(lang);
       EventBus.$emit("lang_changed", lang);
       var currPath = this.$route.matched[0].path;
-      var newPath = currPath.replace(/es|pt|en/gi, lang);
+      var newPath = currPath.replace(/es|pt|en|frs/gi, lang);
       console.log(newPath, currPath);
       //check to make sure you're not already on this page
       if (newPath == "") {

@@ -7,6 +7,14 @@ export default {
 		welldone: 'Well done!',
 		sorry: 'Sorry, try again',
 	},
+	fr: {
+		enter: 'Entrez dans la pyramide',
+		submit: 'Soumettre',
+		meaning: 'sens du premier glyphe',
+		guess: 'nuage',
+		welldone: 'Bien fait!',
+		sorry: 'Désolé, réessayez',
+	},
 	es: {
 		enter: 'Entrar en la pirámide',
 		submit: 'Enviar',

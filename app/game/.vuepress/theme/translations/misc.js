@@ -7,6 +7,14 @@ export default {
 		registerwelcome: 'Welcome! Please login!',
 		myadventure: 'My Adventure',
 	},
+	fr: {
+		login: "S'identifier",
+		register: "S'inscrire",
+		takepic: 'Prendre une photo?',
+		loginwelcome: 'Nous saluons le retour!',
+		registerwelcome: 'Bienvenue! Veuillez vous connecter!',
+		myadventure: 'Mon aventure',
+	},
 	es: {
 		login: 'Login',
 		register: 'Registrar',

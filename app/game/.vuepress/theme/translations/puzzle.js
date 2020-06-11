@@ -10,6 +10,17 @@ export default {
 		tell: 'Tell the world!',
 		staytuned: 'Stay tuned for the next release!',
 	},
+	fr: {
+		match: "Faites correspondre le glyphe à l'inscription",
+		endangered: 'En danger',
+		jaguar: 'Jaguar',
+		macaw: 'Ara',
+		pass:
+			"Les pierres s'enclenchent et vous entendez une porte grincer au-delà des escaliers menant vers le bas. Soudain, le sol s'incline sous vous et vous commencez à glisser vers l'escalier! Que va-t-il se passer? Revenez le mois prochain pour continuer l'Azure Maya Mystery!",
+		congratulations: "Félicitations pour avoir terminé la première des trois parties de l'Azure Maya Mystery!",
+		tell: 'Dire au monde!',
+		staytuned: "Restez à l'écoute pour la prochaine version!",
+	},
 	es: {
 		match: 'Une el glifo con la inscripción',
 		endangered: 'En peligro de extinción',
@@ -26,7 +37,8 @@ export default {
 		endangered: 'Ameaçadas de extinção',
 		jaguar: 'Onça-pintada',
 		macaw: 'Arara',
-		pass: 'As pedras se encaixam e você ouve o som de uma porta se abrir, próximo da escada. De repente, o chão se inclina e você começa a deslizar em direção à escada! O que vai acontecer? Volte no próximo mês para continuar o Azure Maya Mystery!',
+		pass:
+			'As pedras se encaixam e você ouve o som de uma porta se abrir, próximo da escada. De repente, o chão se inclina e você começa a deslizar em direção à escada! O que vai acontecer? Volte no próximo mês para continuar o Azure Maya Mystery!',
 		congratulations: 'Parabéns por concluir a primeira das três partes do Azure Maya Mystery!',
 		tell: 'Compartilhe!',
 		staytuned: 'Fique ligado no próximo lançamento!',

@@ -49,6 +49,8 @@ export default {
         currItem = currItem.instructions.es.instruction;
       } else if (this.$i18n.locale == "pt") {
         currItem = currItem.instructions.pt.instruction;
+      } else if (this.$i18n.locale == "fr") {
+        currItem = currItem.instructions.fr.instruction;
       } else {
         currItem = currItem.instructions.en.instruction;
       }
@@ -60,6 +62,8 @@ export default {
         currItem = currItem.result.es.result;
       } else if (this.$i18n.locale == "pt") {
         currItem = currItem.result.pt.result;
+      } else if (this.$i18n.locale == "fr") {
+        currItem = currItem.result.fr.result;
       } else {
         currItem = currItem.result.en.result;
       }
@@ -71,6 +75,8 @@ export default {
         currItem = currItem.name.es.name;
       } else if (this.$i18n.locale == "pt") {
         currItem = currItem.name.pt.name;
+      } else if (this.$i18n.locale == "fr") {
+        currItem = currItem.name.fr.name;
       } else {
         currItem = currItem.name.en.name;
       }

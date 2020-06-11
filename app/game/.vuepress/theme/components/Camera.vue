@@ -54,6 +54,8 @@ export default {
         currItem = currItem.clues.es.clue;
       } else if (this.$i18n.locale == "pt") {
         currItem = currItem.clues.pt.clue;
+      } else if (this.$i18n.locale == "fr") {
+        currItem = currItem.clues.fr.clue;
       } else {
         currItem = currItem.clues.en.clue;
       }
