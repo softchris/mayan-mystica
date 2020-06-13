@@ -73,12 +73,12 @@
   </div>
 </template>
 <script>
-import messages from "@theme/translations/puzzle.js";
+import messages from "@theme/translations/puzzle1.js";
 import { getLocale } from "@theme/utils/helpers";
 import { EventBus } from "@theme/utils/event-bus";
 
 export default {
-  name: "Puzzle",
+  name: "Puzzle1",
   i18n: {
     messages
   },
