@@ -41,7 +41,7 @@ export default {
       setLocale(lang);
       EventBus.$emit("lang_changed", lang);
       var currPath = this.$route.matched[0].path;
-      var newPath = currPath.replace(/es|pt|en|frs/gi, lang);
+      var newPath = currPath.replace(/es|pt|en|fr/gi, lang);
       console.log(newPath, currPath);
       //check to make sure you're not already on this page
       if (newPath == "") {
