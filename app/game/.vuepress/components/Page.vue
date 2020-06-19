@@ -85,7 +85,6 @@ export default {
 .page-nav {
   font-weight: bold;
   padding-top: 10px;
-  color: green;
   text-decoration: underline;
   display: block;
   cursor: pointer;
