@@ -3,6 +3,7 @@
     <p v-if="showInstructions">
       {{ getLocalizedInstructions }}
       <button
+        type="button"
         class="bg-transparent font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
         aria-expanded="true"
         onclick="return false"
@@ -14,6 +15,7 @@
     <p @click="emitResult(item)">
       {{ getLocalizedInstructions }}
       <button
+        type="button"
         class="bg-transparent font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
         aria-expanded="true"
         onclick="return false"

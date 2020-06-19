@@ -6,7 +6,7 @@
       <form class="w-full max-w-sm">
         <div class="flex items-center">
           <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 m-2 leading-tight focus:outline-none focus:bg-white"
+            class="appearance-none focus:shadow-outline block w-full bg-white border border-gray-500 placeholder-gray-800 rounded py-3 px-4 m-2 leading-tight focus:outline-none focus:bg-white"
             type="text"
             :placeholder="$t('meaning')"
             :aria-label="$t('meaning')"
@@ -14,7 +14,7 @@
           />
           <button
             @click="submit"
-            class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-md border-4 text-white py-1 px-2 rounded"
+            class="bg-transparent font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
             type="button"
           >{{$t('submit')}}</button>
         </div>
