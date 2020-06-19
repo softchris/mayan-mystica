@@ -35,7 +35,7 @@
       </div>
       <div class="flex justify-between">
         <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+          class="bg-transparent font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
           type="submit"
         >{{ $t('login') }}</button>
       </div>
