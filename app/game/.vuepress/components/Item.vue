@@ -2,17 +2,25 @@
   <div v-if="item.filename != ''" @click="takePic(item)">
     <p v-if="showInstructions">
       {{ getLocalizedInstructions }}
-      <a onclick="return false" href>{{ getLocalizedName }}</a>
+      <button
+        type="button"
+        class="bg-transparent font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        aria-expanded="true"
+        onclick="return false"
+        href
+      >{{ getLocalizedName }}</button>
     </p>
   </div>
   <div v-else>
     <p @click="emitResult(item)">
       {{ getLocalizedInstructions }}
-      <a
-        href
+      <button
+        type="button"
+        class="bg-transparent font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        aria-expanded="true"
         onclick="return false"
         @click="showResult = !showResult"
-      >{{ getLocalizedName }}</a>
+      >{{ getLocalizedName }}</button>
     </p>
     <p v-if="showResult">{{ getLocalizedResult }}</p>
   </div>

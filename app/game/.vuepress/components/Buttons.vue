@@ -2,6 +2,7 @@
   <div>
     <div class="m-10 text-center">
       <button
+        type="button"
         class="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded"
         @click="count(1)"
       >🌎</button>
@@ -10,17 +11,20 @@
         @click="count(2)"
       >🌳</button>
       <button
+        type="button"
         class="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded"
         @click="count(3)"
       >🐍</button>
       <button
+        type="button"
         class="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded"
         @click="count(4)"
       >💨</button>
     </div>
     <div class="text-center">
       <button
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        type="button"
+        class="bg-transparent font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
         @click="test()"
       >{{ $t('trythedoor') }}</button>
     </div>
