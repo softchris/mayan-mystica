@@ -17,7 +17,7 @@
 		},
 		"name": {
 			"es": {
-				"name": "mapa desvanecido"
+				"name": "mapa desvaído"
 			},
 			"en": {
 				"name": "faded map"
@@ -174,7 +174,7 @@
 			}
 		},
 		"gameItem": "snake glyph",
-		"filename": "snake",
+		"filename": "4",
 		"initialHide": true,
 		"clues": {
 			"es": {
@@ -196,7 +196,7 @@
 		"id": 5,
 		"instructions": {
 			"es": {
-				"instruction": "Cepille la suciedad del"
+				"instruction": "Sacudir la suciedad del"
 			},
 			"en": {
 				"instruction": "Brush off the dirt from the"
@@ -223,11 +223,11 @@
 			}
 		},
 		"gameItem": "earth glyph",
-		"filename": "earth",
+		"filename": "5",
 		"initialHide": true,
 		"clues": {
 			"es": {
-				"clue": "1: La longitud  mide alrededor de _____ de este a oeste, con 0° en el primer meridiano."
+				"clue": "1: La longitud mide alrededor de _____ de este a oeste, con 0° en el primer meridiano."
 			},
 			"en": {
 				"clue": "1: Longitude measures around the _____ from east to west, with 0° at the Prime Meridian"
@@ -245,7 +245,7 @@
 		"id": 6,
 		"instructions": {
 			"es": {
-				"instruction": "Retire la hoja del"
+				"instruction": "Retira la hoja del"
 			},
 			"en": {
 				"instruction": "Remove the leaf from the"
@@ -272,7 +272,7 @@
 			}
 		},
 		"gameItem": "wind glyph",
-		"filename": "wind",
+		"filename": "6",
 		"clues": {
 			"es": {
 				"clue": "2: Usando el parámetro Measure, puedes medir la velocidad de este objeto"
@@ -294,7 +294,7 @@
 		"id": 7,
 		"instructions": {
 			"es": {
-				"instruction": "Contener las vides del"
+				"instruction": "Contener las enredaderas lejos del"
 			},
 			"en": {
 				"instruction": "Hold back the vines from the"
@@ -321,7 +321,7 @@
 			}
 		},
 		"gameItem": "tree glyph",
-		"filename": "tree",
+		"filename": "7",
 		"clues": {
 			"es": {
 				"clue": "3: El Aprendizaje de Máquinas puede ayudarte a predecir la prevalencia de este tipo de especies"
@@ -453,7 +453,7 @@
 			}
 		},
 		"gameItem": "jaguar glyph",
-		"filename": "jaguar",
+		"filename": "10",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/learn/modules/bash-introduction/3-bash-commands/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
@@ -461,7 +461,7 @@
 		"id": 11,
 		"instructions": {
 			"es": {
-				"instruction": "Reuniendo varias piezas, vuelves a a armar el segundo"
+				"instruction": "Reuniendo varias piezas, vuelves a armar el segundo"
 			},
 			"en": {
 				"instruction": "Gathering up several pieces, you reassemble the second"
@@ -488,7 +488,7 @@
 			}
 		},
 		"gameItem": "macaw glyph",
-		"filename": "macaw",
+		"filename": "11",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/learn/modules/cv-classify-bird-species/?WT.mc_id=mayamystery-playfab-jelooper"
 	}

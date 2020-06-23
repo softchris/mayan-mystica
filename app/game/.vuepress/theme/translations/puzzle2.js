@@ -19,7 +19,7 @@ export default {
 	},
 	es: {
 		code:
-			'Abre su guía pero los resultados son muy desconcertantes. La página desgarrada solo incluye dos elementos: un código: f001f96576472a769c087f98121b0345a559a11e y una nota: sha-1.',
+			'Abres tu guía pero los resultados son muy desconcertantes. La página desgarrada solo incluye dos elementos: un código: f001f96576472a769c087f98121b0345a559a11e y una nota: sha-1.',
 		submit: 'Enviar',
 		meaning: 'significado del glifo',
 		welldone: '¡Bien hecho!',

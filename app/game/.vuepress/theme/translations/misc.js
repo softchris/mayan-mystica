@@ -16,10 +16,10 @@ export default {
 		myadventure: 'Mon aventure',
 	},
 	es: {
-		login: 'Login',
+		login: 'Iniciar Sesión',
 		register: 'Registrar',
-		takepic: '¿Toma una foto?',
-		loginwelcome: '¡Dar una buena acogida!',
+		takepic: '¿Tomar una foto?',
+		loginwelcome: '¡Bienvenido de vuelta!',
 		registerwelcome: '¡Bienvenidos! ¡Por favor Iniciar sesión!',
 		myadventure: 'Mi aventura',
 	},
