@@ -174,7 +174,7 @@
 			}
 		},
 		"gameItem": "snake glyph",
-		"filename": "snake",
+		"filename": "4",
 		"initialHide": true,
 		"clues": {
 			"es": {
@@ -223,7 +223,7 @@
 			}
 		},
 		"gameItem": "earth glyph",
-		"filename": "earth",
+		"filename": "5",
 		"initialHide": true,
 		"clues": {
 			"es": {
@@ -272,7 +272,7 @@
 			}
 		},
 		"gameItem": "wind glyph",
-		"filename": "wind",
+		"filename": "6",
 		"clues": {
 			"es": {
 				"clue": "2: Usando el parámetro Measure, puedes medir la velocidad de este objeto"
@@ -321,7 +321,7 @@
 			}
 		},
 		"gameItem": "tree glyph",
-		"filename": "tree",
+		"filename": "7",
 		"clues": {
 			"es": {
 				"clue": "3: El Aprendizaje de Máquinas puede ayudarte a predecir la prevalencia de este tipo de especies"
@@ -453,7 +453,7 @@
 			}
 		},
 		"gameItem": "jaguar glyph",
-		"filename": "jaguar",
+		"filename": "10",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/learn/modules/bash-introduction/3-bash-commands/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
@@ -488,7 +488,7 @@
 			}
 		},
 		"gameItem": "macaw glyph",
-		"filename": "macaw",
+		"filename": "11",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/learn/modules/cv-classify-bird-species/?WT.mc_id=mayamystery-playfab-jelooper"
 	}
