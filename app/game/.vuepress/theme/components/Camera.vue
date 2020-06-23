@@ -10,7 +10,7 @@
           <div v-for="item in polaroids" class="item">
             <div class="polaroid">
               <span class="container">
-                <img :src="getUrl(item.filename)" alt="a Maya glyph" />
+                <img :src="getUrl(item.filename)" alt="snapshot" />
               </span>
               <div class="caption">
                 <a :href="item.url" target="_blank">{{ $t('learn') }}</a>
