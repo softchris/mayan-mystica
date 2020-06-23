@@ -22,12 +22,12 @@ export default {
 		staytuned: "Restez à l'écoute pour la prochaine version!",
 	},
 	es: {
-		match: 'Une el glifo con la inscripción',
+		match: 'Une el glifo con la inscripción correspondiente',
 		endangered: 'En peligro de extinción',
 		jaguar: 'Jaguar',
 		macaw: 'Guacamaya',
 		pass:
-			'Las piedras encajan en su lugar y oyes una puerta que se abre más allá de las escaleras que bajan. De repente, el piso se inclina debajo de ti y comienzas a deslizarte hacia la escalera. ¿Qué sucederá? ¡Regresa el próximo mes para continuar el Misterio Maya de Azure!',
+			'Las piedras encajan en su lugar y oyes una puerta abriéndose más allá de las escaleras que bajan. De repente, el piso se inclina debajo de ti y comienzas a deslizarte hacia la escalera. ¿Qué sucederá? ¡Regresa el próximo mes para continuar el Misterio Maya de Azure!',
 		congratulations: '¡Felicitaciones por completar la primera de las tres partes del Misterio Maya de Azure!',
 		tell: '¡Dile al mundo!',
 		staytuned: '¡Estén atentos para el próximo lanzamiento!',

@@ -17,7 +17,7 @@
 		},
 		"name": {
 			"es": {
-				"name": "mapa desvanecido"
+				"name": "mapa desvaído"
 			},
 			"en": {
 				"name": "faded map"
@@ -196,7 +196,7 @@
 		"id": 5,
 		"instructions": {
 			"es": {
-				"instruction": "Cepille la suciedad del"
+				"instruction": "Sacudir la suciedad del"
 			},
 			"en": {
 				"instruction": "Brush off the dirt from the"
@@ -227,7 +227,7 @@
 		"initialHide": true,
 		"clues": {
 			"es": {
-				"clue": "1: La longitud  mide alrededor de _____ de este a oeste, con 0° en el primer meridiano."
+				"clue": "1: La longitud mide alrededor de _____ de este a oeste, con 0° en el primer meridiano."
 			},
 			"en": {
 				"clue": "1: Longitude measures around the _____ from east to west, with 0° at the Prime Meridian"
@@ -245,7 +245,7 @@
 		"id": 6,
 		"instructions": {
 			"es": {
-				"instruction": "Retire la hoja del"
+				"instruction": "Retira la hoja del"
 			},
 			"en": {
 				"instruction": "Remove the leaf from the"
@@ -294,7 +294,7 @@
 		"id": 7,
 		"instructions": {
 			"es": {
-				"instruction": "Contener las vides del"
+				"instruction": "Contener las enredaderas lejos del"
 			},
 			"en": {
 				"instruction": "Hold back the vines from the"
@@ -461,7 +461,7 @@
 		"id": 11,
 		"instructions": {
 			"es": {
-				"instruction": "Reuniendo varias piezas, vuelves a a armar el segundo"
+				"instruction": "Reuniendo varias piezas, vuelves a armar el segundo"
 			},
 			"en": {
 				"instruction": "Gathering up several pieces, you reassemble the second"
