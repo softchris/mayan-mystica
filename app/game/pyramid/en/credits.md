@@ -10,7 +10,7 @@ Thank you to the contributors to the Azure Maya Mystery, including:
 
 -   Development Team: Jen Looper and Chris Noring, Developers with Em Lazer-Walker, Creative Director
 
--   Translations: Vicente Guzmán (LucioMSP), Tania Allard, Ricardo Prins, Samir Si-Mohammed, Jen Looper
+-   Translations: Vicente Guzmán (LucioMSP), Tania Allard, Ricardo Prins, Samir Si-Mohammed, Jen Looper, Gustavo Cordido
 
 -   Community Team: Cynthia Zanoni, Piyali Dey
 
