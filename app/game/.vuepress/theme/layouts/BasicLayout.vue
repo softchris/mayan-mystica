@@ -1,17 +1,24 @@
 <template>
   <div class="markdown-body">
-    <span
-      class="float-right p-5 text-white underline cursor-pointer"
-      @click="setLanguage('es')"
-    >Español</span>
-    <span
-      class="float-right p-5 text-white underline cursor-pointer"
-      @click="setLanguage('fr')"
-    >Français</span>
-    <span
-      class="float-right p-5 text-white underline cursor-pointer"
-      @click="setLanguage('pt')"
-    >Português</span>
+    <select
+      @change="goToLevel($event)"
+      class="float-right block appearance-none border border-gray-200 mr-4 ml-4 mt-4 px-3 text-black rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+    >
+      <option value>{{ $t('level') }}</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <select
+      @change="setLanguage($event)"
+      class="float-right block appearance-none border border-gray-200 mt-4 px-3 text-black rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+    >
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="pt">Português</option>
+    </select>
 
     <span
       class="float-right p-5 text-white underline cursor-pointer"
@@ -37,7 +44,17 @@ export default {
   },
 
   methods: {
-    setLanguage(lang) {
+    goToLevel(event) {
+      if (event.target.value == "" || event.target.value == "1") {
+        this.$router.push({ path: "/pyramid/" + getLocale() + "/1" });
+      } else if (event.target.value == "2") {
+        this.$router.push({ path: "/pyramid/" + getLocale() + "/2" });
+      } else {
+        this.$router.push({ path: "/pyramid/" + getLocale() + "/3" });
+      }
+    },
+    setLanguage(event) {
+      var lang = event.target.value;
       setLocale(lang);
       EventBus.$emit("lang_changed", lang);
       var currPath = this.$route.matched[0].path;
