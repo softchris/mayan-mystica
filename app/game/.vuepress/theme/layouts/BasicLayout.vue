@@ -46,7 +46,7 @@ export default {
   methods: {
     goToLevel(event) {
       if (event.target.value == "" || event.target.value == "1") {
-        this.$router.push({ path: "/pyramid/" + getLocale() + "/1" });
+        this.$router.push({ path: "/" });
       } else if (event.target.value == "2") {
         this.$router.push({ path: "/pyramid/" + getLocale() + "/2" });
       } else {
