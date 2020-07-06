@@ -64,11 +64,8 @@
 
       <a
         href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmicrosoft.com/AzureMayaMystery%2F&text=I%20just%20entered%20the%20Azure%20Maya%20Mystery%20pyramid.%20Look%20forward%20to%20next%20month%20when%20I%20will%20get%20to%20explore%20more!&hashtags=AzureMayaMystery"
-        class="twitter-hashtag-button"
         data-show-count="false"
-      >{{ $t('tell') }}</a>
-
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      >Tweet! {{ $t('tell') }}</a>
     </div>
   </div>
 </template>
