@@ -2,6 +2,8 @@
 backdrop: images/1-bg-stairs.png
 ---
 
-# Coming Soon!
+# Part 2: The Mysterious Cenote
 
-Come back in August!
+Welcome to the second part of the Azure Maya Mystery!
+
+<Launch2/>
