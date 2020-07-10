@@ -1,13 +1,12 @@
 <template>
   <div>
     <div v-if="showNext">
-      <p>In the previous episode, you entered the pyramid and have started a perilous journey.</p>
       <p>
-        <router-link to="1">{{$t('enter')}}</router-link>
+        <router-link to="300">{{$t('continue')}}</router-link>
       </p>
     </div>
     <div v-else>
-      <p>Before you can continue your exploration of the Azure Maya Mystery, you need to complete Part 1!</p>
+      <p>{{$t('message')}}</p>
       <p>
         <router-link to="/">{{$t('goback')}}</router-link>
       </p>
@@ -36,7 +35,7 @@ export default {
 
     var ids = getItems();
     //there should be 7 items in localstorage
-    if (ids.length == 7) {
+    if (ids.length >= 7) {
       this.showNext = true;
     }
   }

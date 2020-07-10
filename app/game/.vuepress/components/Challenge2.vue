@@ -20,7 +20,7 @@
       </form>
     </div>
     <p v-if="showNext">
-      <router-link to="4">{{$t('enter')}}</router-link>
+      <router-link to="211">{{$t('continue')}}</router-link>
     </p>
   </div>
 </template>
