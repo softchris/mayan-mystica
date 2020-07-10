@@ -491,5 +491,73 @@
 		"filename": "11",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/learn/modules/cv-classify-bird-species/?WT.mc_id=mayamystery-playfab-jelooper"
+	},
+	{
+		"id": 12,
+		"instructions": {
+			"es": {
+				"instruction": "Mira el"
+			},
+			"en": {
+				"instruction": "Looking down, you see a"
+			},
+			"fr": {
+				"instruction": "Regardez le"
+			},
+			"pt": {
+				"instruction": "Olhe para o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "carved stone"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "turtle glyph",
+		"filename": "12",
+		"initialHide": true
+	},
+	{
+		"id": 13,
+		"instructions": {
+			"es": {
+				"instruction": "Dive down and recover the"
+			},
+			"en": {
+				"instruction": "Dive down and recover the"
+			},
+			"fr": {
+				"instruction": "Regardez le"
+			},
+			"pt": {
+				"instruction": "Olhe para o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "carved stone"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "cenote glyph",
+		"filename": "13",
+		"initialHide": true
 	}
 ]
