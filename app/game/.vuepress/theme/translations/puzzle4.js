@@ -6,21 +6,24 @@ export default {
 		fail: '"Wrong", says the turtle grumpily.',
 	},
 	fr: {
-		assemblethepieces: 'Essayez la porte',
+		assemblethepieces: 'Assemblez les morceaux',
 		continue: 'Continuer',
-		pass: "La porte s'ouvre avec un grincement",
-		fail: 'La porte reste fermée à clé',
+		pass:
+			"Un faisceau de lumière éblouit soudainement vos yeux alors qu'une porte menant à un escalier à l'étage s'ouvre.",
+		fail: '"Faux", dit la tortue d\'un air grincheux.',
 	},
 	es: {
-		assemblethepieces: 'Prueba la puerta',
+		assemblethepieces: 'Ensamblar las piezas',
 		continue: 'Continuar',
-		pass: 'La puerta se abre con un chirrido',
-		fail: 'La puerta permanece cerrada herméticamente',
+		pass:
+			'Un rayo de luz deslumbra de repente cuando una puerta que conduce a una escalera de arriba se abre de golpe.',
+		fail: '"Equivocado", dice la tortuga de mal humor.',
 	},
 	pt: {
-		assemblethepieces: 'Tente a porta',
+		assemblethepieces: 'Monte as peças',
 		continue: 'Continuar',
-		pass: 'A porta se abre com um rangido',
-		fail: 'A porta permanece trancada',
+		pass:
+			'De repente, um raio de luz deslumbra seus olhos quando uma porta que leva a uma escada no andar de cima se abre.',
+		fail: '"Errado", diz a tartaruga mal-humorada.',
 	},
 };
