@@ -9,7 +9,7 @@ export default {
 		assemblethepieces: 'Assemblez les morceaux',
 		continue: 'Continuer',
 		pass:
-			"Un faisceau de lumière éblouit soudainement vos yeux alors qu'une porte menant à un escalier à l'étage s'ouvre.",
+			"Un faisceau de lumière éblouit soudainement vos yeux alors qu'une porte menant à un escalier à l'étage s'ouvre brusquement.",
 		fail: '"Faux", dit la tortue d\'un air grincheux.',
 	},
 	es: {
