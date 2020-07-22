@@ -40,7 +40,7 @@
     </div>
     <p>{{message}}</p>
     <p v-if="showNext">
-      <router-link to="785">{{ $t('continue') }}</router-link>
+      <router-link to="633">{{ $t('continue') }}</router-link>
     </p>
   </div>
 </template>

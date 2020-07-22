@@ -11,6 +11,7 @@ module.exports = {
 	themeConfig: {
 		search: false,
 	},
+	head: [['script', { src: '/scripts/bugs.js' }]],
 	devServer: {
 		proxy: {
 			'/api': {
