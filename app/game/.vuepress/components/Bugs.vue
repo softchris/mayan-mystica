@@ -30,7 +30,6 @@
 import messages from '@theme/translations/bugs.js';
 import { getLocale } from '@theme/utils/helpers';
 import { EventBus } from '@theme/utils/event-bus';
-//import SpiderController from '/AzureMayaMystery/scripts/bugs';
 
 export default {
 	name: 'Challenge',
@@ -42,7 +41,7 @@ export default {
 			guess: '',
 			message: '',
 			showNext: false,
-			bugs: {},
+			//bugs: {},
 		};
 	},
 	methods: {
@@ -62,15 +61,15 @@ export default {
 		EventBus.$on('lang_changed', (lang) => (this.$i18n.locale = lang));
 	},
 	mounted() {
-		this.bugs = new SpiderController({
+		/*this.bugs = new SpiderController({
 			minBugs: 10,
 			maxBugs: 50,
 			mouseOver: 'die',
-		});
+		});*/
 	},
 	beforeDestroy() {
 		//clear the object
-		this.bugs == {};
+		//this.bugs == {};
 	},
 };
 </script>
