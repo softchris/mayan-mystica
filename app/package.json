@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "vuepress build game",
 		"dev": "vuepress dev game",
-		"postbuild": "mkdir ./game/.vuepress/dist/AzureMayaMystery && cp -rf ./game/.vuepress/dist/assets* ./game/.vuepress/dist/AzureMayaMystery/assets && cp -rf ./game/.vuepress/dist/fonts* ./game/.vuepress/dist/AzureMayaMystery/fonts && cp -rf ./game/.vuepress/dist/images* ./game/.vuepress/dist/AzureMayaMystery/images && cp -rf ./game/.vuepress/dist/pyramid* ./game/.vuepress/dist/AzureMayaMystery/pyramid && cp -rf ./game/.vuepress/dist/404.html ./game/.vuepress/dist/AzureMayaMystery/404.html && cp -rf ./game/.vuepress/dist/index.html ./game/.vuepress/dist/AzureMayaMystery/index.html"
+		"postbuild": "mkdir ./game/.vuepress/dist/AzureMayaMystery && cp -rf ./game/.vuepress/dist/assets* ./game/.vuepress/dist/AzureMayaMystery/assets && cp -rf ./game/.vuepress/dist/fonts* ./game/.vuepress/dist/AzureMayaMystery/fonts && cp -rf ./game/.vuepress/dist/images* ./game/.vuepress/dist/AzureMayaMystery/images && cp -rf ./game/.vuepress/dist/scripts* ./game/.vuepress/dist/AzureMayaMystery/scripts && cp -rf ./game/.vuepress/dist/pyramid* ./game/.vuepress/dist/AzureMayaMystery/pyramid && cp -rf ./game/.vuepress/dist/404.html ./game/.vuepress/dist/AzureMayaMystery/404.html && cp -rf ./game/.vuepress/dist/index.html ./game/.vuepress/dist/AzureMayaMystery/index.html"
 	},
 	"keywords": [],
 	"author": "softchris,jlooper",
