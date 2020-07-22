@@ -22,7 +22,7 @@ export default {
 		meaning: 'código secreto',
 		guess: 'azul',
 		welldone:
-			'Un zumbido te sorprende, y un dron vuela hacia ti, dejando caer un paquete en tu regazo. Realmente un gran servicio! "¡Bien hecho!" dice la tortuga. "¡Has descubierto la segunda parte del nombre del templo! Ahora, sumérgete y recupera la pieza que falta en esta habitación".',
+			'Un zumbido te sorprende, y un dron vuela hacia ti, dejando caer un paquete en tu regazo. Verdaderamente un gran servicio! "¡Bien hecho!" dice la tortuga. "¡Has descubierto la segunda parte del nombre del templo! Ahora, sumérgete y recupera la pieza que falta en esta habitación".',
 		sorry: 'Lo siento, intenta de nuevo',
 		continue: 'Continuar',
 	},
