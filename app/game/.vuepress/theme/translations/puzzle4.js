@@ -8,7 +8,8 @@ export default {
 	fr: {
 		assemblethepieces: 'Assemblez les morceaux',
 		continue: 'Continuer',
-		pass: "Vous entendez un clic brusque près d'un escalier alors qu'une porte se déverrouille à proximité",
+pass: "Vous entendez un clic brusque près d'un escalier alors qu'une porte se déverrouille à proximité",
+
 		fail: '"Faux", dit la tortue d\'un air grincheux.',
 	},
 	es: {

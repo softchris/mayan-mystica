@@ -5,7 +5,7 @@ export default {
 		continue: 'Continue',
 	},
 	fr: {
-		message: 'Avant de pouvoir continuer votre exploration du mystère Azure Maya, vous devez terminer la partie 1!',
+		message: 'Avant de pouvoir continuer votre exploration du Mystère Azure Maya, vous devez terminer la Partie 1!',
 		goback: 'Retourner',
 		continue: 'Continuer',
 	},
