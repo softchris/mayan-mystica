@@ -496,10 +496,10 @@
 		"id": 12,
 		"instructions": {
 			"es": {
-				"instruction": "Mira el"
+				"instruction": "Mirando hacia abajo, notas un"
 			},
 			"en": {
-				"instruction": "Mirando hacia abajo, ves un"
+				"instruction": "Looking down, you spot a"
 			},
 			"fr": {
 				"instruction": "En regardant vers le bas, vous voyez un"
