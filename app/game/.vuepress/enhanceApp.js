@@ -11,6 +11,7 @@ import Puzzle5 from './components/Puzzle5';
 import Challenge1 from './components/Challenge1';
 import Launch2 from './components/Launch2';
 import Challenge2 from './components/Challenge2';
+import Bugs from './components/Bugs';
 
 export default ({ Vue }) => {
 	Vue.component('Page', Page);
@@ -26,4 +27,5 @@ export default ({ Vue }) => {
 	Vue.component('Challenge1', Challenge1);
 	Vue.component('Launch2', Launch2);
 	Vue.component('Challenge2', Challenge2);
+	Vue.component('Bugs', Bugs);
 };
