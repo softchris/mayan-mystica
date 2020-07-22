@@ -499,13 +499,13 @@
 				"instruction": "Mira el"
 			},
 			"en": {
-				"instruction": "Looking down, you see a"
+				"instruction": "Mirando hacia abajo, ves un"
 			},
 			"fr": {
-				"instruction": "Regardez le"
+				"instruction": "En regardant vers le bas, vous voyez un"
 			},
 			"pt": {
-				"instruction": "Olhe para o"
+				"instruction": "Olhando para baixo, você vê uma"
 			}
 		},
 		"name": {
@@ -530,16 +530,16 @@
 		"id": 13,
 		"instructions": {
 			"es": {
-				"instruction": "Dive down and recover the"
+				"instruction": "Sumergirse y recuperar el"
 			},
 			"en": {
 				"instruction": "Dive down and recover the"
 			},
 			"fr": {
-				"instruction": "Regardez le"
+				"instruction": "Plongez et récupérez le"
 			},
 			"pt": {
-				"instruction": "Olhe para o"
+				"instruction": "Mergulhar e recuperar o"
 			}
 		},
 		"name": {
