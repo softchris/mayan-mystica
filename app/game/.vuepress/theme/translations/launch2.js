@@ -10,8 +10,8 @@ export default {
 		continue: 'Continuer',
 	},
 	es: {
-		message: '¡Antes de que pueda continuar su exploración del Misterio Maya de Azure, debe completar la Parte 1!',
-		goback: 'Regresa',
+		message: '¡Antes de que puedas continuar tu exploración del Misterio Maya de Azure, debes completar la Parte 1!',
+		goback: 'Regresar',
 		continue: 'Continuar',
 	},
 	pt: {
