@@ -324,20 +324,20 @@
 		"filename": "7",
 		"clues": {
 			"es": {
-				"clue": "3: El Aprendizaje de Máquinas puede ayudarte a predecir la prevalencia de este tipo de especies"
+				"clue": "3: el DOM es una estructura ----"
 			},
 			"en": {
-				"clue": "3: Machine Learning can help you predict the prevalence of this kind of species"
+				"clue": "3: The DOM is a ---- structure"
 			},
 			"fr": {
-				"clue": "3: L'apprentissage automatique peut vous aider à prédire la prévalence de ce type d'espèces"
+				"clue": "3: le DOM est une structure ----"
 			},
 			"pt": {
-				"clue": "3: Machine Learning pode ajudar a prever a prevalência desse tipo de espécie"
+				"clue": "3: o DOM é uma estrutura ----"
 			}
 		},
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/learn/modules/introduction-to-classification/?WT.mc_id=mayamystery-playfab-jelooper"
+		"url": "https://docs.microsoft.com/en-us/learn/certifications/courses/55244/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 8,
