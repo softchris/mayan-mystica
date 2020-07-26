@@ -65,7 +65,6 @@ export default {
     spell(letter) {
       //c-e-n-o-t-e
       this.spellingString = this.spellingString.concat(letter);
-      console.log(this.spellingString);
     },
     test() {
       if (this.spellingString == "cenote") {
