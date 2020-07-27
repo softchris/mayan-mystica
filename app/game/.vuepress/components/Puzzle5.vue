@@ -33,13 +33,13 @@ import { EventBus } from "@theme/utils/event-bus";
 export default {
   name: "Puzzle5",
   i18n: {
-    messages
+    messages,
   },
   data() {
     return {
       showNext: false,
       message: "",
-      guess: ""
+      guess: "",
     };
   },
   methods: {
@@ -51,15 +51,15 @@ export default {
         this.message = this.$t("fail");
       }
       this.guess = "";
-    }
+    },
   },
   created() {
     this.$i18n.locale = getLocale();
-    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+    EventBus.$on("lang_changed", (lang) => (this.$i18n.locale = lang));
   },
   beforeDestroy() {
-    EventBus.$off("lang_changed");
-  }
+    //EventBus.$off("lang_changed");
+  },
 };
 </script>
 <style scoped></style>
