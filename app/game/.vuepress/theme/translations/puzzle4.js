@@ -20,7 +20,7 @@ export default {
 	pt: {
 		assemblethepieces: 'Monte as peças',
 		continue: 'Continuar',
-		pass: 'Você ouve um clique agudo perto de uma escada quando uma porta se abre perto.',
+		pass: 'Você ouve um clique agudo perto de uma escada enquando uma porta se abre por perto.',
 		fail: '"Errado", diz a tartaruga mal-humorada.',
 	},
 };
