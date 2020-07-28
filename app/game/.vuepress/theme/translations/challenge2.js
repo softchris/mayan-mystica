@@ -31,7 +31,7 @@ export default {
 		meaning: 'codigo secreto',
 		guess: 'azul',
 		welldone:
-			'Um zumbido o surpreende e um drone voa até você, deixando cair um pacote no seu colo. Realment, um ótimo serviço! "Bom trabalho!" diz a tartaruga. "Você descobriu a segunda parte do nome do templo! Agora, mergulhe e recupere a peça que faltava desta sala."',
+			'Um zumbido o surpreende e um drone voa até você, deixando cair um pacote no seu colo. Realmente, um ótimo serviço! "Bom trabalho!" diz a tartaruga. "Você descobriu a segunda parte do nome do templo! Agora, mergulhe e recupere a peça que faltava desta sala."',
 		sorry: 'Desculpe, tente novamente',
 		continue: 'Continuar',
 	},
