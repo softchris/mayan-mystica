@@ -337,7 +337,7 @@
 			}
 		},
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/certifications/courses/55244/?WT.mc_id=mayamystery-playfab-jelooper"
+		"url": "https://docs.microsoft.com/learn/certifications/courses/55244/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 8,
@@ -513,7 +513,7 @@
 				"name": "glifo"
 			},
 			"en": {
-				"name": "carved stone"
+				"name": "glyph"
 			},
 			"fr": {
 				"name": "glyphe"
@@ -547,7 +547,7 @@
 				"name": "glifo"
 			},
 			"en": {
-				"name": "carved stone"
+				"name": "glyph"
 			},
 			"fr": {
 				"name": "glyphe"
