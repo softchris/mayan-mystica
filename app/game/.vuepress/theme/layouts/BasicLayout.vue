@@ -1,6 +1,6 @@
 <template>
   <div class="markdown-body">
-    <!--<select
+    <select
       @change="goToLevel($event)"
       class="float-right block appearance-none border border-gray-200 mr-4 ml-4 mt-4 px-3 text-black rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
     >
@@ -8,7 +8,7 @@
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
-    </select>-->
+    </select>
 
     <select
       @change="setLanguage($event)"

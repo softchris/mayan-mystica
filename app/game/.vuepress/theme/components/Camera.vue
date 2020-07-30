@@ -12,7 +12,7 @@
               <span class="container">
                 <img :src="getUrl(item.filename)" alt="a Maya glyph" />
               </span>
-              <div class="caption" v-if="item.url">
+              <div class="caption">
                 <a :href="item.url" target="_blank">{{ $t('learn') }}</a>
                 <p class="text-sm leading-snug">{{ getLocalizedClue(item) }}</p>
               </div>
@@ -40,32 +40,33 @@ export default {
     let obj = { polaroids: [] };
     return obj;
   },
+
   methods: {
-    showCameraItems() {
-      var ids = getItems();
-      this.polaroids = ids.map((id) => items.find((item) => item.id == id));
-    },
-    getLocalizedClue(item) {
-      if (!item.clues) {
-        return "";
-      }
-      let currItem = item;
-      if (this.$i18n.locale == "es") {
-        currItem = currItem.clues.es.clue;
-      } else if (this.$i18n.locale == "pt") {
-        currItem = currItem.clues.pt.clue;
-      } else if (this.$i18n.locale == "fr") {
-        currItem = currItem.clues.fr.clue;
-      } else {
-        currItem = currItem.clues.en.clue;
-      }
-      return currItem;
-    },
     getUrl(name) {
       if (name) {
         return this.$withBase("/images/" + name + ".png");
       }
       return "";
+    },
+    showCameraItems() {
+      var ids = getItems();
+      this.polaroids = ids.map((id) => items.find((item) => item.id == id));
+    },
+    getLocalizedClue(item) {
+      console.log(item);
+      let currItem = item;
+      if (currItem.clues) {
+        if (this.$i18n.locale == "es") {
+          currItem = currItem.clues.es.clue;
+        } else if (this.$i18n.locale == "pt") {
+          currItem = currItem.clues.pt.clue;
+        } else if (this.$i18n.locale == "fr") {
+          currItem = currItem.clues.fr.clue;
+        } else {
+          currItem = currItem.clues.en.clue;
+        }
+        return currItem;
+      }
     },
   },
   created() {
