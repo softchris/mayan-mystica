@@ -24,7 +24,7 @@ Inspiration comes from many different places, and it so happens that lead develo
 
 ## Architecture
 
-This site is a hybrid of a Vue.js Single Page Web App and a VuePress static site. Most written content is written using VuePress's markdown architecture, and the game elements and forms for login and register are build as standard Vue.js app elements. The game is contained in the `/app` folder and the API where calls to PlayFab, the backend, are stored is in `/api`. The site is deployed on [Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/?WT.mc_id=mayamystery-github-jelooper#overview) but, due to redirection needs when moving the site to production, a separate Azure Function App is running for the API calls.
+This site is a hybrid of a Vue.js Single Page Web App and a VuePress static site. Most written content is written using VuePress's markdown architecture, and the game elements are built as standard Vue.js app elements. The game is contained in the `/app` folder and the API where calls to PlayFab, the backend, are stored is in `/api`. The site is deployed on [Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/?WT.mc_id=mayamystery-github-jelooper#overview) but, due to redirection needs when moving the site to production, a separate Azure Function App is running for the API calls.
 
 ## The Internal Challenge
 

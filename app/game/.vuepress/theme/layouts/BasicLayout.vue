@@ -20,10 +20,6 @@
       <option value="pt">Português</option>
     </select>
 
-    <span
-      class="float-right p-5 text-white underline cursor-pointer"
-      @click="goToLogin()"
-    >{{ $t('myadventure') }}</span>
     <p class="text-3xl pb-5 pt-5 ml-5 text-sans">{{ $page.frontmatter.title }}</p>
     <div class="p-5 bg-white m-5 rounded">
       <Content />
@@ -40,7 +36,7 @@ import { i18n } from "@theme/utils/i18n";
 export default {
   name: "BasicLayout",
   i18n: {
-    messages
+    messages,
   },
 
   methods: {
@@ -75,14 +71,14 @@ export default {
       if (currPath !== newPath) {
         this.$router.replace({ path: newPath });
       }
-    }
+    },
   },
   created() {
     this.$i18n.locale = getLocale();
-    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+    EventBus.$on("lang_changed", (lang) => (this.$i18n.locale = lang));
   },
   beforeDestroy() {
     //EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>

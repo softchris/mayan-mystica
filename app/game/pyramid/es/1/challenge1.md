@@ -12,10 +12,6 @@ Clona [este repositorio](https://github.com/MicrosoftDocs/Azure-Maya-Mystery-Cha
 
 <hr class="m-5"/>
 
-¡Asegúrate de [Ingresar](../../login) para guardar tu progreso y continuar el próximo mes!
-
-<hr class="m-5"/>
-
 ¿Aprendiste el significado de uno de los glifos en la misteriosa estela? Ingrésalo aquí:
 
 <Challenge1/>
