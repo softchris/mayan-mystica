@@ -33,7 +33,7 @@ import { i18n } from "@theme/utils/i18n";
 export default {
   name: "Camera",
   i18n: {
-    messages
+    messages,
   },
 
   data() {
@@ -43,7 +43,7 @@ export default {
   methods: {
     showCameraItems() {
       var ids = getItems();
-      this.polaroids = ids.map(id => items.find(item => item.id == id));
+      this.polaroids = ids.map((id) => items.find((item) => item.id == id));
     },
     getLocalizedClue(item) {
       if (!item.clues) {
@@ -66,21 +66,21 @@ export default {
         return this.$withBase("/images/" + name + ".png");
       }
       return "";
-    }
+    },
   },
   created() {
     this.showCameraItems();
     this.$i18n.locale = getLocale();
-    EventBus.$on("item_added", id => {
+    EventBus.$on("item_added", (id) => {
       this.showCameraItems();
     });
-    EventBus.$on("lang_changed", lang => {
+    EventBus.$on("lang_changed", (lang) => {
       this.$i18n.locale = lang;
     });
   },
   beforeDestroy() {
     //EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>
 <style scoped>
