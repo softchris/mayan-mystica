@@ -2,6 +2,8 @@
 backdrop: images/1-bg-stairs.png
 ---
 
-# Bientôt disponible!
+# Partie 2: Le mystérieux cénote
 
-Revenez en août!
+Bienvenue! Dans cette partie du Mystère, vous découvrirez un ancien lac sous la pyramide Maya et vous aiderez à restaurer des artefacts pour continuer votre voyage.
+
+<Launch2/>

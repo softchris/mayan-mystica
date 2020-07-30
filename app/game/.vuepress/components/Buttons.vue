@@ -55,7 +55,6 @@ export default {
     count(item) {
       //earth,wind,tree,snake
       this.numbersArray.push(item);
-      console.log(this.numbersArray);
     },
     test() {
       if (JSON.stringify([1, 4, 2, 3]) === JSON.stringify(this.numbersArray)) {

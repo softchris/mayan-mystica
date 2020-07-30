@@ -337,7 +337,7 @@
 			}
 		},
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/certifications/courses/55244/?WT.mc_id=mayamystery-playfab-jelooper"
+		"url": "https://docs.microsoft.com/learn/certifications/courses/55244/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 8,
@@ -491,5 +491,73 @@
 		"filename": "11",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/learn/modules/cv-classify-bird-species/?WT.mc_id=mayamystery-playfab-jelooper"
+	},
+	{
+		"id": 12,
+		"instructions": {
+			"es": {
+				"instruction": "Mirando hacia abajo, notas un"
+			},
+			"en": {
+				"instruction": "Looking down, you spot a"
+			},
+			"fr": {
+				"instruction": "En regardant vers le bas, vous voyez un"
+			},
+			"pt": {
+				"instruction": "Olhando para baixo, você vê um"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "turtle glyph",
+		"filename": "12",
+		"initialHide": true
+	},
+	{
+		"id": 13,
+		"instructions": {
+			"es": {
+				"instruction": "Sumergirse y recuperar el"
+			},
+			"en": {
+				"instruction": "Dive down and recover the"
+			},
+			"fr": {
+				"instruction": "Plongez et récupérez le"
+			},
+			"pt": {
+				"instruction": "Mergulhar e recuperar o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "cenote glyph",
+		"filename": "13",
+		"initialHide": true
 	}
 ]

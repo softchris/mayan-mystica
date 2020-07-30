@@ -6,8 +6,12 @@ import Buttons from './components/Buttons';
 import Puzzle1 from './components/Puzzle1';
 import Puzzle2 from './components/Puzzle2';
 import Puzzle3 from './components/Puzzle3';
+import Puzzle4 from './components/Puzzle4';
+import Puzzle5 from './components/Puzzle5';
 import Challenge1 from './components/Challenge1';
-//import VueI18n from 'vue-i18n';
+import Launch2 from './components/Launch2';
+import Challenge2 from './components/Challenge2';
+import Bugs from './components/Bugs';
 
 export default ({ Vue }) => {
 	Vue.component('Page', Page);
@@ -18,6 +22,10 @@ export default ({ Vue }) => {
 	Vue.component('Puzzle1', Puzzle1);
 	Vue.component('Puzzle2', Puzzle2);
 	Vue.component('Puzzle3', Puzzle3);
+	Vue.component('Puzzle4', Puzzle4);
+	Vue.component('Puzzle5', Puzzle5);
 	Vue.component('Challenge1', Challenge1);
-	//Vue.use(VueI18n);
+	Vue.component('Launch2', Launch2);
+	Vue.component('Challenge2', Challenge2);
+	Vue.component('Bugs', Bugs);
 };
