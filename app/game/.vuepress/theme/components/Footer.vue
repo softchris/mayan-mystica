@@ -15,14 +15,14 @@
       &nbsp;|&nbsp;
       {{ $t('copyright') }}
       &nbsp;|&nbsp;
-      <span
+      <a
         class="has-text-grey underline cursor-pointer"
-        @click="goToCredits()"
+        href="/AzureMayaMystery/pyramid/en/credits"
       >
         {{
         $t('credits')
         }}
-      </span>
+      </a>
     </div>
   </footer>
 </template>
@@ -34,7 +34,7 @@ import { EventBus } from "@theme/utils/event-bus";
 export default {
   name: "Footer",
   i18n: {
-    messages
+    messages,
   },
   methods: {
     goToCredits() {
@@ -48,15 +48,15 @@ export default {
       } else {
         this.$router.push({ path: newPath });
       }
-    }
+    },
   },
   created() {
     this.$i18n.locale = getLocale();
-    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+    EventBus.$on("lang_changed", (lang) => (this.$i18n.locale = lang));
   },
   beforeDestroy() {
     EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>
 <style scoped>

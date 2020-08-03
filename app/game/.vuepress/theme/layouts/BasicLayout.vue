@@ -1,27 +1,60 @@
 <template>
   <div class="markdown-body">
-    <select
-      @change="goToLevel($event)"
-      class="float-right block appearance-none border border-gray-200 mr-4 ml-4 mt-4 px-3 text-black rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-    >
-      <option value>{{ $t('level') }}</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
+    <div class="flex flex-wrap float-right m-2 mr-5">
+      <label
+        class="mr-3 float-left block tracking-wide text-white text-xs font-bold mb-2"
+        for="grid-state"
+      >{{ $t('level') }}</label>
+      <div class="relative">
+        <select
+          role="listbox"
+          @change="goToLevel($event)"
+          class="block appearance-none w-full border border-gray-200 py-3 px-4 pr-8 rounded leading-tight"
+          id="level"
+        >
+          <option role="listitem" value="1">1</option>
+          <option role="listitem" value="2">2</option>
+          <option role="listitem" value="3">3</option>
+        </select>
+        <div
+          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+        >
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+      </div>
+    </div>
 
-    <select
-      @change="setLanguage($event)"
-      class="float-right block appearance-none border border-gray-200 mt-4 px-3 text-black rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-    >
-      <option value="en">English</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="pt">Português</option>
-    </select>
+    <div class="flex flex-wrap float-right m-2">
+      <label
+        class="mr-3 float-left block tracking-wide text-white text-xs font-bold mb-2"
+        for="grid-state"
+      >{{ $t('language') }}</label>
+      <div class="relative">
+        <select
+          role="listbox"
+          @change="setLanguage($event)"
+          class="block appearance-none w-full border border-gray-200 py-3 px-4 pr-8 rounded leading-tight"
+          id="level"
+        >
+          <option role="listitem" value="en">English</option>
+          <option role="listitem" value="es">Español</option>
+          <option role="listitem" value="fr">Français</option>
+          <option role="listitem" value="pt">Português</option>
+        </select>
+        <div
+          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+        >
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+      </div>
+    </div>
 
     <p class="text-3xl pb-5 pt-5 ml-5 text-sans">{{ $page.frontmatter.title }}</p>
-    <div class="p-5 bg-white m-5 rounded">
+    <div class="p-5 bg-white m-5 mt-6 rounded">
       <Content />
     </div>
   </div>

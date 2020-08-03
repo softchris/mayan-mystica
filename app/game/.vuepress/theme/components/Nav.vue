@@ -1,16 +1,15 @@
 <template>
   <nav
+    role="navigation"
+    aria-label="Nav"
     class="nav rounded-t flex items-center justify-between flex-wrap text-right pr-0 lg:pr-5 md:pr-3 sm:pr-0 border-b"
   >
     <span class="lg:w-1/2 md:w-full sm:w-full w-full">
       <img :src="$withBase('/images/logo.png')" alt="Microsoft logo" />
     </span>
 
-    <span class="lg:w-1/2 md:w-full sm:w-full w-full">
-      <span
-        class="title cursor-pointer block m-1 lg:m-4 md:m-2 sm:m-1"
-        @click="goHome()"
-      >Azure Maya Mystery</span>
+    <span class="lg:w-1/2 md:w-full sm:w-full w-full" @click="goHome()">
+      <a href="/" class="title cursor-pointer block m-1 lg:m-4 md:m-2 sm:m-1">Azure Maya Mystery</a>
     </span>
 
     <div v-on:click="openNav()" class="lg:hidden">
@@ -48,7 +47,7 @@ export default {
   data() {
     return {
       lang: "en",
-      hidden: "lg:hidden md:hidden sm:hidden hidden"
+      hidden: "lg:hidden md:hidden sm:hidden hidden",
     };
   },
   methods: {
@@ -67,15 +66,15 @@ export default {
       if (tempPath != "") {
         this.$router.push({ path: "/" });
       }
-    }
+    },
   },
   created() {
     this.$i18n.locale = getLocale();
-    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+    EventBus.$on("lang_changed", (lang) => (this.$i18n.locale = lang));
   },
   beforeDestroy() {
     //EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>
 
