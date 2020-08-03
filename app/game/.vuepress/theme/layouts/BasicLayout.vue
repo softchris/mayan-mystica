@@ -12,9 +12,9 @@
           class="block appearance-none w-full border border-gray-200 py-3 px-4 pr-8 rounded leading-tight"
           id="level"
         >
-          <option role="listitem" value="1">1</option>
-          <option role="listitem" value="2">2</option>
-          <option role="listitem" value="3">3</option>
+          <option role="link" value="1">1</option>
+          <option role="link" value="2">2</option>
+          <option role="link" value="3">3</option>
         </select>
         <div
           class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
@@ -38,10 +38,10 @@
           class="block appearance-none w-full border border-gray-200 py-3 px-4 pr-8 rounded leading-tight"
           id="level"
         >
-          <option role="listitem" value="en">English</option>
-          <option role="listitem" value="es">Español</option>
-          <option role="listitem" value="fr">Français</option>
-          <option role="listitem" value="pt">Português</option>
+          <option role="link" value="en">English</option>
+          <option role="link" value="es">Español</option>
+          <option role="link" value="fr">Français</option>
+          <option role="link" value="pt">Português</option>
         </select>
         <div
           class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
