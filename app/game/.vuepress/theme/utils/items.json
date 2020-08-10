@@ -559,5 +559,103 @@
 		"gameItem": "cenote glyph",
 		"filename": "13",
 		"initialHide": true
+	},
+	{
+		"id": 14,
+		"instructions": {
+			"es": {
+				"instruction": "Examina el"
+			},
+			"en": {
+				"instruction": "Examine the"
+			},
+			"fr": {
+				"instruction": "Examiner le"
+			},
+			"pt": {
+				"instruction": "Examinar o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "book glyph",
+		"clues": {
+			"es": {
+				"clue": "Some of these are called '.ipynb'."
+			},
+			"en": {
+				"clue": "Some of these are called '.ipynb'."
+			},
+			"fr": {
+				"clue": "Some of these are called '.ipynb'."
+			},
+			"pt": {
+				"clue": "Some of these are called '.ipynb'."
+			}
+		},
+		"filename": "14",
+		"initialHide": true,
+		"url": "https://docs.microsoft.com/en-us/learn/modules/explore-analyze-data-with-python/2-exercise-explore-data?WT.mc_id=mayamystery-playfab-jelooper"
+	},
+	{
+		"id": 15,
+		"instructions": {
+			"es": {
+				"instruction": "Examina el"
+			},
+			"en": {
+				"instruction": "Examine the"
+			},
+			"fr": {
+				"instruction": "Examiner le"
+			},
+			"pt": {
+				"instruction": "Examinar o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "house glyph",
+		"clues": {
+			"es": {
+				"clue": "Sort these items into 'houses' using their nearest neighbors."
+			},
+			"en": {
+				"clue": "Sort these items into 'houses' using their nearest neighbors."
+			},
+			"fr": {
+				"clue": "Sort these items into 'houses' using their nearest neighbors."
+			},
+			"pt": {
+				"clue": "Sort these items into 'houses' using their nearest neighbors."
+			}
+		},
+		"filename": "15",
+		"initialHide": true,
+		"url": "https://docs.microsoft.com/en-us/learn/modules/predict-classes-with-knn-classifier/?WT.mc_id=mayamystery-playfab-jelooper"
 	}
 ]
