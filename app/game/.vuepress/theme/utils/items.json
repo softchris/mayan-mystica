@@ -657,5 +657,54 @@
 		"filename": "15",
 		"initialHide": true,
 		"url": "https://docs.microsoft.com/en-us/learn/modules/predict-classes-with-knn-classifier/?WT.mc_id=mayamystery-playfab-jelooper"
+	},
+	{
+		"id": 16,
+		"instructions": {
+			"es": {
+				"instruction": "Examina el"
+			},
+			"en": {
+				"instruction": "Examine the"
+			},
+			"fr": {
+				"instruction": "Examiner le"
+			},
+			"pt": {
+				"instruction": "Examinar o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "rainbow glyph",
+		"clues": {
+			"es": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			},
+			"en": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			},
+			"fr": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			},
+			"pt": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			}
+		},
+		"filename": "16",
+		"initialHide": true,
+		"url": ""
 	}
 ]

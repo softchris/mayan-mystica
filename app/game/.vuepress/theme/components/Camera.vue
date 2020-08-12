@@ -13,7 +13,7 @@
                 <img :src="getUrl(item.filename)" alt="a Maya glyph" />
               </span>
               <div class="caption">
-                <a :href="item.url" target="_blank">{{ $t('learn') }}</a>
+                <a v-if="item.url" :href="item.url" target="_blank">{{ $t('learn') }}</a>
                 <p class="text-sm leading-snug">{{ getLocalizedClue(item) }}</p>
               </div>
             </div>
