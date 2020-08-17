@@ -10,7 +10,7 @@
 			allowfullscreen
 		></iframe>
 		<p>
-			<router-link to="1">{{ $t('continue') }}</router-link>
+			<router-link to="133">{{ $t('continue') }}</router-link>
 		</p>
 	</div>
 </template>
