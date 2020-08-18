@@ -14,7 +14,7 @@ export default {
 		pass: "Vos yeux sont éblouis alors que la porte s'ouvre sur un escalier à l'étage.",
 		fail: 'Désolé, réessayez',
 		meaning: 'sens',
-		guess: 'arc en ciel',
+		guess: 'arc-en-ciel',
 		submit: 'Soumettre',
 	},
 	es: {
@@ -23,7 +23,7 @@ export default {
 		pass: 'Tus ojos están deslumbrados cuando la puerta se abre hacia una escalera de arriba.',
 		fail: 'Lo siento, intenta de nuevo',
 		meaning: 'sentido',
-		guess: 'arco Iris',
+		guess: 'arco iris',
 		submit: 'Enviar',
 	},
 	pt: {
