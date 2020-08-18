@@ -593,21 +593,21 @@
 		"gameItem": "book glyph",
 		"clues": {
 			"es": {
-				"clue": "Some of these are called '.ipynb'."
+				"clue": "Algunos de estos se llaman '.ipynb'."
 			},
 			"en": {
 				"clue": "Some of these are called '.ipynb'."
 			},
 			"fr": {
-				"clue": "Some of these are called '.ipynb'."
+				"clue": "Certains d'entre eux s'appellent «.ipynb»."
 			},
 			"pt": {
-				"clue": "Some of these are called '.ipynb'."
+				"clue": "Alguns deles são chamados de '.ipynb'."
 			}
 		},
 		"filename": "14",
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/modules/explore-analyze-data-with-python/2-exercise-explore-data?WT.mc_id=mayamystery-playfab-jelooper"
+		"url": "https://docs.microsoft.com/learn/modules/explore-analyze-data-with-python/2-exercise-explore-data?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 15,
@@ -642,21 +642,21 @@
 		"gameItem": "house glyph",
 		"clues": {
 			"es": {
-				"clue": "Sort these items into 'houses' using their nearest neighbors."
+				"clue": "Clasifique estos artículos en 'casas' usando sus vecinos más cercanos."
 			},
 			"en": {
 				"clue": "Sort these items into 'houses' using their nearest neighbors."
 			},
 			"fr": {
-				"clue": "Sort these items into 'houses' using their nearest neighbors."
+				"clue": "Triez ces articles en «maisons» en utilisant leurs voisins les plus proches."
 			},
 			"pt": {
-				"clue": "Sort these items into 'houses' using their nearest neighbors."
+				"clue": "Organize esses itens em 'casas' usando seus vizinhos mais próximos."
 			}
 		},
 		"filename": "15",
 		"initialHide": true,
-		"url": "https://docs.microsoft.com/en-us/learn/modules/predict-classes-with-knn-classifier/?WT.mc_id=mayamystery-playfab-jelooper"
+		"url": "https://docs.microsoft.com/learn/modules/predict-classes-with-knn-classifier/?WT.mc_id=mayamystery-playfab-jelooper"
 	},
 	{
 		"id": 16,

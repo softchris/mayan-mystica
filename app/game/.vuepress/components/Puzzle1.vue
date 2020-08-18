@@ -57,7 +57,7 @@
 			<p>
 				<a
 					href="https://azure.microsoft.com/resources/join-the-azure-developer-community?WT.mc_id=mayamystery-newsletter-jelooper"
-					target="blank"
+					target="_blank"
 					>{{ $t('staytuned') }}</a
 				>
 			</p>

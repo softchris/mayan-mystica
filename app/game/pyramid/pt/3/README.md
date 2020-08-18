@@ -2,8 +2,8 @@
 backdrop: images/1-bg-stairs.png
 ---
 
-# Part 3: Ascending
+# Parte 3: Ascendente
 
-Welcome! In this part of the Mystery, you will explore the pyramid's inner sanctum and gain access to its summit, learning the name of the goddess to whom the pyramid is dedicated, restore more of its broken glyphs, and earn the goddess's gratitude.
+Bem-vinda! Nesta parte do Mistério, você vai explorar o santuário interno da pirâmide e obter acesso ao seu cume, aprendendo o nome da deusa a quem a pirâmide é dedicada, restaurando mais de seus glifos quebrados e ganhando a gratidão da deusa.
 
 <Launch3/>
