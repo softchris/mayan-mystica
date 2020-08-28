@@ -23,7 +23,7 @@ export default {
 	pt: {
 		test: 'Verifique a ordem dos glifos',
 		pass:
-			'"Corrigir! O nome do templo é \'Casa da Nuvem Azul\' - em maia, azul (yax), nuvem (muyal), casa (nah)." Os três glifos aparecem no terceiro nicho.',
+			'"Correto! O nome do templo é \'Casa da Nuvem Azul\' - em maia, azul (yax), nuvem (muyal), casa (nah)." Os três glifos aparecem na terceira cavidade.',
 		fail: 'Desculpe, tente novamente',
 		continue: 'Continuar',
 	},

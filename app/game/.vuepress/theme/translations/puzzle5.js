@@ -26,9 +26,9 @@ export default {
 	pt: {
 		code: 'Digite o código para abrir a porta',
 		continue: 'Continuar',
-		pass: 'Seus olhos estão ofuscados quando a porta se abre para uma escada no andar de cima.',
+		pass: 'Seus olhos ficam deslumbrados quando a porta se abre para uma escada no andar de cima.',
 		fail: 'Desculpe, tente novamente',
-		meaning: 'keyword',
+		meaning: 'palavra-chave',
 		submit: 'Enviar',
 	},
 };

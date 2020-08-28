@@ -12,7 +12,7 @@ export default {
 		continue: 'Continuar',
 	},
 	pt: {
-		message: 'Os glifos voltam para seus nichos.',
+		message: 'Os glifos voltam para suas cavidades.',
 		continue: 'Continuar',
 	},
 };

@@ -29,10 +29,10 @@ export default {
 	pt: {
 		code: 'Insira o nome do glifo',
 		continue: 'Continuar',
-		pass: 'Seus olhos estão ofuscados quando a porta se abre para uma escada no andar de cima.',
+		pass: 'Seus olhos ficam deslumbrados quando a porta se abre para uma escada no andar de cima.',
 		fail: 'Desculpe, tente novamente',
 		meaning: 'significado',
-		guess: 'arco iris',
+		guess: 'arco-íris',
 		submit: 'Enviar',
 	},
 };
