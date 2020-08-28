@@ -7,6 +7,7 @@ export default {
 		registerwelcome: 'Welcome! Please login!',
 		myadventure: 'My Adventure',
 		level: 'Level',
+		language: 'Language',
 	},
 	fr: {
 		login: "S'identifier",
@@ -16,6 +17,7 @@ export default {
 		registerwelcome: 'Bienvenue! Veuillez vous connecter!',
 		myadventure: 'Mon aventure',
 		level: 'Niveau',
+		language: 'Langue',
 	},
 	es: {
 		login: 'Iniciar Sesión',
@@ -25,6 +27,7 @@ export default {
 		registerwelcome: '¡Bienvenidos! ¡Por favor Iniciar sesión!',
 		myadventure: 'Mi aventura',
 		level: 'Nivel',
+		language: 'Idioma',
 	},
 	pt: {
 		login: 'Login',
@@ -34,5 +37,6 @@ export default {
 		registerwelcome: 'Bem-vinda! Por favor entre!',
 		myadventure: 'Minha aventura',
 		level: 'Nível',
+		language: 'Língua',
 	},
 };

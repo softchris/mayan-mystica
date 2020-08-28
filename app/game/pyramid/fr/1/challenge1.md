@@ -12,10 +12,6 @@ Clonez [ce répertoire](https://github.com/MicrosoftDocs/Azure-Maya-Mystery-Chal
 
 <hr class = "m-5" />
 
-Assurez-vous de vous [Connecter](../login) pour enregistrer votre progression et continuer le mois prochain!
-
-<hr class = "m-5" />
-
 Avez-vous appris la signification d'un des glyphes sur la mystérieuse stèle? Entrez-le ici:
 
 <Challenge1/>

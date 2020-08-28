@@ -12,8 +12,12 @@
               <span class="container">
                 <img :src="getUrl(item.filename)" alt="a Maya glyph" />
               </span>
-              <div class="caption" v-if="item.url">
-                <a :href="item.url" target="_blank">{{ $t('learn') }}</a>
+              <div class="caption">
+                <a
+                  v-show="checkIfUrlExists(item)"
+                  :href="item.url"
+                  target="_blank"
+                >{{ $t('learn') }}</a>
                 <p class="text-sm leading-snug">{{ getLocalizedClue(item) }}</p>
               </div>
             </div>
@@ -33,54 +37,59 @@ import { i18n } from "@theme/utils/i18n";
 export default {
   name: "Camera",
   i18n: {
-    messages
+    messages,
   },
 
   data() {
     let obj = { polaroids: [] };
     return obj;
   },
+
   methods: {
-    showCameraItems() {
-      var ids = getItems();
-      this.polaroids = ids.map(id => items.find(item => item.id == id));
-    },
-    getLocalizedClue(item) {
-      if (!item.clues) {
-        return "";
-      }
-      let currItem = item;
-      if (this.$i18n.locale == "es") {
-        currItem = currItem.clues.es.clue;
-      } else if (this.$i18n.locale == "pt") {
-        currItem = currItem.clues.pt.clue;
-      } else if (this.$i18n.locale == "fr") {
-        currItem = currItem.clues.fr.clue;
-      } else {
-        currItem = currItem.clues.en.clue;
-      }
-      return currItem;
-    },
     getUrl(name) {
       if (name) {
         return this.$withBase("/images/" + name + ".png");
       }
       return "";
-    }
+    },
+    checkIfUrlExists(item) {
+      console.log(item.url);
+      if (item.url) return true;
+      else return false;
+    },
+    showCameraItems() {
+      var ids = getItems();
+      this.polaroids = ids.map((id) => items.find((item) => item.id == id));
+    },
+    getLocalizedClue(item) {
+      let currItem = item;
+      if (currItem.clues) {
+        if (this.$i18n.locale == "es") {
+          currItem = currItem.clues.es.clue;
+        } else if (this.$i18n.locale == "pt") {
+          currItem = currItem.clues.pt.clue;
+        } else if (this.$i18n.locale == "fr") {
+          currItem = currItem.clues.fr.clue;
+        } else {
+          currItem = currItem.clues.en.clue;
+        }
+        return currItem;
+      }
+    },
   },
   created() {
     this.showCameraItems();
     this.$i18n.locale = getLocale();
-    EventBus.$on("item_added", id => {
+    EventBus.$on("item_added", (id) => {
       this.showCameraItems();
     });
-    EventBus.$on("lang_changed", lang => {
+    EventBus.$on("lang_changed", (lang) => {
       this.$i18n.locale = lang;
     });
   },
   beforeDestroy() {
     //EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>
 <style scoped>

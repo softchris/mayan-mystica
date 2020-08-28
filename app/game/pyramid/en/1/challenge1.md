@@ -12,10 +12,6 @@ Clone [this repo](https://github.com/MicrosoftDocs/Azure-Maya-Mystery-Challenge-
 
 <hr class="m-5"/>
 
-Make sure to [Login](../login) to save your progress and continue next month!
-
-<hr class="m-5"/>
-
 Did you learn the meaning of one of the glyphs on the mysterious stela? Enter it here:
 
 <Challenge1/>

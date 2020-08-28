@@ -12,6 +12,9 @@ import Challenge1 from './components/Challenge1';
 import Launch2 from './components/Launch2';
 import Challenge2 from './components/Challenge2';
 import Bugs from './components/Bugs';
+import Matching from './components/Matching';
+import Challenge3 from './components/Challenge3';
+import Puzzle6 from './components/Puzzle6';
 
 export default ({ Vue }) => {
 	Vue.component('Page', Page);
@@ -28,4 +31,7 @@ export default ({ Vue }) => {
 	Vue.component('Launch2', Launch2);
 	Vue.component('Challenge2', Challenge2);
 	Vue.component('Bugs', Bugs);
+	Vue.component('Matching', Matching);
+	Vue.component('Challenge3', Challenge3);
+	Vue.component('Puzzle6', Puzzle6);
 };

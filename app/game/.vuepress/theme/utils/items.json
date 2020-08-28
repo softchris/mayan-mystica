@@ -559,5 +559,152 @@
 		"gameItem": "cenote glyph",
 		"filename": "13",
 		"initialHide": true
+	},
+	{
+		"id": 14,
+		"instructions": {
+			"es": {
+				"instruction": "Examina el"
+			},
+			"en": {
+				"instruction": "Examine the"
+			},
+			"fr": {
+				"instruction": "Examiner le"
+			},
+			"pt": {
+				"instruction": "Examinar o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "book glyph",
+		"clues": {
+			"es": {
+				"clue": "Algunos de estos se llaman '.ipynb'."
+			},
+			"en": {
+				"clue": "Some of these are called '.ipynb'."
+			},
+			"fr": {
+				"clue": "Certains d'entre eux s'appellent «.ipynb»."
+			},
+			"pt": {
+				"clue": "Alguns deles são chamados de '.ipynb'."
+			}
+		},
+		"filename": "14",
+		"initialHide": true,
+		"url": "https://docs.microsoft.com/learn/modules/explore-analyze-data-with-python/2-exercise-explore-data?WT.mc_id=mayamystery-playfab-jelooper"
+	},
+	{
+		"id": 15,
+		"instructions": {
+			"es": {
+				"instruction": "Examina el"
+			},
+			"en": {
+				"instruction": "Examine the"
+			},
+			"fr": {
+				"instruction": "Examiner le"
+			},
+			"pt": {
+				"instruction": "Examinar o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "house glyph",
+		"clues": {
+			"es": {
+				"clue": "Clasifique estos artículos en 'casas' usando sus vecinos más cercanos."
+			},
+			"en": {
+				"clue": "Sort these items into 'houses' using their nearest neighbors."
+			},
+			"fr": {
+				"clue": "Triez ces articles en «maisons» en utilisant leurs voisins les plus proches."
+			},
+			"pt": {
+				"clue": "Organize esses itens em 'casas' usando seus vizinhos mais próximos."
+			}
+		},
+		"filename": "15",
+		"initialHide": true,
+		"url": "https://docs.microsoft.com/learn/modules/predict-classes-with-knn-classifier/?WT.mc_id=mayamystery-playfab-jelooper"
+	},
+	{
+		"id": 16,
+		"instructions": {
+			"es": {
+				"instruction": "Examina el"
+			},
+			"en": {
+				"instruction": "Examine the"
+			},
+			"fr": {
+				"instruction": "Examiner le"
+			},
+			"pt": {
+				"instruction": "Examinar o"
+			}
+		},
+		"name": {
+			"es": {
+				"name": "glifo"
+			},
+			"en": {
+				"name": "glyph"
+			},
+			"fr": {
+				"name": "glyphe"
+			},
+			"pt": {
+				"name": "glifo"
+			}
+		},
+		"gameItem": "rainbow glyph",
+		"clues": {
+			"es": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			},
+			"en": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			},
+			"fr": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			},
+			"pt": {
+				"clue": "Hex: #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee."
+			}
+		},
+		"filename": "16",
+		"initialHide": true,
+		"url": ""
 	}
 ]

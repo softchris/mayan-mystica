@@ -32,7 +32,7 @@ import {
   hasItem,
   getUID,
   getSessionTicket,
-  getLocale
+  getLocale,
 } from "@theme/utils/helpers";
 import axios from "axios";
 import messages from "@theme/translations/misc.js";
@@ -43,16 +43,17 @@ export default {
   props: ["id"],
 
   i18n: {
-    messages
+    messages,
   },
   computed: {
     item() {
-      let item = items.find(row => row.id == this.id);
+      let item = items.find((row) => row.id == this.id);
       item = item || { name: "not set" };
       return item;
     },
+
     getLocalizedInstructions() {
-      let currItem = items.find(row => row.id == this.id);
+      let currItem = items.find((row) => row.id == this.id);
       if (this.$i18n.locale == "es") {
         currItem = currItem.instructions.es.instruction;
       } else if (this.$i18n.locale == "pt") {
@@ -65,7 +66,7 @@ export default {
       return currItem;
     },
     getLocalizedResult() {
-      let currItem = items.find(row => row.id == this.id);
+      let currItem = items.find((row) => row.id == this.id);
       if (this.$i18n.locale == "es") {
         currItem = currItem.result.es.result;
       } else if (this.$i18n.locale == "pt") {
@@ -78,7 +79,7 @@ export default {
       return currItem;
     },
     getLocalizedName() {
-      let currItem = items.find(row => row.id == this.id);
+      let currItem = items.find((row) => row.id == this.id);
       if (this.$i18n.locale == "es") {
         currItem = currItem.name.es.name;
       } else if (this.$i18n.locale == "pt") {
@@ -89,14 +90,14 @@ export default {
         currItem = currItem.name.en.name;
       }
       return currItem;
-    }
+    },
   },
   data() {
-    const item = items.find(row => row.id == this.id);
+    const item = items.find((row) => row.id == this.id);
 
     return {
       showInstructions: !item || item.initialHide,
-      showResult: false
+      showResult: false,
     };
   },
   methods: {
@@ -107,12 +108,12 @@ export default {
       jsonData[columnName] = item.gameItem;
       axios
         .post("https://maya-mystery-api.azurewebsites.net/api/updateData", {
-          Data: jsonData
+          Data: jsonData,
         })
-        .then(response => {
+        .then((response) => {
           console.log(response);
         })
-        .catch(function(error) {
+        .catch(function (error) {
           console.log(error);
         });
 
@@ -129,14 +130,14 @@ export default {
     },
     callback(e) {
       console.log(e);
-    }
+    },
   },
   created() {
     this.$i18n.locale = getLocale();
-    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+    EventBus.$on("lang_changed", (lang) => (this.$i18n.locale = lang));
   },
   beforeDestroy() {
     //EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>
