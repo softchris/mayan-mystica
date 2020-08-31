@@ -28,7 +28,7 @@
         @click="test()"
       >{{ $t('trythedoor') }}</button>
     </div>
-    <p>{{message}}</p>
+    <p role="alert">{{message}}</p>
     <p v-if="showNext">
       <router-link to="293">{{ $t('goinside') }}</router-link>
     </p>

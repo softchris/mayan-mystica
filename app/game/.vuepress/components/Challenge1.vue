@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="m-10 p-10 rounded overflow-hidden shadow-lg">
-      <p>{{message}}</p>
+      <p role="alert">{{message}}</p>
       <form class="w-full max-w-sm">
         <div class="flex items-center">
           <input
@@ -32,13 +32,13 @@ import { EventBus } from "@theme/utils/event-bus";
 export default {
   name: "Challenge",
   i18n: {
-    messages
+    messages,
   },
   data() {
     return {
       guess: "",
       message: "",
-      showNext: false
+      showNext: false,
     };
   },
   methods: {
@@ -50,14 +50,14 @@ export default {
         this.message = this.$t("sorry");
       }
       this.guess = "";
-    }
+    },
   },
   created() {
     this.$i18n.locale = getLocale();
-    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+    EventBus.$on("lang_changed", (lang) => (this.$i18n.locale = lang));
   },
   beforeDestroy() {
     //EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>

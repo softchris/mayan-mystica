@@ -2,7 +2,7 @@
   <div>
     <p>{{ $t('code') }}</p>
     <div class="m-10 p-10 rounded overflow-hidden shadow-lg">
-      <p>{{message}}</p>
+      <p role="alert">{{message}}</p>
       <form class="w-full max-w-sm">
         <div class="flex items-center">
           <input

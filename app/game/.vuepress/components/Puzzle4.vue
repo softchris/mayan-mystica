@@ -38,7 +38,7 @@
         @click="test()"
       >{{ $t('assemblethepieces') }}</button>
     </div>
-    <p>{{message}}</p>
+    <p role="alert">{{message}}</p>
     <p v-if="showNext">
       <router-link to="633">{{ $t('continue') }}</router-link>
     </p>
@@ -52,13 +52,13 @@ import { EventBus } from "@theme/utils/event-bus";
 export default {
   name: "Puzzle4",
   i18n: {
-    messages
+    messages,
   },
   data() {
     return {
       spellingString: "",
       message: "",
-      showNext: false
+      showNext: false,
     };
   },
   methods: {
@@ -74,14 +74,14 @@ export default {
         this.message = this.$t("fail");
       }
       this.spellingString = "";
-    }
+    },
   },
   created() {
     this.$i18n.locale = getLocale();
-    EventBus.$on("lang_changed", lang => (this.$i18n.locale = lang));
+    EventBus.$on("lang_changed", (lang) => (this.$i18n.locale = lang));
   },
   beforeDestroy() {
     //EventBus.$off("lang_changed");
-  }
+  },
 };
 </script>
