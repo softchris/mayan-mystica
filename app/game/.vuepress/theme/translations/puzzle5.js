@@ -18,9 +18,9 @@ export default {
 	es: {
 		code: 'Ingrese el código para abrir la puerta',
 		continue: 'Continuar',
-		pass: 'Tus ojos están deslumbrados cuando la puerta se abre hacia una escalera de arriba.',
+		pass: 'Tus ojos se deslumbran cuando la puerta se abre hacia una escalera de arriba.',
 		fail: 'Lo siento, intenta de nuevo',
-		meaning: 'keyword',
+		meaning: 'palabra clave',
 		submit: 'Enviar',
 	},
 	pt: {
