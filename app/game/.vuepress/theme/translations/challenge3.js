@@ -14,7 +14,7 @@ export default {
 		continue: 'Continuer',
 	},
 	es: {
-		test: 'Verificar el orden de los glifos',
+		test: 'Comprueba el orden de los glifos',
 		pass:
 			'"¡Correcto! El nombre del templo es \'Casa de la Nube Azul\' - en Maya, azul (yax), nube (muyal), casa (nah)." Los tres glifos aparecen en el tercer nicho.',
 		fail: 'Lo siento, intenta de nuevo',
