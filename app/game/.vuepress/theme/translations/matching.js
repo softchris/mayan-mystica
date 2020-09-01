@@ -8,7 +8,7 @@ export default {
 		continue: 'Continuer',
 	},
 	es: {
-		message: 'Los glifos vuelven a hacer clic en sus nichos.',
+		message: 'Los glifos vuelven a sus nichos.',
 		continue: 'Continuar',
 	},
 	pt: {
