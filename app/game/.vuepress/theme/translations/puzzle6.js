@@ -20,10 +20,10 @@ export default {
 	es: {
 		code: 'Ingrese el nombre del glifo',
 		continue: 'Continuar',
-		pass: 'Tus ojos están deslumbrados cuando la puerta se abre hacia una escalera de arriba.',
+		pass: 'Tus ojos se deslumbran cuando la puerta se abre hacia una escalera de arriba.',
 		fail: 'Lo siento, intenta de nuevo',
 		meaning: 'sentido',
-		guess: 'arco iris',
+		guess: 'arcoiris',
 		submit: 'Enviar',
 	},
 	pt: {
