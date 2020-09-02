@@ -3,7 +3,7 @@
 		"id": 1,
 		"instructions": {
 			"es": {
-				"instruction": "Desplegar el"
+				"instruction": "Desdobla el"
 			},
 			"en": {
 				"instruction": "Unfold the"
@@ -17,7 +17,7 @@
 		},
 		"name": {
 			"es": {
-				"name": "mapa desvaído"
+				"name": "mapa descolorido"
 			},
 			"en": {
 				"name": "faded map"
@@ -51,7 +51,7 @@
 		"id": 2,
 		"instructions": {
 			"es": {
-				"instruction": "Sacar la"
+				"instruction": "Saca la"
 			},
 			"en": {
 				"instruction": "Take out the"
@@ -82,7 +82,7 @@
 		"initialHide": true,
 		"result": {
 			"es": {
-				"result": "Sacas tu cámara de confianza y miras a tu alrededor."
+				"result": "Sacas tu fiel cámara y miras a tu alrededor."
 			},
 			"en": {
 				"result": "You take out your trusty camera and look around."
@@ -196,7 +196,7 @@
 		"id": 5,
 		"instructions": {
 			"es": {
-				"instruction": "Sacudir la suciedad del"
+				"instruction": "Cepille la suciedad del"
 			},
 			"en": {
 				"instruction": "Brush off the dirt from the"
@@ -294,7 +294,7 @@
 		"id": 7,
 		"instructions": {
 			"es": {
-				"instruction": "Contener las enredaderas lejos del"
+				"instruction": "Mantenga las enredaderas lejos del"
 			},
 			"en": {
 				"instruction": "Hold back the vines from the"
@@ -409,7 +409,7 @@
 		"initialHide": true,
 		"result": {
 			"es": {
-				"result": "Bajas las escaleras, pero encuentras otra puerta cerrada. Vuelves a la entrada."
+				"result": "Bajas las escaleras, pero encuentras otra puerta cerrada. Regresas a la entrada."
 			},
 			"en": {
 				"result": "You go down the staircase, but find another locked door. You return to the entryway."
