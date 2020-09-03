@@ -2,10 +2,10 @@
   <div>
     <div class="flex justify-center bg-gray-300 mt-5">
       <div class="flex justify-center">
-        <img class="m-12 bg-white" src="/images/13.png" width="100" height="100" />
+        <img class="m-12 bg-white" :src="$withBase('/images/13.png')" width="100" height="100" />
       </div>
       <div class="flex justify-center">
-        <img class="m-12 bg-white" src="/images/7.png" width="100" height="100" />
+        <img class="m-12 bg-white" :src="$withBase('/images/7.png')" width="100" height="100" />
       </div>
     </div>
 
@@ -15,7 +15,7 @@
           <div class="list-group-item" v-for="(element, index) in list1" :key="element">
             <img
               class="m-5 bg-white rounded-md shadow-md"
-              :src="'/images/' + element + '.png'"
+              :src="$withBase('/images/' + element + '.png')"
               width="100"
               height="100"
             />
@@ -27,7 +27,7 @@
           <div class="list-group-item" v-for="(element, index) in list2" :key="element">
             <img
               class="m-5 bg-white rounded-md shadow-md"
-              :src="'/images/' + element + '.png'"
+              :src="$withBase('/images/' + element + '.png')"
               width="100"
               height="100"
             />
