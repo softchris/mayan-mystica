@@ -2,10 +2,10 @@
   <div>
     <div class="flex justify-center bg-gray-300 mt-5">
       <div class="flex justify-center">
-        <img class="m-12 bg-white" src="/AzureMayaMystery/images/13.png" width="100" height="100" />
+        <img class="m-12 bg-white" :src="$withBase('/images/13.png')" width="100" height="100" />
       </div>
       <div class="flex justify-center">
-        <img class="m-12 bg-white" src="/AzureMayaMystery/images/7.png" width="100" height="100" />
+        <img class="m-12 bg-white" :src="$withBase('/images/7.png')" width="100" height="100" />
       </div>
     </div>
 
@@ -15,7 +15,7 @@
           <div class="list-group-item" v-for="(element, index) in list1" :key="element">
             <img
               class="m-5 bg-white rounded-md shadow-md"
-              :src="'/AzureMayaMystery/images/' + element + '.png'"
+              :src="$withBase('/images/' + element + '.png')"
               width="100"
               height="100"
             />
@@ -27,7 +27,7 @@
           <div class="list-group-item" v-for="(element, index) in list2" :key="element">
             <img
               class="m-5 bg-white rounded-md shadow-md"
-              :src="'/AzureMayaMystery/images/' + element + '.png'"
+              :src="$withBase('/images/' + element + '.png')"
               width="100"
               height="100"
             />
@@ -47,7 +47,6 @@ import draggable from "vuedraggable";
 import messages from "@theme/translations/matching.js";
 import { getLocale } from "@theme/utils/helpers";
 import { EventBus } from "@theme/utils/event-bus";
-
 export default {
   components: {
     draggable,
